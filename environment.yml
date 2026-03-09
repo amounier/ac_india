@@ -1,0 +1,15 @@
+name: ac_india
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - pandas
+  - matplotlib
+  - tqdm
+  - cartopy
+  - xarray
+  - netCDF4
+  - rioxarray
+  - numpy
+  - seaborn
+  - shapely
