@@ -1,0 +1,491 @@
+Year,State/UT,Households_million_est
+2011,Uttar Pradesh,33.448
+2012,Uttar Pradesh,34.117
+2013,Uttar Pradesh,34.799
+2014,Uttar Pradesh,35.495
+2015,Uttar Pradesh,36.205
+2016,Uttar Pradesh,36.929
+2017,Uttar Pradesh,37.668
+2018,Uttar Pradesh,38.421
+2019,Uttar Pradesh,39.19
+2020,Uttar Pradesh,39.973
+2021,Uttar Pradesh,40.773
+2022,Uttar Pradesh,41.588
+2023,Uttar Pradesh,42.42
+2024,Uttar Pradesh,43.269
+2011,Maharashtra,24.422
+2012,Maharashtra,24.91
+2013,Maharashtra,25.409
+2014,Maharashtra,25.917
+2015,Maharashtra,26.435
+2016,Maharashtra,26.964
+2017,Maharashtra,27.503
+2018,Maharashtra,28.053
+2019,Maharashtra,28.614
+2020,Maharashtra,29.187
+2021,Maharashtra,29.77
+2022,Maharashtra,30.366
+2023,Maharashtra,30.973
+2024,Maharashtra,31.592
+2011,West Bengal,20.38
+2012,West Bengal,20.788
+2013,West Bengal,21.203
+2014,West Bengal,21.627
+2015,West Bengal,22.06
+2016,West Bengal,22.501
+2017,West Bengal,22.951
+2018,West Bengal,23.41
+2019,West Bengal,23.878
+2020,West Bengal,24.356
+2021,West Bengal,24.843
+2022,West Bengal,25.34
+2023,West Bengal,25.847
+2024,West Bengal,26.364
+2011,Andhra Pradesh (undivided),21.023
+2012,Andhra Pradesh (undivided),21.443
+2013,Andhra Pradesh (undivided),21.872
+2014,Andhra Pradesh (undivided),22.31
+2015,Andhra Pradesh (undivided),22.756
+2016,Andhra Pradesh (undivided),23.211
+2017,Andhra Pradesh (undivided),23.675
+2018,Andhra Pradesh (undivided),24.149
+2019,Andhra Pradesh (undivided),24.632
+2020,Andhra Pradesh (undivided),25.124
+2021,Andhra Pradesh (undivided),25.627
+2022,Andhra Pradesh (undivided),26.139
+2023,Andhra Pradesh (undivided),26.662
+2024,Andhra Pradesh (undivided),27.195
+2011,Bihar,18.914
+2012,Bihar,19.292
+2013,Bihar,19.678
+2014,Bihar,20.072
+2015,Bihar,20.473
+2016,Bihar,20.883
+2017,Bihar,21.3
+2018,Bihar,21.726
+2019,Bihar,22.161
+2020,Bihar,22.604
+2021,Bihar,23.056
+2022,Bihar,23.517
+2023,Bihar,23.988
+2024,Bihar,24.467
+2011,Tamil Nadu,18.525
+2012,Tamil Nadu,18.895
+2013,Tamil Nadu,19.273
+2014,Tamil Nadu,19.659
+2015,Tamil Nadu,20.052
+2016,Tamil Nadu,20.453
+2017,Tamil Nadu,20.862
+2018,Tamil Nadu,21.279
+2019,Tamil Nadu,21.705
+2020,Tamil Nadu,22.139
+2021,Tamil Nadu,22.582
+2022,Tamil Nadu,23.034
+2023,Tamil Nadu,23.494
+2024,Tamil Nadu,23.964
+2011,Madhya Pradesh,15.093
+2012,Madhya Pradesh,15.395
+2013,Madhya Pradesh,15.703
+2014,Madhya Pradesh,16.017
+2015,Madhya Pradesh,16.337
+2016,Madhya Pradesh,16.664
+2017,Madhya Pradesh,16.997
+2018,Madhya Pradesh,17.337
+2019,Madhya Pradesh,17.684
+2020,Madhya Pradesh,18.038
+2021,Madhya Pradesh,18.398
+2022,Madhya Pradesh,18.766
+2023,Madhya Pradesh,19.142
+2024,Madhya Pradesh,19.524
+2011,Karnataka,13.357
+2012,Karnataka,13.624
+2013,Karnataka,13.897
+2014,Karnataka,14.175
+2015,Karnataka,14.458
+2016,Karnataka,14.747
+2017,Karnataka,15.042
+2018,Karnataka,15.343
+2019,Karnataka,15.65
+2020,Karnataka,15.963
+2021,Karnataka,16.282
+2022,Karnataka,16.608
+2023,Karnataka,16.94
+2024,Karnataka,17.279
+2011,Rajasthan,12.711
+2012,Rajasthan,12.965
+2013,Rajasthan,13.225
+2014,Rajasthan,13.489
+2015,Rajasthan,13.759
+2016,Rajasthan,14.034
+2017,Rajasthan,14.315
+2018,Rajasthan,14.601
+2019,Rajasthan,14.893
+2020,Rajasthan,15.191
+2021,Rajasthan,15.495
+2022,Rajasthan,15.805
+2023,Rajasthan,16.121
+2024,Rajasthan,16.443
+2011,Gujarat,12.248
+2012,Gujarat,12.493
+2013,Gujarat,12.743
+2014,Gujarat,12.998
+2015,Gujarat,13.258
+2016,Gujarat,13.523
+2017,Gujarat,13.793
+2018,Gujarat,14.069
+2019,Gujarat,14.35
+2020,Gujarat,14.637
+2021,Gujarat,14.93
+2022,Gujarat,15.229
+2023,Gujarat,15.533
+2024,Gujarat,15.844
+2011,Odisha,9.638
+2012,Odisha,9.831
+2013,Odisha,10.027
+2014,Odisha,10.228
+2015,Odisha,10.432
+2016,Odisha,10.641
+2017,Odisha,10.854
+2018,Odisha,11.071
+2019,Odisha,11.292
+2020,Odisha,11.518
+2021,Odisha,11.749
+2022,Odisha,11.984
+2023,Odisha,12.223
+2024,Odisha,12.468
+2011,Kerala,7.854
+2012,Kerala,8.011
+2013,Kerala,8.171
+2014,Kerala,8.335
+2015,Kerala,8.501
+2016,Kerala,8.671
+2017,Kerala,8.845
+2018,Kerala,9.022
+2019,Kerala,9.202
+2020,Kerala,9.386
+2021,Kerala,9.574
+2022,Kerala,9.765
+2023,Kerala,9.961
+2024,Kerala,10.16
+2011,Assam,6.406
+2012,Assam,6.534
+2013,Assam,6.665
+2014,Assam,6.798
+2015,Assam,6.934
+2016,Assam,7.073
+2017,Assam,7.214
+2018,Assam,7.358
+2019,Assam,7.506
+2020,Assam,7.656
+2021,Assam,7.809
+2022,Assam,7.965
+2023,Assam,8.124
+2024,Assam,8.287
+2011,Jharkhand,6.255
+2012,Jharkhand,6.38
+2013,Jharkhand,6.508
+2014,Jharkhand,6.638
+2015,Jharkhand,6.771
+2016,Jharkhand,6.906
+2017,Jharkhand,7.044
+2018,Jharkhand,7.185
+2019,Jharkhand,7.329
+2020,Jharkhand,7.475
+2021,Jharkhand,7.625
+2022,Jharkhand,7.777
+2023,Jharkhand,7.933
+2024,Jharkhand,8.092
+2011,Punjab,5.513
+2012,Punjab,5.623
+2013,Punjab,5.736
+2014,Punjab,5.85
+2015,Punjab,5.967
+2016,Punjab,6.087
+2017,Punjab,6.209
+2018,Punjab,6.333
+2019,Punjab,6.459
+2020,Punjab,6.589
+2021,Punjab,6.72
+2022,Punjab,6.855
+2023,Punjab,6.992
+2024,Punjab,7.132
+2011,Chhattisgarh,5.651
+2012,Chhattisgarh,5.764
+2013,Chhattisgarh,5.879
+2014,Chhattisgarh,5.997
+2015,Chhattisgarh,6.117
+2016,Chhattisgarh,6.239
+2017,Chhattisgarh,6.364
+2018,Chhattisgarh,6.491
+2019,Chhattisgarh,6.621
+2020,Chhattisgarh,6.753
+2021,Chhattisgarh,6.889
+2022,Chhattisgarh,7.026
+2023,Chhattisgarh,7.167
+2024,Chhattisgarh,7.31
+2011,Haryana,4.858
+2012,Haryana,4.955
+2013,Haryana,5.054
+2014,Haryana,5.155
+2015,Haryana,5.258
+2016,Haryana,5.364
+2017,Haryana,5.471
+2018,Haryana,5.58
+2019,Haryana,5.692
+2020,Haryana,5.806
+2021,Haryana,5.922
+2022,Haryana,6.04
+2023,Haryana,6.161
+2024,Haryana,6.284
+2011,Delhi,3.436
+2012,Delhi,3.505
+2013,Delhi,3.575
+2014,Delhi,3.646
+2015,Delhi,3.719
+2016,Delhi,3.794
+2017,Delhi,3.869
+2018,Delhi,3.947
+2019,Delhi,4.026
+2020,Delhi,4.106
+2021,Delhi,4.188
+2022,Delhi,4.272
+2023,Delhi,4.358
+2024,Delhi,4.445
+2011,Jammu & Kashmir (undivided),2.12
+2012,Jammu & Kashmir (undivided),2.162
+2013,Jammu & Kashmir (undivided),2.206
+2014,Jammu & Kashmir (undivided),2.25
+2015,Jammu & Kashmir (undivided),2.295
+2016,Jammu & Kashmir (undivided),2.341
+2017,Jammu & Kashmir (undivided),2.387
+2018,Jammu & Kashmir (undivided),2.435
+2019,Jammu & Kashmir (undivided),2.484
+2020,Jammu & Kashmir (undivided),2.534
+2021,Jammu & Kashmir (undivided),2.584
+2022,Jammu & Kashmir (undivided),2.636
+2023,Jammu & Kashmir (undivided),2.689
+2024,Jammu & Kashmir (undivided),2.742
+2011,Uttarakhand,2.057
+2012,Uttarakhand,2.098
+2013,Uttarakhand,2.14
+2014,Uttarakhand,2.183
+2015,Uttarakhand,2.227
+2016,Uttarakhand,2.271
+2017,Uttarakhand,2.317
+2018,Uttarakhand,2.363
+2019,Uttarakhand,2.41
+2020,Uttarakhand,2.458
+2021,Uttarakhand,2.507
+2022,Uttarakhand,2.558
+2023,Uttarakhand,2.609
+2024,Uttarakhand,2.661
+2011,Himachal Pradesh,1.483
+2012,Himachal Pradesh,1.513
+2013,Himachal Pradesh,1.543
+2014,Himachal Pradesh,1.574
+2015,Himachal Pradesh,1.605
+2016,Himachal Pradesh,1.637
+2017,Himachal Pradesh,1.67
+2018,Himachal Pradesh,1.704
+2019,Himachal Pradesh,1.738
+2020,Himachal Pradesh,1.772
+2021,Himachal Pradesh,1.808
+2022,Himachal Pradesh,1.844
+2023,Himachal Pradesh,1.881
+2024,Himachal Pradesh,1.918
+2011,Tripura,0.856
+2012,Tripura,0.873
+2013,Tripura,0.891
+2014,Tripura,0.908
+2015,Tripura,0.927
+2016,Tripura,0.945
+2017,Tripura,0.964
+2018,Tripura,0.983
+2019,Tripura,1.003
+2020,Tripura,1.023
+2021,Tripura,1.043
+2022,Tripura,1.064
+2023,Tripura,1.086
+2024,Tripura,1.107
+2011,Manipur,0.558
+2012,Manipur,0.569
+2013,Manipur,0.581
+2014,Manipur,0.592
+2015,Manipur,0.604
+2016,Manipur,0.616
+2017,Manipur,0.628
+2018,Manipur,0.641
+2019,Manipur,0.654
+2020,Manipur,0.667
+2021,Manipur,0.68
+2022,Manipur,0.694
+2023,Manipur,0.708
+2024,Manipur,0.722
+2011,Meghalaya,0.548
+2012,Meghalaya,0.559
+2013,Meghalaya,0.57
+2014,Meghalaya,0.582
+2015,Meghalaya,0.593
+2016,Meghalaya,0.605
+2017,Meghalaya,0.617
+2018,Meghalaya,0.629
+2019,Meghalaya,0.642
+2020,Meghalaya,0.655
+2021,Meghalaya,0.668
+2022,Meghalaya,0.681
+2023,Meghalaya,0.695
+2024,Meghalaya,0.709
+2011,Nagaland,0.396
+2012,Nagaland,0.404
+2013,Nagaland,0.412
+2014,Nagaland,0.42
+2015,Nagaland,0.429
+2016,Nagaland,0.437
+2017,Nagaland,0.446
+2018,Nagaland,0.455
+2019,Nagaland,0.464
+2020,Nagaland,0.473
+2021,Nagaland,0.483
+2022,Nagaland,0.492
+2023,Nagaland,0.502
+2024,Nagaland,0.512
+2011,Goa,0.344
+2012,Goa,0.351
+2013,Goa,0.358
+2014,Goa,0.365
+2015,Goa,0.372
+2016,Goa,0.38
+2017,Goa,0.387
+2018,Goa,0.395
+2019,Goa,0.403
+2020,Goa,0.411
+2021,Goa,0.419
+2022,Goa,0.428
+2023,Goa,0.436
+2024,Goa,0.445
+2011,Arunachal Pradesh,0.271
+2012,Arunachal Pradesh,0.276
+2013,Arunachal Pradesh,0.282
+2014,Arunachal Pradesh,0.288
+2015,Arunachal Pradesh,0.293
+2016,Arunachal Pradesh,0.299
+2017,Arunachal Pradesh,0.305
+2018,Arunachal Pradesh,0.311
+2019,Arunachal Pradesh,0.318
+2020,Arunachal Pradesh,0.324
+2021,Arunachal Pradesh,0.33
+2022,Arunachal Pradesh,0.337
+2023,Arunachal Pradesh,0.344
+2024,Arunachal Pradesh,0.351
+2011,Mizoram,0.223
+2012,Mizoram,0.227
+2013,Mizoram,0.232
+2014,Mizoram,0.237
+2015,Mizoram,0.241
+2016,Mizoram,0.246
+2017,Mizoram,0.251
+2018,Mizoram,0.256
+2019,Mizoram,0.261
+2020,Mizoram,0.267
+2021,Mizoram,0.272
+2022,Mizoram,0.277
+2023,Mizoram,0.283
+2024,Mizoram,0.288
+2011,Sikkim,0.129
+2012,Sikkim,0.132
+2013,Sikkim,0.134
+2014,Sikkim,0.137
+2015,Sikkim,0.14
+2016,Sikkim,0.142
+2017,Sikkim,0.145
+2018,Sikkim,0.148
+2019,Sikkim,0.151
+2020,Sikkim,0.154
+2021,Sikkim,0.157
+2022,Sikkim,0.16
+2023,Sikkim,0.164
+2024,Sikkim,0.167
+2011,Chandigarh,0.241
+2012,Chandigarh,0.246
+2013,Chandigarh,0.251
+2014,Chandigarh,0.256
+2015,Chandigarh,0.261
+2016,Chandigarh,0.266
+2017,Chandigarh,0.271
+2018,Chandigarh,0.277
+2019,Chandigarh,0.282
+2020,Chandigarh,0.288
+2021,Chandigarh,0.294
+2022,Chandigarh,0.3
+2023,Chandigarh,0.306
+2024,Chandigarh,0.312
+2011,Puducherry,0.302
+2012,Puducherry,0.308
+2013,Puducherry,0.314
+2014,Puducherry,0.32
+2015,Puducherry,0.327
+2016,Puducherry,0.333
+2017,Puducherry,0.34
+2018,Puducherry,0.347
+2019,Puducherry,0.354
+2020,Puducherry,0.361
+2021,Puducherry,0.368
+2022,Puducherry,0.375
+2023,Puducherry,0.383
+2024,Puducherry,0.391
+2011,Andaman & Nicobar Islands,0.095
+2012,Andaman & Nicobar Islands,0.097
+2013,Andaman & Nicobar Islands,0.099
+2014,Andaman & Nicobar Islands,0.101
+2015,Andaman & Nicobar Islands,0.103
+2016,Andaman & Nicobar Islands,0.105
+2017,Andaman & Nicobar Islands,0.107
+2018,Andaman & Nicobar Islands,0.109
+2019,Andaman & Nicobar Islands,0.111
+2020,Andaman & Nicobar Islands,0.114
+2021,Andaman & Nicobar Islands,0.116
+2022,Andaman & Nicobar Islands,0.118
+2023,Andaman & Nicobar Islands,0.12
+2024,Andaman & Nicobar Islands,0.123
+2011,Dadra & Nagar Haveli,0.076
+2012,Dadra & Nagar Haveli,0.078
+2013,Dadra & Nagar Haveli,0.079
+2014,Dadra & Nagar Haveli,0.081
+2015,Dadra & Nagar Haveli,0.082
+2016,Dadra & Nagar Haveli,0.084
+2017,Dadra & Nagar Haveli,0.086
+2018,Dadra & Nagar Haveli,0.087
+2019,Dadra & Nagar Haveli,0.089
+2020,Dadra & Nagar Haveli,0.091
+2021,Dadra & Nagar Haveli,0.093
+2022,Dadra & Nagar Haveli,0.094
+2023,Dadra & Nagar Haveli,0.096
+2024,Dadra & Nagar Haveli,0.098
+2011,Daman & Diu,0.061
+2012,Daman & Diu,0.062
+2013,Daman & Diu,0.063
+2014,Daman & Diu,0.065
+2015,Daman & Diu,0.066
+2016,Daman & Diu,0.067
+2017,Daman & Diu,0.069
+2018,Daman & Diu,0.07
+2019,Daman & Diu,0.071
+2020,Daman & Diu,0.073
+2021,Daman & Diu,0.074
+2022,Daman & Diu,0.076
+2023,Daman & Diu,0.077
+2024,Daman & Diu,0.079
+2011,Lakshadweep,0.012
+2012,Lakshadweep,0.012
+2013,Lakshadweep,0.012
+2014,Lakshadweep,0.013
+2015,Lakshadweep,0.013
+2016,Lakshadweep,0.013
+2017,Lakshadweep,0.014
+2018,Lakshadweep,0.014
+2019,Lakshadweep,0.014
+2020,Lakshadweep,0.014
+2021,Lakshadweep,0.015
+2022,Lakshadweep,0.015
+2023,Lakshadweep,0.015
+2024,Lakshadweep,0.016
