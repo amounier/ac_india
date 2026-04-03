@@ -7,3 +7,4 @@ Multi-stage modelling:
 4. Generalisation to the tertiary sector
 
 ## 1. Characterisation of equipment according to climate and income 
+Only completed part
