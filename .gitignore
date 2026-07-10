@@ -1,6 +1,7 @@
 # Manually defined
 output/
-
+data/CMIP6/
+.cds*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

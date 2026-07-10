@@ -11,6 +11,7 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import subprocess
 
 from utils import (save_figure,
                    draw_state_map,
@@ -92,7 +93,7 @@ def main():
             plt.close()
             
     #%% Carte des CDD
-    if True:
+    if False:
         mean_period = 10 #yrs
         year = 2021
         
@@ -104,10 +105,48 @@ def main():
                            cbar_label=f'Population-ponderated CDD{threshold} (°C.days)',cmap=plt.get_cmap('YlOrRd'),
                            map_title = f'{year-mean_period+1} $-$ {year}',
                            save=os.path.join('maps',f'cdd{threshold}_{year}_period{mean_period}'))
+    
+    #%% Téléchargement des données CDS
+    if True:
+        import cdsapi
         
         
+        experiments_dict = {'ssp1_2_6':['cmcc_esm2','iitm_esm','hadgem3_gc31_mm','miroc6','cnrm_cm6_1'],
+                            'ssp2_4_5':['cmcc_esm2','iitm_esm','hadgem3_gc31_ll','miroc6','cnrm_cm6_1'],
+                            'ssp3_7_0':['cmcc_cm2_sr5','iitm_esm','canesm5','miroc6','cnrm_cm6_1'],
+                            'ssp5_8_5':['cmcc_esm2','iitm_esm','hadgem3_gc31_mm','canesm5','miroc6','cnrm_cm6_1'],}
         
-        
+        for experiment,models_list in experiments_dict.items():
+            for model in models_list:
+                print('-'*40)
+                print(f'Scenario : {experiment}, Model : {model}')
+                print('-'*40,'\n')
+                
+                # years = [str(e) for e in list(range(2015,2050))]
+                years = [str(e) for e in list(range(2050,2101))]
+                
+                dataset = "projections-cmip6"
+                request = {"temporal_resolution": "daily",
+                           "experiment": experiment,
+                           "variable": "near_surface_air_temperature",
+                           "model": model,
+                           "year": years,
+                           "month": ["01", "02", "03",
+                                     "04", "05", "06",
+                                     "07", "08", "09",
+                                     "10", "11", "12"],
+                           "area": [38, 68, 6, 98]
+                           }
+                
+                client = cdsapi.Client()
+                client.retrieve(dataset, request).download()
+                
+                downloaded_file = [e for e in os.listdir() if'.zip' in e][0]
+                save_file = f'tas_{experiment}_{model}_{years[0]}_{years[-1]}'
+                save_path = os.path.join('data','CMIP6')
+                subprocess.run(f"unzip {downloaded_file} -d {save_file}",shell=True)
+                subprocess.run(f"mv {save_file} {os.path.join(save_path,save_file)}",shell=True)
+                subprocess.run(f"rm {downloaded_file}",shell=True)
         
     
     tac = time.time()
