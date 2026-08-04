@@ -1,6 +1,7 @@
 # Manually defined
 output/
 data/CMIP6/
+data/temperature.parquet
 data/gpw-v4-population-count-rev11_totpop_15_min_nc/
 .cds*
 
