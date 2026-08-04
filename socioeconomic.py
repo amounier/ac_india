@@ -12,8 +12,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-from utils import dict_name_code, draw_state_map, dict_code_name
+from utils import dict_name_code, draw_state_map, dict_code_name,get_ssp_palette
 
+EXPERIMENTS_LIST = ['ssp1','ssp2','ssp3','ssp5']
 
 def get_gdp_data(columns_format_name=True):
     file = os.path.join('data','GDP-States-2011-2023.xlsx')
@@ -190,7 +191,7 @@ def main():
                                    'cmap':'bone_r'},
                      }
         
-        for var in [f'gdp_{year}',f'population_{year}',f'gdp_per_capita_{year}',f'households_{year}']:
+        for var in [f'gdp_{year}',f'population_{year}',f'gdp_per_capita_{year}']:#,f'households_{year}']:
             data_dict = data.to_dict().get(var)
             
             draw_state_map(data_dict,automatic_cbar_values=True,
@@ -220,7 +221,7 @@ def main():
                        save=os.path.join('maps','ac_cooler_rate_2021'))
 
     #%% Carte des taux d'équipement en climatisation
-    if True:
+    if False:
         year = 2021
         data = add_ac_cooler_data(base_year=year, base_data=None)
         
@@ -235,7 +236,7 @@ def main():
                        save=os.path.join('maps',f'cooler_rate_{year}'))
         
     #%% Nombre de climatisation par ménage climatisé
-    if True:
+    if False:
         data = add_ac_cooler_data(base_year=2021, base_data=None)
     
         draw_state_map(data.to_dict().get('nb_ac_when_ac_2021'),cbar_min=1,cbar_max=2.2,
@@ -247,6 +248,45 @@ def main():
                        cbar_label='# of cooler systems when equipped (units)',cmap=plt.get_cmap('bone_r'),
                        map_title = '2021',
                        save=os.path.join('maps','nb_cooler_when_cooler_2021'))
+        
+    #%% Projection de population 
+    if True:
+        file = os.path.join('data','iamc_data-3fbc344f-2763-46da-97c3-f4fc654a3f35.csv')
+        pop_projection = pd.read_csv(file)
+        pop_projection = pop_projection[pop_projection.variable=='Population']
+        pop_projection = pop_projection[['scenario',
+               '1950', '1955', '1960', '1965', '1970', '1975', '1980', '1985', '1990',
+               '1995', '2000', '2005', '2010', '2015', '2020', '2025', '2030', '2035',
+               '2040', '2045', '2050', '2055', '2060', '2065', '2070', '2075', '2080',
+               '2085', '2090', '2095', '2100']].set_index('scenario').T
+        pop_projection.index = pop_projection.index.map(int)
+        
+        unit = 1e6
+        pop_projection = pop_projection*unit
+        
+        survey_pop = get_population_data()
+        
+        pop_projection_first_years = pop_projection[pop_projection.index.isin(survey_pop.index)]
+        correction_coefficient = survey_pop[survey_pop.index.isin(pop_projection_first_years.index)].sum(axis=1).mean()/pop_projection_first_years['Historical Reference'].mean()
+        print(f'Coefficient correcteur : {correction_coefficient:.4f}')
+        
+        pop_projection = pop_projection*correction_coefficient
+        
+        fig,ax = plt.subplots(figsize=(5,5),dpi=300)
+        ax.plot(pop_projection['Historical Reference'],color='k',label='Historical',zorder=5)
+        # ax.plot(survey_pop.sum(axis=1),color='red',label='Survey',zorder=5)
+        
+        for scenario in EXPERIMENTS_LIST:
+            ax.plot(pop_projection[scenario.upper()],color=get_ssp_palette(scenario),label=scenario.upper())
+            
+        ax.set_ylim(bottom=0.)
+        ax.set_xlim(left=2015)
+        ax.legend()
+        ax.set_ylabel('Population (inhab)')
+        plt.show()
+        
+        
+        pass
         
     
     tac = time.time()
