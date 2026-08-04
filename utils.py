@@ -16,6 +16,29 @@ import matplotlib
 import pandas as pd
 from datetime import date
 
+def get_ssp_palette(scenario):
+    # https://www.ipcc.ch/site/assets/uploads/2022/09/IPCC_AR6_WGI_VisualStyleGuide_2022.pdf
+    ssp_palette = {'ssp1_2_6': (23,60,102),
+                   'ssp2_4_5': (247,148,32),
+                   'ssp3_7_0': (231,29,37),
+                   'ssp5_8_5': (149,27,30),
+                   'ssp1': (23,60,102),
+                   'ssp2': (247,148,32),
+                   'ssp3': (231,29,37),
+                   'ssp5': (149,27,30)}
+    for k,(v0,v1,v2) in ssp_palette.items():
+        ssp_palette[k] = (v0/255,v1/255,v2/255)
+    return ssp_palette.get(scenario)
+
+def get_ssp_name(scenario):
+    # https://www.ipcc.ch/site/assets/uploads/2022/09/IPCC_AR6_WGI_VisualStyleGuide_2022.pdf
+    ssp_name = {'ssp1_2_6': 'SSP1-2.6',
+                   'ssp2_4_5': 'SSP2-4.5',
+                   'ssp3_7_0': 'SSP3-7.0',
+                   'ssp5_8_5': 'SSP5-8.5'}
+    return ssp_name.get(scenario)
+
+
 def get_states():
     path = os.path.join('data','geometry','INDIA_STATES.geojson')
     data = gpd.read_file(path)
