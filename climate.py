@@ -29,10 +29,10 @@ from utils import (save_figure,
                    get_ssp_palette,
                    get_ssp_name,)
 
-EXPERIMENTS_DICT = {'ssp1_2_6':['cmcc_esm2','iitm_esm','hadgem3_gc31_mm','miroc6','cnrm_cm6_1'],
-                    'ssp2_4_5':['cmcc_esm2','iitm_esm','hadgem3_gc31_ll','miroc6','cnrm_cm6_1'],
-                    'ssp3_7_0':['cmcc_cm2_sr5','iitm_esm','canesm5','miroc6','cnrm_cm6_1'],
-                    'ssp5_8_5':['cmcc_esm2','iitm_esm','hadgem3_gc31_mm','canesm5','miroc6','cnrm_cm6_1'],}
+EXPERIMENTS_DICT = {'ssp1_2_6':['cmcc_esm2','iitm_esm','hadgem3_gc31_mm','miroc6','cnrm_cm6_1','gfdl_esm4'],
+                    'ssp2_4_5':['cmcc_esm2','iitm_esm','hadgem3_gc31_ll','miroc6','cnrm_cm6_1','gfdl_esm4'],
+                    'ssp3_7_0':['cmcc_cm2_sr5','iitm_esm','canesm5','miroc6','cnrm_cm6_1','gfdl_esm4'],
+                    'ssp5_8_5':['cmcc_esm2','iitm_esm','hadgem3_gc31_mm','canesm5','miroc6','cnrm_cm6_1','gfdl_esm4'],}
 
 
 def get_cdd_data(threshold=26, source='iea', columns_format_name=True):
@@ -204,17 +204,17 @@ def export_cdd(threshold,force=False):
     iea_cdd_calibration_file = 'cdd_calibration.csv'
     cdd_projection_file = 'cdd_projection.csv'
     
-    cdd = format_cdd(threshold=threshold,force=force)
-    
-    iea_data = get_cdd_data(threshold=threshold, source='iea')
-    iea_data = iea_data[iea_data.index.isin(list(range(2011,2025)))]
-    iea_mean = iea_data[iea_data.index.isin(list(range(2015,2025)))].mean().to_dict()
-    
     cdd_projection = None
     iea_cdd_calibration = {'state':[],'experiment':[],'model':[],f'cdd{threshold}_calibration':[]}
     iea_missing_states = set()
     
     if cdd_projection_file not in os.listdir(save_folder) or force:
+        iea_data = get_cdd_data(threshold=threshold, source='iea')
+        iea_data = iea_data[iea_data.index.isin(list(range(2011,2025)))]
+        iea_mean = iea_data[iea_data.index.isin(list(range(2015,2025)))].mean().to_dict()
+        
+        cdd = format_cdd(threshold=threshold,force=force)
+        
         for scenario in EXPERIMENTS_DICT.keys():
             for state in dict_name_geom.keys():
                 if state not in iea_data.columns:
@@ -345,17 +345,16 @@ def export_cdd_INDIA(threshold,force=False):
     iea_cdd_calibration_file = 'cdd_calibration_INDIA.csv'
     cdd_projection_file = 'cdd_projection_INDIA.csv'
     
-    cdd = format_cdd_INDIA(threshold=threshold,force=force)
-    
-    iea_data = get_cdd_data(threshold=threshold, source='iea_india')
-    iea_data = iea_data[iea_data.index.isin(list(range(2011,2025)))]
-    iea_mean = iea_data[iea_data.index.isin(list(range(2015,2025)))].mean().to_dict()
-    
     cdd_projection = None
     iea_cdd_calibration = {'experiment':[],'model':[],f'cdd{threshold}_calibration':[]}
     
     if cdd_projection_file not in os.listdir(save_folder) or force:
         for scenario in EXPERIMENTS_DICT.keys():
+            cdd = format_cdd_INDIA(threshold=threshold,force=force)
+            
+            iea_data = get_cdd_data(threshold=threshold, source='iea_india')
+            iea_data = iea_data[iea_data.index.isin(list(range(2011,2025)))]
+            iea_mean = iea_data[iea_data.index.isin(list(range(2015,2025)))].mean().to_dict()
                 
             cdd_state = cdd[cdd.index.get_level_values('experiment')==scenario]
             cdd_state = cdd_state.reset_index()
@@ -450,8 +449,8 @@ def main():
                 print(f'Scenario : {experiment}, Model : {model}')
                 print('-'*40,'\n')
                 
-                # years = [str(e) for e in list(range(2015,2050))]
-                years = [str(e) for e in list(range(2050,2101))]
+                years = [str(e) for e in list(range(2015,2050))]
+                # years = [str(e) for e in list(range(2050,2101))]
                 
                 dataset = "projections-cmip6"
                 request = {"temporal_resolution": "daily",
@@ -554,7 +553,7 @@ def main():
         
     
     # formatage des températures et calcul des CDD26
-    if False:
+    if True:
         threshold = 26 #°C
         # scenario = 'ssp2_4_5'
         scenario = 'ssp5_8_5'
@@ -562,7 +561,7 @@ def main():
         iea_data = get_cdd_data(threshold=threshold, source='iea')
         iea_data = iea_data[iea_data.index.isin(list(range(2011,2025)))]
         
-        cdd_projection,_,missing_states = export_cdd(threshold)
+        cdd_projection,_,missing_states = export_cdd(threshold,force=False)
         
         for state in dict_name_geom.keys():
             if state in missing_states:
@@ -674,7 +673,7 @@ def main():
             iea_data = get_cdd_data(threshold=threshold, source='iea_india')
             iea_data = iea_data[iea_data.index.isin(list(range(2011,2025)))]
             
-            cdd_projection,_ = export_cdd_INDIA(threshold=threshold)
+            cdd_projection,_ = export_cdd_INDIA(threshold=threshold,force=False)
         
             fig,ax = plt.subplots(figsize=(5,5),dpi=300)
             ax.plot(iea_data[f'CDD{threshold}'],color='k',label='Historical',zorder=5)

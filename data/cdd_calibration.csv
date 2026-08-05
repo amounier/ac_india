@@ -1,673 +1,801 @@
 state,experiment,model,cdd26_calibration
 Assam,ssp1_2_6,cmcc_esm2,396.2336500938574
 Assam,ssp1_2_6,cnrm_cm6_1,304.1407774742285
+Assam,ssp1_2_6,gfdl_esm4,338.636505013291
 Assam,ssp1_2_6,hadgem3_gc31_mm,378.99126041490234
 Assam,ssp1_2_6,iitm_esm,378.59150302964844
 Assam,ssp1_2_6,miroc6,389.00283420640625
 Chhattisgarh,ssp1_2_6,cmcc_esm2,-10.331913527907432
 Chhattisgarh,ssp1_2_6,cnrm_cm6_1,-60.28174262946993
+Chhattisgarh,ssp1_2_6,gfdl_esm4,-171.13342719978243
 Chhattisgarh,ssp1_2_6,hadgem3_gc31_mm,-188.27594428962618
 Chhattisgarh,ssp1_2_6,iitm_esm,334.4961504369363
 Chhattisgarh,ssp1_2_6,miroc6,-214.86560493415743
 Delhi,ssp1_2_6,cmcc_esm2,-926.4472494602203
 Delhi,ssp1_2_6,cnrm_cm6_1,-178.6426840305328
+Delhi,ssp1_2_6,gfdl_esm4,-608.6213217258453
 Delhi,ssp1_2_6,hadgem3_gc31_mm,-509.2472982883453
 Delhi,ssp1_2_6,iitm_esm,384.59040923118596
 Delhi,ssp1_2_6,miroc6,-1591.7975912570953
 Goa,ssp1_2_6,cmcc_esm2,-305.22262233346703
 Goa,ssp1_2_6,cnrm_cm6_1,44.70102268606422
+Goa,ssp1_2_6,gfdl_esm4,77.45828586965797
 Goa,ssp1_2_6,hadgem3_gc31_mm,37.18271213918922
 Goa,ssp1_2_6,iitm_esm,-262.0982937201858
 Goa,ssp1_2_6,miroc6,-1.4815945014357794
 Haryana,ssp1_2_6,cmcc_esm2,-1018.3902220688527
 Haryana,ssp1_2_6,cnrm_cm6_1,155.22098398583478
+Haryana,ssp1_2_6,gfdl_esm4,-306.8832640610402
 Haryana,ssp1_2_6,hadgem3_gc31_mm,278.4487061538035
 Haryana,ssp1_2_6,iitm_esm,373.2194581069285
 Haryana,ssp1_2_6,miroc6,-737.2154173813527
 Himachal Pradesh,ssp1_2_6,cmcc_esm2,18.19119177272077
 Himachal Pradesh,ssp1_2_6,cnrm_cm6_1,111.40078649928327
+Himachal Pradesh,ssp1_2_6,gfdl_esm4,104.75815258433576
 Himachal Pradesh,ssp1_2_6,hadgem3_gc31_mm,105.23703442027326
 Himachal Pradesh,ssp1_2_6,iitm_esm,111.39540014674421
 Himachal Pradesh,ssp1_2_6,miroc6,74.03787527491804
 Jharkhand,ssp1_2_6,cmcc_esm2,-294.9265877473765
 Jharkhand,ssp1_2_6,cnrm_cm6_1,-131.38349692706402
+Jharkhand,ssp1_2_6,gfdl_esm4,302.65745766277973
 Jharkhand,ssp1_2_6,hadgem3_gc31_mm,-230.39826743487652
 Jharkhand,ssp1_2_6,iitm_esm,-756.237256692689
 Jharkhand,ssp1_2_6,miroc6,-493.3816658723765
 Karnataka,ssp1_2_6,cmcc_esm2,160.02804892659185
 Karnataka,ssp1_2_6,cnrm_cm6_1,-1.617199486494087
+Karnataka,ssp1_2_6,gfdl_esm4,47.25477927327154
 Karnataka,ssp1_2_6,hadgem3_gc31_mm,23.958453589677788
 Karnataka,ssp1_2_6,iitm_esm,38.57930319905279
 Karnataka,ssp1_2_6,miroc6,-286.42002541422846
 Manipur,ssp1_2_6,cmcc_esm2,-405.37014068255667
 Manipur,ssp1_2_6,cnrm_cm6_1,14.911771644256078
+Manipur,ssp1_2_6,gfdl_esm4,-208.88365996966604
 Manipur,ssp1_2_6,hadgem3_gc31_mm,-62.306099544861354
 Manipur,ssp1_2_6,iitm_esm,-39.40745605120901
 Manipur,ssp1_2_6,miroc6,-136.11800445208792
 Meghalaya,ssp1_2_6,cmcc_esm2,-262.7538768954575
 Meghalaya,ssp1_2_6,cnrm_cm6_1,106.45567968413235
+Meghalaya,ssp1_2_6,gfdl_esm4,-165.51953241303562
 Meghalaya,ssp1_2_6,hadgem3_gc31_mm,-170.08422967866062
 Meghalaya,ssp1_2_6,iitm_esm,178.40477779433132
 Meghalaya,ssp1_2_6,miroc6,170.99442937895657
 Mizoram,ssp1_2_6,cmcc_esm2,-373.48698698952796
 Mizoram,ssp1_2_6,cnrm_cm6_1,122.17207348868251
+Mizoram,ssp1_2_6,gfdl_esm4,-36.657946462184185
 Mizoram,ssp1_2_6,hadgem3_gc31_mm,-18.190554494410748
 Mizoram,ssp1_2_6,iitm_esm,79.21559632346035
 Mizoram,ssp1_2_6,miroc6,64.42639649435878
 Nagaland,ssp1_2_6,cmcc_esm2,-35.301048022136094
 Nagaland,ssp1_2_6,cnrm_cm6_1,56.362773436680435
+Nagaland,ssp1_2_6,gfdl_esm4,-140.76959965787827
 Nagaland,ssp1_2_6,hadgem3_gc31_mm,35.26560427583754
 Nagaland,ssp1_2_6,iitm_esm,39.90841319002211
 Nagaland,ssp1_2_6,miroc6,-20.16197941862047
 Punjab,ssp1_2_6,cmcc_esm2,-994.2496207267046
 Punjab,ssp1_2_6,cnrm_cm6_1,835.0752083748579
+Punjab,ssp1_2_6,gfdl_esm4,-509.3331168204546
 Punjab,ssp1_2_6,hadgem3_gc31_mm,835.0752083748579
 Punjab,ssp1_2_6,iitm_esm,278.7972542732954
 Punjab,ssp1_2_6,miroc6,835.0752083748579
 Rajasthan,ssp1_2_6,cmcc_esm2,149.33175064388206
 Rajasthan,ssp1_2_6,cnrm_cm6_1,110.76168228450706
+Rajasthan,ssp1_2_6,gfdl_esm4,-322.71951888736794
 Rajasthan,ssp1_2_6,hadgem3_gc31_mm,74.82290054622581
 Rajasthan,ssp1_2_6,iitm_esm,-142.47171615299294
 Rajasthan,ssp1_2_6,miroc6,-1676.9645140045554
 Sikkim,ssp1_2_6,cmcc_esm2,0.0
 Sikkim,ssp1_2_6,cnrm_cm6_1,0.0
+Sikkim,ssp1_2_6,gfdl_esm4,0.0
 Sikkim,ssp1_2_6,hadgem3_gc31_mm,0.0
 Sikkim,ssp1_2_6,iitm_esm,0.0
 Sikkim,ssp1_2_6,miroc6,0.0
 Tripura,ssp1_2_6,cmcc_esm2,-82.62099245823924
 Tripura,ssp1_2_6,cnrm_cm6_1,49.39939328394826
+Tripura,ssp1_2_6,gfdl_esm4,-60.70412234105174
 Tripura,ssp1_2_6,hadgem3_gc31_mm,-137.4938562277705
 Tripura,ssp1_2_6,iitm_esm,275.84443112574513
 Tripura,ssp1_2_6,miroc6,93.41794797144826
 Uttarakhand,ssp1_2_6,cmcc_esm2,92.85496260151268
 Uttarakhand,ssp1_2_6,cnrm_cm6_1,219.2736303947866
+Uttarakhand,ssp1_2_6,gfdl_esm4,167.2863667152822
 Uttarakhand,ssp1_2_6,hadgem3_gc31_mm,204.95763899311424
 Uttarakhand,ssp1_2_6,iitm_esm,211.92410589680077
 Uttarakhand,ssp1_2_6,miroc6,-14.10031388774513
 Telangana,ssp1_2_6,cmcc_esm2,-122.7264494910196
 Telangana,ssp1_2_6,cnrm_cm6_1,-6.0596404089883436
+Telangana,ssp1_2_6,gfdl_esm4,-63.57819509648834
 Telangana,ssp1_2_6,hadgem3_gc31_mm,-241.54584646367584
 Telangana,ssp1_2_6,iitm_esm,-58.41669607305084
 Telangana,ssp1_2_6,miroc6,-332.53119802617584
 Andaman and Nicobar,ssp1_2_6,cmcc_esm2,539.8506923675537
 Andaman and Nicobar,ssp1_2_6,cnrm_cm6_1,134.05277976989748
+Andaman and Nicobar,ssp1_2_6,gfdl_esm4,-6.852066421508766
 Andaman and Nicobar,ssp1_2_6,hadgem3_gc31_mm,-283.781326675415
 Andaman and Nicobar,ssp1_2_6,iitm_esm,188.42716941833498
 Andaman and Nicobar,ssp1_2_6,miroc6,-11.406509780883766
 Bihar,ssp1_2_6,cmcc_esm2,-391.70785111170267
 Bihar,ssp1_2_6,cnrm_cm6_1,-238.03341263514017
+Bihar,ssp1_2_6,gfdl_esm4,423.69156295079733
 Bihar,ssp1_2_6,hadgem3_gc31_mm,-263.55636185389017
 Bihar,ssp1_2_6,iitm_esm,154.87991744298483
 Bihar,ssp1_2_6,miroc6,271.10989791173483
 Gujarat,ssp1_2_6,cmcc_esm2,-471.25498866849887
 Gujarat,ssp1_2_6,cnrm_cm6_1,188.58339023775113
+Gujarat,ssp1_2_6,gfdl_esm4,-65.66899013334262
 Gujarat,ssp1_2_6,hadgem3_gc31_mm,369.34767246431363
 Gujarat,ssp1_2_6,iitm_esm,214.21662998384488
 Gujarat,ssp1_2_6,miroc6,-1165.0862874966238
 Kerala,ssp1_2_6,cmcc_esm2,143.21820001602174
 Kerala,ssp1_2_6,cnrm_cm6_1,49.52421503067018
+Kerala,ssp1_2_6,gfdl_esm4,99.96940546035768
 Kerala,ssp1_2_6,hadgem3_gc31_mm,131.25675897598268
 Kerala,ssp1_2_6,iitm_esm,-63.8241431236267
 Kerala,ssp1_2_6,miroc6,74.96543817520143
 Madhya Pradesh,ssp1_2_6,cmcc_esm2,-270.1850448754616
 Madhya Pradesh,ssp1_2_6,cnrm_cm6_1,43.710646042507165
+Madhya Pradesh,ssp1_2_6,gfdl_esm4,-254.85148774655534
 Madhya Pradesh,ssp1_2_6,hadgem3_gc31_mm,13.018446335475915
 Madhya Pradesh,ssp1_2_6,iitm_esm,87.63929594485091
 Madhya Pradesh,ssp1_2_6,miroc6,-638.7226425317116
 Odisha,ssp1_2_6,cmcc_esm2,692.7205383802648
 Odisha,ssp1_2_6,cnrm_cm6_1,-203.77798723924207
+Odisha,ssp1_2_6,gfdl_esm4,-115.25619768846082
 Odisha,ssp1_2_6,hadgem3_gc31_mm,-264.57632708299207
 Odisha,ssp1_2_6,iitm_esm,117.18990826857043
 Odisha,ssp1_2_6,miroc6,-252.83902239549207
 Tamil Nadu,ssp1_2_6,cmcc_esm2,325.16486923694606
 Tamil Nadu,ssp1_2_6,cnrm_cm6_1,405.70087997913356
+Tamil Nadu,ssp1_2_6,gfdl_esm4,290.7282847642898
 Tamil Nadu,ssp1_2_6,hadgem3_gc31_mm,349.49165146350856
 Tamil Nadu,ssp1_2_6,iitm_esm,237.92072861194606
 Tamil Nadu,ssp1_2_6,miroc6,-473.44401748180394
 Uttar Pradesh,ssp1_2_6,cmcc_esm2,-561.8360706778534
 Uttar Pradesh,ssp1_2_6,cnrm_cm6_1,-204.2100941153534
+Uttar Pradesh,ssp1_2_6,gfdl_esm4,5.7567027596466005
 Uttar Pradesh,ssp1_2_6,hadgem3_gc31_mm,-186.0830189200409
 Uttar Pradesh,ssp1_2_6,iitm_esm,-34.91926159582215
 Uttar Pradesh,ssp1_2_6,miroc6,-1300.2926136466035
 West Bengal,ssp1_2_6,cmcc_esm2,756.4760349725723
 West Bengal,ssp1_2_6,cnrm_cm6_1,-72.17618670711522
+West Bengal,ssp1_2_6,gfdl_esm4,-189.85227313289647
 West Bengal,ssp1_2_6,hadgem3_gc31_mm,214.95442852725978
 West Bengal,ssp1_2_6,iitm_esm,-754.4783107305527
 West Bengal,ssp1_2_6,miroc6,-348.4808742071152
 Andhra Pradesh,ssp1_2_6,cmcc_esm2,137.1918982565403
 Andhra Pradesh,ssp1_2_6,cnrm_cm6_1,579.5516394674778
+Andhra Pradesh,ssp1_2_6,gfdl_esm4,104.17889776825905
 Andhra Pradesh,ssp1_2_6,hadgem3_gc31_mm,239.02362433075905
 Andhra Pradesh,ssp1_2_6,iitm_esm,11.600711733102798
 Andhra Pradesh,ssp1_2_6,miroc6,467.9134253561497
 Puducherry,ssp1_2_6,cmcc_esm2,-809.5463244855404
 Puducherry,ssp1_2_6,cnrm_cm6_1,-762.0275256574154
+Puducherry,ssp1_2_6,gfdl_esm4,-746.1251819074154
 Puducherry,ssp1_2_6,hadgem3_gc31_mm,-927.8765246808529
 Puducherry,ssp1_2_6,iitm_esm,-776.0043322980404
 Puducherry,ssp1_2_6,miroc6,-1006.0709826886654
 Maharashtra,ssp1_2_6,cmcc_esm2,287.26613073211627
 Maharashtra,ssp1_2_6,cnrm_cm6_1,120.57689123016314
+Maharashtra,ssp1_2_6,gfdl_esm4,298.29976110321
 Maharashtra,ssp1_2_6,hadgem3_gc31_mm,345.66639928680377
 Maharashtra,ssp1_2_6,iitm_esm,197.2424796090694
 Maharashtra,ssp1_2_6,miroc6,-199.5358407034306
 Daman and Diu,ssp1_2_6,cmcc_esm2,-74.89458913803105
 Daman and Diu,ssp1_2_6,cnrm_cm6_1,197.60025339126582
+Daman and Diu,ssp1_2_6,gfdl_esm4,76.98688058853145
 Daman and Diu,ssp1_2_6,hadgem3_gc31_mm,88.96136789321895
 Daman and Diu,ssp1_2_6,iitm_esm,147.92087106704707
 Daman and Diu,ssp1_2_6,miroc6,-323.9425017356873
 Dadra and Nagar Haveli,ssp1_2_6,cmcc_esm2,-203.68500540871173
 Dadra and Nagar Haveli,ssp1_2_6,cnrm_cm6_1,125.6281354604289
+Dadra and Nagar Haveli,ssp1_2_6,gfdl_esm4,60.358176964335144
 Dadra and Nagar Haveli,ssp1_2_6,hadgem3_gc31_mm,260.22019173484296
 Dadra and Nagar Haveli,ssp1_2_6,iitm_esm,192.97246529441327
 Dadra and Nagar Haveli,ssp1_2_6,miroc6,-489.94037650246173
 Assam,ssp2_4_5,cmcc_esm2,396.2336500938574
 Assam,ssp2_4_5,cnrm_cm6_1,314.7983931358496
+Assam,ssp2_4_5,gfdl_esm4,345.19178760606445
 Assam,ssp2_4_5,hadgem3_gc31_ll,372.1367205436865
 Assam,ssp2_4_5,iitm_esm,378.57843769151367
 Assam,ssp2_4_5,miroc6,384.31127155381836
 Chhattisgarh,ssp2_4_5,cmcc_esm2,12.117000046311318
 Chhattisgarh,ssp2_4_5,cnrm_cm6_1,-68.99512153571993
+Chhattisgarh,ssp2_4_5,gfdl_esm4,-107.93469673103243
 Chhattisgarh,ssp2_4_5,hadgem3_gc31_ll,-167.15893989509493
 Chhattisgarh,ssp2_4_5,iitm_esm,397.02575248771757
 Chhattisgarh,ssp2_4_5,miroc6,-389.40601020759493
 Delhi,ssp2_4_5,cmcc_esm2,-929.1382894992828
 Delhi,ssp2_4_5,cnrm_cm6_1,-44.35984711647029
+Delhi,ssp2_4_5,gfdl_esm4,-517.7971029758453
 Delhi,ssp2_4_5,hadgem3_gc31_ll,-620.9982748508453
 Delhi,ssp2_4_5,iitm_esm,495.94758696556096
 Delhi,ssp2_4_5,miroc6,-1670.4301596164703
 Goa,ssp2_4_5,cmcc_esm2,-294.1065945014358
 Goa,ssp2_4_5,cnrm_cm6_1,57.850040020048596
+Goa,ssp2_4_5,gfdl_esm4,81.7348056450486
 Goa,ssp2_4_5,hadgem3_gc31_ll,59.537112773954846
 Goa,ssp2_4_5,iitm_esm,-147.24306911081078
 Goa,ssp2_4_5,miroc6,-11.537350116670154
 Haryana,ssp2_4_5,cmcc_esm2,-976.4562621079152
 Haryana,ssp2_4_5,cnrm_cm6_1,254.35300302880353
+Haryana,ssp2_4_5,gfdl_esm4,-229.82405995947772
 Haryana,ssp2_4_5,hadgem3_gc31_ll,-557.9881224594777
 Haryana,ssp2_4_5,iitm_esm,484.5766358413035
 Haryana,ssp2_4_5,miroc6,-856.5459837876027
 Himachal Pradesh,ssp2_4_5,cmcc_esm2,36.249564270279365
 Himachal Pradesh,ssp2_4_5,cnrm_cm6_1,111.40078649928327
+Himachal Pradesh,ssp2_4_5,gfdl_esm4,104.69737682749982
 Himachal Pradesh,ssp2_4_5,hadgem3_gc31_ll,111.40078649928327
 Himachal Pradesh,ssp2_4_5,iitm_esm,111.40078649928327
 Himachal Pradesh,ssp2_4_5,miroc6,51.00430212428327
 Jharkhand,ssp2_4_5,cmcc_esm2,-286.248243020814
 Jharkhand,ssp2_4_5,cnrm_cm6_1,-114.89521567706402
+Jharkhand,ssp2_4_5,gfdl_esm4,325.16575844402973
 Jharkhand,ssp2_4_5,hadgem3_gc31_ll,-553.6150643098765
 Jharkhand,ssp2_4_5,iitm_esm,-514.182569192689
 Jharkhand,ssp2_4_5,miroc6,-663.526319192689
 Karnataka,ssp2_4_5,cmcc_esm2,147.6196626961231
 Karnataka,ssp2_4_5,cnrm_cm6_1,-11.152142113447212
+Karnataka,ssp2_4_5,gfdl_esm4,67.27748435139654
 Karnataka,ssp2_4_5,hadgem3_gc31_ll,-112.96732766032221
 Karnataka,ssp2_4_5,iitm_esm,72.55482810139654
 Karnataka,ssp2_4_5,miroc6,-367.9261899650097
 Manipur,ssp2_4_5,cmcc_esm2,-423.27370513568167
 Manipur,ssp2_4_5,cnrm_cm6_1,17.3350655924296
+Manipur,ssp2_4_5,gfdl_esm4,-164.9432455409551
 Manipur,ssp2_4_5,hadgem3_gc31_ll,-328.82701934466604
 Manipur,ssp2_4_5,iitm_esm,-38.91925109515432
 Manipur,ssp2_4_5,miroc6,-171.8007131923223
 Meghalaya,ssp2_4_5,cmcc_esm2,-255.80554315522312
 Meghalaya,ssp2_4_5,cnrm_cm6_1,125.80618932768704
+Meghalaya,ssp2_4_5,gfdl_esm4,-118.5837108798325
 Meghalaya,ssp2_4_5,hadgem3_gc31_ll,-180.12262079194187
 Meghalaya,ssp2_4_5,iitm_esm,177.68202093169094
 Meghalaya,ssp2_4_5,miroc6,163.62798955962063
 Mizoram,ssp2_4_5,cmcc_esm2,-392.0424374289811
 Mizoram,ssp2_4_5,cnrm_cm6_1,127.23871815726162
+Mizoram,ssp2_4_5,gfdl_esm4,-6.352084035426373
 Mizoram,ssp2_4_5,hadgem3_gc31_ll,-349.2906063742936
 Mizoram,ssp2_4_5,iitm_esm,79.70380127951503
 Mizoram,ssp2_4_5,miroc6,30.235737925022846
 Nagaland,ssp2_4_5,cmcc_esm2,-43.32207463346422
 Nagaland,ssp2_4_5,cnrm_cm6_1,57.25495784319937
+Nagaland,ssp2_4_5,gfdl_esm4,-121.35242436490952
 Nagaland,ssp2_4_5,hadgem3_gc31_ll,-226.80667851530015
 Nagaland,ssp2_4_5,iitm_esm,39.895347851887344
 Nagaland,ssp2_4_5,miroc6,-31.796127062663437
 Punjab,ssp2_4_5,cmcc_esm2,-914.1140006095171
 Punjab,ssp2_4_5,cnrm_cm6_1,835.0752083748579
+Punjab,ssp2_4_5,gfdl_esm4,-468.1103385001421
 Punjab,ssp2_4_5,hadgem3_gc31_ll,-213.99412756264212
 Punjab,ssp2_4_5,iitm_esm,339.93159265220163
 Punjab,ssp2_4_5,miroc6,835.0752083748579
 Rajasthan,ssp2_4_5,cmcc_esm2,168.0216310149758
 Rajasthan,ssp2_4_5,cnrm_cm6_1,183.20394302669456
+Rajasthan,ssp2_4_5,gfdl_esm4,-282.38358138736794
 Rajasthan,ssp2_4_5,hadgem3_gc31_ll,-319.05753158268044
 Rajasthan,ssp2_4_5,iitm_esm,-10.81741927799294
 Rajasthan,ssp2_4_5,miroc6,-1834.6654417389304
 Sikkim,ssp2_4_5,cmcc_esm2,0.0
 Sikkim,ssp2_4_5,cnrm_cm6_1,0.0
+Sikkim,ssp2_4_5,gfdl_esm4,0.0
 Sikkim,ssp2_4_5,hadgem3_gc31_ll,0.0
 Sikkim,ssp2_4_5,iitm_esm,0.0
 Sikkim,ssp2_4_5,miroc6,0.0
 Tripura,ssp2_4_5,cmcc_esm2,-115.49660280980174
 Tripura,ssp2_4_5,cnrm_cm6_1,65.91260739527638
+Tripura,ssp2_4_5,gfdl_esm4,9.827738010510757
 Tripura,ssp2_4_5,hadgem3_gc31_ll,-322.2160241965205
 Tripura,ssp2_4_5,iitm_esm,317.7855169411748
 Tripura,ssp2_4_5,miroc6,6.445169651135757
 Uttarakhand,ssp2_4_5,cmcc_esm2,89.75314070209862
 Uttarakhand,ssp2_4_5,cnrm_cm6_1,224.2272894524038
+Uttarakhand,ssp2_4_5,gfdl_esm4,180.07935453876854
 Uttarakhand,ssp2_4_5,hadgem3_gc31_ll,170.9906246803701
 Uttarakhand,ssp2_4_5,iitm_esm,220.43079592213036
 Uttarakhand,ssp2_4_5,miroc6,-76.8565547324717
 Telangana,ssp2_4_5,cmcc_esm2,-107.5373625769571
 Telangana,ssp2_4_5,cnrm_cm6_1,-58.44159841680084
+Telangana,ssp2_4_5,gfdl_esm4,-31.054574491019594
 Telangana,ssp2_4_5,hadgem3_gc31_ll,-391.97748708867584
 Telangana,ssp2_4_5,iitm_esm,43.76640939569916
 Telangana,ssp2_4_5,miroc6,-540.5463347449258
 Andaman and Nicobar,ssp2_4_5,cmcc_esm2,539.8506923675537
 Andaman and Nicobar,ssp2_4_5,cnrm_cm6_1,128.72135887145998
+Andaman and Nicobar,ssp2_4_5,gfdl_esm4,7.516158676147484
 Andaman and Nicobar,ssp2_4_5,hadgem3_gc31_ll,-361.73475685119627
 Andaman and Nicobar,ssp2_4_5,iitm_esm,282.67887840271
 Andaman and Nicobar,ssp2_4_5,miroc6,6.402572250366234
 Bihar,ssp2_4_5,cmcc_esm2,-344.65890091639017
 Bihar,ssp2_4_5,cnrm_cm6_1,-136.78945511560892
+Bihar,ssp2_4_5,gfdl_esm4,470.48578292150046
 Bihar,ssp2_4_5,hadgem3_gc31_ll,-409.61739701014017
 Bihar,ssp2_4_5,iitm_esm,311.8736308218911
 Bihar,ssp2_4_5,miroc6,127.60849410314108
 Gujarat,ssp2_4_5,cmcc_esm2,-423.89341640287387
 Gujarat,ssp2_4_5,cnrm_cm6_1,211.55964756196988
+Gujarat,ssp2_4_5,gfdl_esm4,-21.648116109905118
 Gujarat,ssp2_4_5,hadgem3_gc31_ll,38.29591465181363
 Gujarat,ssp2_4_5,iitm_esm,309.60914707368863
 Gujarat,ssp2_4_5,miroc6,-1295.4578695278738
 Kerala,ssp2_4_5,cmcc_esm2,134.27299432754518
 Kerala,ssp2_4_5,cnrm_cm6_1,73.76060419082643
+Kerala,ssp2_4_5,gfdl_esm4,119.53773431777955
 Kerala,ssp2_4_5,hadgem3_gc31_ll,-113.36494512557982
 Kerala,ssp2_4_5,iitm_esm,-11.796433162689198
 Kerala,ssp2_4_5,miroc6,64.19584589004518
 Madhya Pradesh,ssp2_4_5,cmcc_esm2,-246.34788667233659
 Madhya Pradesh,ssp2_4_5,cnrm_cm6_1,54.562330612819665
+Madhya Pradesh,ssp2_4_5,gfdl_esm4,-197.91069184811784
 Madhya Pradesh,ssp2_4_5,hadgem3_gc31_ll,-195.31096040280534
 Madhya Pradesh,ssp2_4_5,iitm_esm,223.08161772219466
 Madhya Pradesh,ssp2_4_5,miroc6,-967.9828964379616
 Odisha,ssp2_4_5,cmcc_esm2,691.2003471876378
 Odisha,ssp2_4_5,cnrm_cm6_1,-206.68606829392957
+Odisha,ssp2_4_5,gfdl_esm4,-68.93191790330457
 Odisha,ssp2_4_5,hadgem3_gc31_ll,-321.88125872361707
 Odisha,ssp2_4_5,iitm_esm,258.66317487013293
 Odisha,ssp2_4_5,miroc6,-338.36355852830457
 Tamil Nadu,ssp2_4_5,cmcc_esm2,322.35371201038356
 Tamil Nadu,ssp2_4_5,cnrm_cm6_1,418.10371201038356
+Tamil Nadu,ssp2_4_5,gfdl_esm4,345.03080551624294
 Tamil Nadu,ssp2_4_5,hadgem3_gc31_ll,-59.68644912242894
 Tamil Nadu,ssp2_4_5,iitm_esm,285.77387802600856
 Tamil Nadu,ssp2_4_5,miroc6,-635.1500721693039
 Uttar Pradesh,ssp2_4_5,cmcc_esm2,-535.3182484122284
 Uttar Pradesh,ssp2_4_5,cnrm_cm6_1,-81.0260120841034
+Uttar Pradesh,ssp2_4_5,gfdl_esm4,98.0620006112091
 Uttar Pradesh,ssp2_4_5,hadgem3_gc31_ll,-393.1057239981659
 Uttar Pradesh,ssp2_4_5,iitm_esm,147.1221812752716
 Uttar Pradesh,ssp2_4_5,miroc6,-1379.4954945059785
 West Bengal,ssp2_4_5,cmcc_esm2,756.4760349725723
 West Bengal,ssp2_4_5,cnrm_cm6_1,6.674826476478529
+West Bengal,ssp2_4_5,gfdl_esm4,-107.22354998836522
 West Bengal,ssp2_4_5,hadgem3_gc31_ll,-352.3678370977402
 West Bengal,ssp2_4_5,iitm_esm,-543.4188624883652
 West Bengal,ssp2_4_5,miroc6,-534.4745265508652
 Andhra Pradesh,ssp2_4_5,cmcc_esm2,132.99701300263405
 Andhra Pradesh,ssp2_4_5,cnrm_cm6_1,573.1466101706028
+Andhra Pradesh,ssp2_4_5,gfdl_esm4,131.45099249482155
 Andhra Pradesh,ssp2_4_5,hadgem3_gc31_ll,-149.23223504424095
 Andhra Pradesh,ssp2_4_5,iitm_esm,135.22040167450905
 Andhra Pradesh,ssp2_4_5,miroc6,365.1816443502903
 Puducherry,ssp2_4_5,cmcc_esm2,-765.5469348371029
 Puducherry,ssp2_4_5,cnrm_cm6_1,-759.3507678449154
+Puducherry,ssp2_4_5,gfdl_esm4,-663.5557238996029
 Puducherry,ssp2_4_5,hadgem3_gc31_ll,-840.2120959699154
 Puducherry,ssp2_4_5,iitm_esm,-684.3702990949154
 Puducherry,ssp2_4_5,miroc6,-1133.8930041730405
 Maharashtra,ssp2_4_5,cmcc_esm2,279.5354788766475
 Maharashtra,ssp2_4_5,cnrm_cm6_1,85.58336095672564
+Maharashtra,ssp2_4_5,gfdl_esm4,324.48610143524127
 Maharashtra,ssp2_4_5,hadgem3_gc31_ll,-3.5841805471806083
 Maharashtra,ssp2_4_5,iitm_esm,266.9645255075069
 Maharashtra,ssp2_4_5,miroc6,-406.83741541046186
 Daman and Diu,ssp2_4_5,cmcc_esm2,-65.6564909934998
 Daman and Diu,ssp2_4_5,cnrm_cm6_1,215.64371042251582
+Daman and Diu,ssp2_4_5,gfdl_esm4,93.95123605728145
 Daman and Diu,ssp2_4_5,hadgem3_gc31_ll,296.7258332252502
 Daman and Diu,ssp2_4_5,iitm_esm,254.7681916236877
 Daman and Diu,ssp2_4_5,miroc6,-394.86419363021855
 Dadra and Nagar Haveli,ssp2_4_5,cmcc_esm2,-194.44690726418048
 Dadra and Nagar Haveli,ssp2_4_5,cnrm_cm6_1,110.21398140769452
+Dadra and Nagar Haveli,ssp2_4_5,gfdl_esm4,101.28099800925702
 Dadra and Nagar Haveli,ssp2_4_5,hadgem3_gc31_ll,167.93541695456952
 Dadra and Nagar Haveli,ssp2_4_5,iitm_esm,270.25107552390546
 Dadra and Nagar Haveli,ssp2_4_5,miroc6,-739.9027788462117
 Assam,ssp3_7_0,canesm5,393.49848163682617
 Assam,ssp3_7_0,cmcc_cm2_sr5,396.2336500938574
 Assam,ssp3_7_0,cnrm_cm6_1,297.6322020347754
+Assam,ssp3_7_0,gfdl_esm4,347.50465381700195
 Assam,ssp3_7_0,iitm_esm,384.00442684251465
 Assam,ssp3_7_0,miroc6,383.48742950517334
 Chhattisgarh,ssp3_7_0,canesm5,-820.5429730982199
 Chhattisgarh,ssp3_7_0,cmcc_cm2_sr5,-23.95673042243868
 Chhattisgarh,ssp3_7_0,cnrm_cm6_1,-13.321476516188682
+Chhattisgarh,ssp3_7_0,gfdl_esm4,-182.65735298103243
 Chhattisgarh,ssp3_7_0,iitm_esm,362.40465873771757
 Chhattisgarh,ssp3_7_0,miroc6,-298.36999946540743
 Delhi,ssp3_7_0,canesm5,-508.7012777805328
 Delhi,ssp3_7_0,cmcc_cm2_sr5,-775.2878256320953
 Delhi,ssp3_7_0,cnrm_cm6_1,74.69032378196721
+Delhi,ssp3_7_0,gfdl_esm4,-620.9653158664703
 Delhi,ssp3_7_0,iitm_esm,414.5069741725922
 Delhi,ssp3_7_0,miroc6,-1715.8481283664703
 Goa,ssp3_7_0,canesm5,-663.6357693061233
 Goa,ssp3_7_0,cmcc_cm2_sr5,-377.4631618842483
 Goa,ssp3_7_0,cnrm_cm6_1,24.941592754423596
+Goa,ssp3_7_0,gfdl_esm4,83.82242161184547
 Goa,ssp3_7_0,iitm_esm,-206.16952174752953
 Goa,ssp3_7_0,miroc6,-29.673824726045154
 Haryana,ssp3_7_0,canesm5,-520.0722289047902
 Haryana,ssp3_7_0,cmcc_cm2_sr5,-848.9619994126027
 Haryana,ssp3_7_0,cnrm_cm6_1,338.3159546889598
+Haryana,ssp3_7_0,gfdl_esm4,-321.1424193344777
 Haryana,ssp3_7_0,iitm_esm,403.1360230483348
 Haryana,ssp3_7_0,miroc6,-838.3789916001027
 Himachal Pradesh,ssp3_7_0,canesm5,11.759497741959052
 Himachal Pradesh,ssp3_7_0,cmcc_cm2_sr5,26.55844030787702
 Himachal Pradesh,ssp3_7_0,cnrm_cm6_1,111.40078649928327
+Himachal Pradesh,ssp3_7_0,gfdl_esm4,108.23184214045759
 Himachal Pradesh,ssp3_7_0,iitm_esm,111.40078649928327
 Himachal Pradesh,ssp3_7_0,miroc6,77.60964117457624
 Jharkhand,ssp3_7_0,canesm5,-1053.494580911439
 Jharkhand,ssp3_7_0,cmcc_cm2_sr5,-361.01954429034527
 Jharkhand,ssp3_7_0,cnrm_cm6_1,-48.211805032532766
+Jharkhand,ssp3_7_0,gfdl_esm4,300.26902992840473
 Jharkhand,ssp3_7_0,iitm_esm,-658.019239114564
 Jharkhand,ssp3_7_0,miroc6,-501.439405130189
 Karnataka,ssp3_7_0,canesm5,-517.0972104728222
 Karnataka,ssp3_7_0,cmcc_cm2_sr5,138.60878317952154
 Karnataka,ssp3_7_0,cnrm_cm6_1,-32.47343117594721
+Karnataka,ssp3_7_0,gfdl_esm4,69.06755393147466
 Karnataka,ssp3_7_0,iitm_esm,70.35560935139654
 Karnataka,ssp3_7_0,miroc6,-393.7657895743847
 Manipur,ssp3_7_0,canesm5,-761.0360952724004
 Manipur,ssp3_7_0,cmcc_cm2_sr5,-456.84804595599417
 Manipur,ssp3_7_0,cnrm_cm6_1,13.22392069210764
+Manipur,ssp3_7_0,gfdl_esm4,-166.5212484706426
 Manipur,ssp3_7_0,iitm_esm,-38.412865291931666
 Manipur,ssp3_7_0,miroc6,-174.21813262591604
 Meghalaya,ssp3_7_0,canesm5,180.2454242400825
 Meghalaya,ssp3_7_0,cmcc_cm2_sr5,-327.50540277436374
 Meghalaya,ssp3_7_0,cnrm_cm6_1,117.42225912138821
+Meghalaya,ssp3_7_0,gfdl_esm4,-138.85608026459812
 Meghalaya,ssp3_7_0,iitm_esm,180.13306462690235
 Meghalaya,ssp3_7_0,miroc6,165.13287237212063
 Mizoram,ssp3_7_0,canesm5,-642.4130428977311
 Mizoram,ssp3_7_0,cmcc_cm2_sr5,-469.4917782492936
 Mizoram,ssp3_7_0,cnrm_cm6_1,122.80052483603359
+Mizoram,ssp3_7_0,gfdl_esm4,-3.967760915309185
 Mizoram,ssp3_7_0,iitm_esm,80.21018708273769
 Mizoram,ssp3_7_0,miroc6,11.152363901585346
 Nagaland,ssp3_7_0,canesm5,54.8010211173445
 Nagaland,ssp3_7_0,cmcc_cm2_sr5,-60.73500035367906
 Nagaland,ssp3_7_0,cnrm_cm6_1,55.841530102863906
+Nagaland,ssp3_7_0,gfdl_esm4,-121.20661137662827
 Nagaland,ssp3_7_0,iitm_esm,45.32133700288832
 Nagaland,ssp3_7_0,miroc6,-34.64484379850328
 Punjab,ssp3_7_0,canesm5,735.4339196175337
 Punjab,ssp3_7_0,cmcc_cm2_sr5,-875.1373160392046
 Punjab,ssp3_7_0,cnrm_cm6_1,835.0752083748579
+Punjab,ssp3_7_0,gfdl_esm4,-513.1492789298296
 Punjab,ssp3_7_0,iitm_esm,268.56770105063913
 Punjab,ssp3_7_0,miroc6,835.0752083748579
 Rajasthan,ssp3_7_0,canesm5,-622.4189817779929
 Rajasthan,ssp3_7_0,cmcc_cm2_sr5,207.7002198821633
 Rajasthan,ssp3_7_0,cnrm_cm6_1,275.82540298763206
+Rajasthan,ssp3_7_0,gfdl_esm4,-351.65250228580544
 Rajasthan,ssp3_7_0,iitm_esm,-132.84866927799294
 Rajasthan,ssp3_7_0,miroc6,-1794.6312620514304
 Sikkim,ssp3_7_0,canesm5,-6.399710178375244
 Sikkim,ssp3_7_0,cmcc_cm2_sr5,0.0
 Sikkim,ssp3_7_0,cnrm_cm6_1,0.0
+Sikkim,ssp3_7_0,gfdl_esm4,0.0
 Sikkim,ssp3_7_0,iitm_esm,0.0
 Sikkim,ssp3_7_0,miroc6,0.0
 Tripura,ssp3_7_0,canesm5,-252.3559167746455
 Tripura,ssp3_7_0,cmcc_cm2_sr5,-147.20448855198924
 Tripura,ssp3_7_0,cnrm_cm6_1,42.98884030543263
+Tripura,ssp3_7_0,gfdl_esm4,12.027139865979507
 Tripura,ssp3_7_0,iitm_esm,298.9560491677373
 Tripura,ssp3_7_0,miroc6,7.389932834729507
 Uttarakhand,ssp3_7_0,canesm5,-57.44652055278419
 Uttarakhand,ssp3_7_0,cmcc_cm2_sr5,98.6737187050283
 Uttarakhand,ssp3_7_0,cnrm_cm6_1,224.32975222095848
+Uttarakhand,ssp3_7_0,gfdl_esm4,178.42059446796776
 Uttarakhand,ssp3_7_0,iitm_esm,215.43581606373192
 Uttarakhand,ssp3_7_0,miroc6,-50.34956620708107
 Telangana,ssp3_7_0,canesm5,-916.5298552527383
 Telangana,ssp3_7_0,cmcc_cm2_sr5,-140.4914641394571
 Telangana,ssp3_7_0,cnrm_cm6_1,-51.17420339726959
+Telangana,ssp3_7_0,gfdl_esm4,-63.48578786992584
 Telangana,ssp3_7_0,iitm_esm,-6.5722746863320936
 Telangana,ssp3_7_0,miroc6,-573.8048796668008
 Andaman and Nicobar,ssp3_7_0,canesm5,-568.4312900543213
 Andaman and Nicobar,ssp3_7_0,cmcc_cm2_sr5,539.8506923675537
 Andaman and Nicobar,ssp3_7_0,cnrm_cm6_1,184.99064598083498
+Andaman and Nicobar,ssp3_7_0,gfdl_esm4,-4.282181167602516
 Andaman and Nicobar,ssp3_7_0,iitm_esm,261.51133689880373
 Andaman and Nicobar,ssp3_7_0,miroc6,-8.270035171508766
 Bihar,ssp3_7_0,canesm5,640.853351891227
 Bihar,ssp3_7_0,cmcc_cm2_sr5,-475.18844193201517
 Bihar,ssp3_7_0,cnrm_cm6_1,-145.30538529139017
+Bihar,ssp3_7_0,gfdl_esm4,444.3920634390786
 Bihar,ssp3_7_0,iitm_esm,206.16336470860983
 Bihar,ssp3_7_0,miroc6,300.5295146109536
 Gujarat,ssp3_7_0,canesm5,-254.98301601224887
 Gujarat,ssp3_7_0,cmcc_cm2_sr5,-457.51597499662387
 Gujarat,ssp3_7_0,cnrm_cm6_1,234.76991367525113
+Gujarat,ssp3_7_0,gfdl_esm4,-103.94285487943637
 Gujarat,ssp3_7_0,iitm_esm,201.74330234712613
 Gujarat,ssp3_7_0,miroc6,-1179.1941976528738
 Kerala,ssp3_7_0,canesm5,-551.8502356529236
 Kerala,ssp3_7_0,cmcc_cm2_sr5,66.51603631973268
 Kerala,ssp3_7_0,cnrm_cm6_1,66.13514642715455
+Kerala,ssp3_7_0,gfdl_esm4,141.65879755020143
 Kerala,ssp3_7_0,iitm_esm,7.609053897857677
 Kerala,ssp3_7_0,miroc6,55.58717279434205
 Madhya Pradesh,ssp3_7_0,canesm5,-840.6440292504616
 Madhya Pradesh,ssp3_7_0,cmcc_cm2_sr5,-226.55088960202409
 Madhya Pradesh,ssp3_7_0,cnrm_cm6_1,97.37940824953841
+Madhya Pradesh,ssp3_7_0,gfdl_esm4,-309.5247665551491
 Madhya Pradesh,ssp3_7_0,iitm_esm,106.46601713625716
 Madhya Pradesh,ssp3_7_0,miroc6,-913.4544540551491
 Odisha,ssp3_7_0,canesm5,-851.8981044267421
 Odisha,ssp3_7_0,cmcc_cm2_sr5,691.3971054579015
 Odisha,ssp3_7_0,cnrm_cm6_1,-178.32644915330457
+Odisha,ssp3_7_0,gfdl_esm4,-113.21890520799207
 Odisha,ssp3_7_0,iitm_esm,204.72280621778918
 Odisha,ssp3_7_0,miroc6,-338.79287981736707
 Tamil Nadu,ssp3_7_0,canesm5,-222.71721084117894
 Tamil Nadu,ssp3_7_0,cmcc_cm2_sr5,302.58015244007106
 Tamil Nadu,ssp3_7_0,cnrm_cm6_1,415.8419322252273
+Tamil Nadu,ssp3_7_0,gfdl_esm4,318.43647568225856
 Tamil Nadu,ssp3_7_0,iitm_esm,294.8126353502273
 Tamil Nadu,ssp3_7_0,miroc6,-548.7070790052414
 Uttar Pradesh,ssp3_7_0,canesm5,-118.9494739981659
 Uttar Pradesh,ssp3_7_0,cmcc_cm2_sr5,-478.6410023184784
 Uttar Pradesh,ssp3_7_0,cnrm_cm6_1,24.6855357674591
+Uttar Pradesh,ssp3_7_0,gfdl_esm4,3.9699595955841005
 Uttar Pradesh,ssp3_7_0,iitm_esm,63.4559215096466
 Uttar Pradesh,ssp3_7_0,miroc6,-1365.6624866934785
 West Bengal,ssp3_7_0,canesm5,-983.0239650274277
 West Bengal,ssp3_7_0,cmcc_cm2_sr5,756.4760349725723
 West Bengal,ssp3_7_0,cnrm_cm6_1,23.28426251163478
+West Bengal,ssp3_7_0,gfdl_esm4,-169.10196795711522
 West Bengal,ssp3_7_0,iitm_esm,-679.6628810430527
 West Bengal,ssp3_7_0,miroc6,-474.2629786993027
 Andhra Pradesh,ssp3_7_0,canesm5,-448.27618035674095
 Andhra Pradesh,ssp3_7_0,cmcc_cm2_sr5,83.85589972138405
 Andhra Pradesh,ssp3_7_0,cnrm_cm6_1,561.6757849752903
+Andhra Pradesh,ssp3_7_0,gfdl_esm4,105.45587530732155
 Andhra Pradesh,ssp3_7_0,iitm_esm,83.8253211081028
 Andhra Pradesh,ssp3_7_0,miroc6,370.6628455221653
 Puducherry,ssp3_7_0,canesm5,-889.5848987042904
 Puducherry,ssp3_7_0,cmcc_cm2_sr5,-862.9877307355404
 Puducherry,ssp3_7_0,cnrm_cm6_1,-750.5208728253841
+Puducherry,ssp3_7_0,gfdl_esm4,-722.1672351300716
 Puducherry,ssp3_7_0,iitm_esm,-705.6298205792904
 Puducherry,ssp3_7_0,miroc6,-1055.683653587103
 Maharashtra,ssp3_7_0,canesm5,-563.2983529104619
 Maharashtra,ssp3_7_0,cmcc_cm2_sr5,278.32029943328814
 Maharashtra,ssp3_7_0,cnrm_cm6_1,88.41710119110064
+Maharashtra,ssp3_7_0,gfdl_esm4,315.50828771453814
 Maharashtra,ssp3_7_0,iitm_esm,219.3829825387569
 Maharashtra,ssp3_7_0,miroc6,-321.7703377737431
 Daman and Diu,ssp3_7_0,canesm5,-416.82220144271855
 Daman and Diu,ssp3_7_0,cmcc_cm2_sr5,-118.72063894271855
 Daman and Diu,ssp3_7_0,cnrm_cm6_1,239.0587189674377
+Daman and Diu,ssp3_7_0,gfdl_esm4,76.35748605728145
 Daman and Diu,ssp3_7_0,iitm_esm,196.06012277603145
 Daman and Diu,ssp3_7_0,miroc6,-309.2546355247498
 Dadra and Nagar Haveli,ssp3_7_0,canesm5,-545.6126177133992
 Dadra and Nagar Haveli,ssp3_7_0,cmcc_cm2_sr5,-247.51105521339923
 Dadra and Nagar Haveli,ssp3_7_0,cnrm_cm6_1,128.66017891746014
+Dadra and Nagar Haveli,ssp3_7_0,gfdl_esm4,79.47942330222577
 Dadra and Nagar Haveli,ssp3_7_0,iitm_esm,207.93239571433514
 Dadra and Nagar Haveli,ssp3_7_0,miroc6,-556.5109331430867
 Assam,ssp5_8_5,canesm5,392.40313566285766
 Assam,ssp5_8_5,cmcc_esm2,396.2336500938574
 Assam,ssp5_8_5,cnrm_cm6_1,319.0237044151465
+Assam,ssp5_8_5,gfdl_esm4,348.7270354087988
 Assam,ssp5_8_5,hadgem3_gc31_mm,368.93730533677734
 Assam,ssp5_8_5,iitm_esm,387.59166706163086
 Assam,ssp5_8_5,miroc6,380.19320095140137
 Chhattisgarh,ssp5_8_5,canesm5,-824.9958539575949
 Chhattisgarh,ssp5_8_5,cmcc_esm2,32.32512992912382
 Chhattisgarh,ssp5_8_5,cnrm_cm6_1,-20.63434272712618
+Chhattisgarh,ssp5_8_5,gfdl_esm4,-125.03375678962618
 Chhattisgarh,ssp5_8_5,hadgem3_gc31_mm,-219.78674751228243
 Chhattisgarh,ssp5_8_5,iitm_esm,394.9667314916238
 Chhattisgarh,ssp5_8_5,miroc6,-248.02673774665743
 Delhi,ssp5_8_5,canesm5,-483.2610922336578
 Delhi,ssp5_8_5,cmcc_esm2,-819.9670248508453
 Delhi,ssp5_8_5,cnrm_cm6_1,-119.07310395240779
+Delhi,ssp5_8_5,gfdl_esm4,-643.9804525852203
 Delhi,ssp5_8_5,hadgem3_gc31_mm,-550.2470541477203
 Delhi,ssp5_8_5,iitm_esm,444.9549417018891
 Delhi,ssp5_8_5,miroc6,-1524.3061361789703
 Goa,ssp5_8_5,canesm5,-711.4966701850295
 Goa,ssp5_8_5,cmcc_esm2,-319.9908718451858
 Goa,ssp5_8_5,cnrm_cm6_1,64.36429172903297
+Goa,ssp5_8_5,gfdl_esm4,86.32617527395485
 Goa,ssp5_8_5,hadgem3_gc31_mm,3.7398715630173456
 Goa,ssp5_8_5,iitm_esm,-165.69466823190453
 Goa,ssp5_8_5,miroc6,-2.0296902045607794
 Haryana,ssp5_8_5,canesm5,-494.6320433579152
 Haryana,ssp5_8_5,cmcc_esm2,-900.4191527329152
 Haryana,ssp5_8_5,cnrm_cm6_1,208.18887949364728
+Haryana,ssp5_8_5,gfdl_esm4,-342.6108031235402
 Haryana,ssp5_8_5,hadgem3_gc31_mm,245.79520273583478
 Haryana,ssp5_8_5,iitm_esm,433.58399057763165
 Haryana,ssp5_8_5,miroc6,-690.8658080063527
 Himachal Pradesh,ssp5_8_5,canesm5,5.749495605728583
 Himachal Pradesh,ssp5_8_5,cmcc_esm2,0.5034247439121771
 Himachal Pradesh,ssp5_8_5,cnrm_cm6_1,111.40078649928327
+Himachal Pradesh,ssp5_8_5,gfdl_esm4,105.72371254374738
 Himachal Pradesh,ssp5_8_5,hadgem3_gc31_mm,104.76447496821638
 Himachal Pradesh,ssp5_8_5,iitm_esm,111.40078649928327
 Himachal Pradesh,ssp5_8_5,miroc6,84.31859121730085
 Jharkhand,ssp5_8_5,canesm5,-1067.449170755189
 Jharkhand,ssp5_8_5,cmcc_esm2,-273.5323006380015
 Jharkhand,ssp5_8_5,cnrm_cm6_1,-108.39655845050152
+Jharkhand,ssp5_8_5,gfdl_esm4,348.59422524090473
 Jharkhand,ssp5_8_5,hadgem3_gc31_mm,-245.48634116534527
 Jharkhand,ssp5_8_5,iitm_esm,-677.0501229036265
 Jharkhand,ssp5_8_5,miroc6,-576.6553475130015
 Karnataka,ssp5_8_5,canesm5,-502.2102475821972
 Karnataka,ssp5_8_5,cmcc_esm2,176.40365927815435
 Karnataka,ssp5_8_5,cnrm_cm6_1,10.509234839677788
+Karnataka,ssp5_8_5,gfdl_esm4,63.30382102131841
 Karnataka,ssp5_8_5,hadgem3_gc31_mm,15.682818824052788
 Karnataka,ssp5_8_5,iitm_esm,70.47272055745123
 Karnataka,ssp5_8_5,miroc6,-301.5864682853222
 Manipur,ssp5_8_5,canesm5,-695.6667105067754
 Manipur,ssp5_8_5,cmcc_esm2,-390.69289458880667
 Manipur,ssp5_8_5,cnrm_cm6_1,16.014502872130834
+Manipur,ssp5_8_5,gfdl_esm4,-191.61461700091604
 Manipur,ssp5_8_5,hadgem3_gc31_mm,-49.156807552673854
 Manipur,ssp5_8_5,iitm_esm,-27.202183376648463
 Manipur,ssp5_8_5,miroc6,-185.5063558925176
 Meghalaya,ssp5_8_5,canesm5,179.15015748068691
 Meghalaya,ssp5_8_5,cmcc_esm2,-283.80227777436374
 Meghalaya,ssp5_8_5,cnrm_cm6_1,123.0878207974136
+Meghalaya,ssp5_8_5,gfdl_esm4,-137.52490350678562
 Meghalaya,ssp5_8_5,hadgem3_gc31_mm,-189.39294549897312
 Meghalaya,ssp5_8_5,iitm_esm,180.01106753870846
 Meghalaya,ssp5_8_5,miroc6,160.2430064968765
 Mizoram,ssp5_8_5,canesm5,-577.0436581321061
 Mizoram,ssp5_8_5,cmcc_esm2,-387.9698055930436
 Mizoram,ssp5_8_5,cnrm_cm6_1,131.8989168457687
+Mizoram,ssp5_8_5,gfdl_esm4,-17.860461110621685
 Mizoram,ssp5_8_5,hadgem3_gc31_mm,-0.32242094948887257
 Mizoram,ssp5_8_5,iitm_esm,91.4208689980209
 Mizoram,ssp5_8_5,miroc6,-45.09518706277012
 Nagaland,ssp5_8_5,canesm5,54.27618886865675
 Nagaland,ssp5_8_5,cmcc_esm2,-32.09025548063219
 Nagaland,ssp5_8_5,cnrm_cm6_1,57.091353106871246
+Nagaland,ssp5_8_5,gfdl_esm4,-121.98938725553452
 Nagaland,ssp5_8_5,hadgem3_gc31_mm,19.15636469759047
 Nagaland,ssp5_8_5,iitm_esm,48.90857722200453
 Nagaland,ssp5_8_5,miroc6,-35.21551488004625
 Punjab,ssp5_8_5,canesm5,729.4239174813032
 Punjab,ssp5_8_5,cmcc_esm2,-905.1236441642046
 Punjab,ssp5_8_5,cnrm_cm6_1,835.0752083748579
+Punjab,ssp5_8_5,gfdl_esm4,-587.6999381095171
 Punjab,ssp5_8_5,hadgem3_gc31_mm,835.0752083748579
 Punjab,ssp5_8_5,iitm_esm,316.5868050545454
 Punjab,ssp5_8_5,miroc6,835.0752083748579
 Rajasthan,ssp5_8_5,canesm5,-616.6131956451804
 Rajasthan,ssp5_8_5,cmcc_esm2,225.7262208587258
 Rajasthan,ssp5_8_5,cnrm_cm6_1,163.24337173763206
+Rajasthan,ssp5_8_5,gfdl_esm4,-328.61246322330544
 Rajasthan,ssp5_8_5,hadgem3_gc31_mm,67.32485367122581
 Rajasthan,ssp5_8_5,iitm_esm,-76.70731185611794
 Rajasthan,ssp5_8_5,miroc6,-1654.5597288483054
 Sikkim,ssp5_8_5,canesm5,-7.547552585601807
 Sikkim,ssp5_8_5,cmcc_esm2,0.0
 Sikkim,ssp5_8_5,cnrm_cm6_1,0.0
+Sikkim,ssp5_8_5,gfdl_esm4,0.0
 Sikkim,ssp5_8_5,hadgem3_gc31_mm,0.0
 Sikkim,ssp5_8_5,iitm_esm,0.0
 Sikkim,ssp5_8_5,miroc6,0.0
 Tripura,ssp5_8_5,canesm5,-186.9865320090205
 Tripura,ssp5_8_5,cmcc_esm2,-66.57546023167674
 Tripura,ssp5_8_5,cnrm_cm6_1,102.94809933863576
+Tripura,ssp5_8_5,gfdl_esm4,-32.17647341527049
 Tripura,ssp5_8_5,hadgem3_gc31_mm,-116.06130007542674
 Tripura,ssp5_8_5,iitm_esm,278.8457891579717
 Tripura,ssp5_8_5,miroc6,-45.45369509495799
 Uttarakhand,ssp5_8_5,canesm5,-44.34474442973732
 Uttarakhand,ssp5_8_5,cmcc_esm2,94.74961592182518
 Uttarakhand,ssp5_8_5,cnrm_cm6_1,221.94017054066063
+Uttarakhand,ssp5_8_5,gfdl_esm4,183.16335035786034
 Uttarakhand,ssp5_8_5,hadgem3_gc31_mm,201.8963043831289
 Uttarakhand,ssp5_8_5,iitm_esm,215.85716940388085
 Uttarakhand,ssp5_8_5,miroc6,1.5122807167470569
 Telangana,ssp5_8_5,canesm5,-951.8831267371133
 Telangana,ssp5_8_5,cmcc_esm2,-83.4871916785196
 Telangana,ssp5_8_5,cnrm_cm6_1,19.413015841011656
+Telangana,ssp5_8_5,gfdl_esm4,-31.402047635550844
 Telangana,ssp5_8_5,hadgem3_gc31_mm,-285.85553884648834
 Telangana,ssp5_8_5,iitm_esm,68.88616037226166
 Telangana,ssp5_8_5,miroc6,-417.24457693242584
 Andaman and Nicobar,ssp5_8_5,canesm5,-604.2902988433838
 Andaman and Nicobar,ssp5_8_5,cmcc_esm2,539.8506923675537
 Andaman and Nicobar,ssp5_8_5,cnrm_cm6_1,190.94230613708498
+Andaman and Nicobar,ssp5_8_5,gfdl_esm4,19.165145492553734
 Andaman and Nicobar,ssp5_8_5,hadgem3_gc31_mm,-346.30641212463377
 Andaman and Nicobar,ssp5_8_5,iitm_esm,268.1836391448975
 Andaman and Nicobar,ssp5_8_5,miroc6,16.586837387084984
 Bihar,ssp5_8_5,canesm5,643.9845622183755
 Bihar,ssp5_8_5,cmcc_esm2,-386.22396439295267
 Bihar,ssp5_8_5,cnrm_cm6_1,-160.54970902185892
+Bihar,ssp5_8_5,gfdl_esm4,503.88129073400046
 Bihar,ssp5_8_5,hadgem3_gc31_mm,-239.59383743982767
 Bihar,ssp5_8_5,iitm_esm,224.21945601720358
 Bihar,ssp5_8_5,miroc6,171.45279341954733
 Gujarat,ssp5_8_5,canesm5,-338.09190273099887
 Gujarat,ssp5_8_5,cmcc_esm2,-413.37437343412387
 Gujarat,ssp5_8_5,cnrm_cm6_1,195.16206455415738
+Gujarat,ssp5_8_5,gfdl_esm4,-29.883528707561368
 Gujarat,ssp5_8_5,hadgem3_gc31_mm,341.7711954135324
 Gujarat,ssp5_8_5,iitm_esm,291.2753458041574
 Gujarat,ssp5_8_5,miroc6,-1231.6824789028738
 Kerala,ssp5_8_5,canesm5,-527.9852454185486
 Kerala,ssp5_8_5,cmcc_esm2,124.11436395645143
 Kerala,ssp5_8_5,cnrm_cm6_1,119.89781122207643
+Kerala,ssp5_8_5,gfdl_esm4,151.75967340469361
 Kerala,ssp5_8_5,hadgem3_gc31_mm,118.87718133926393
 Kerala,ssp5_8_5,iitm_esm,-34.48326177597045
 Kerala,ssp5_8_5,miroc6,60.0268090248108
 Madhya Pradesh,ssp5_8_5,canesm5,-850.4163681176491
 Madhya Pradesh,ssp5_8_5,cmcc_esm2,-229.07725678952409
 Madhya Pradesh,ssp5_8_5,cnrm_cm6_1,59.566725144069665
+Madhya Pradesh,ssp5_8_5,gfdl_esm4,-223.67308198483659
 Madhya Pradesh,ssp5_8_5,hadgem3_gc31_mm,4.989820847194665
 Madhya Pradesh,ssp5_8_5,iitm_esm,157.75770414797591
 Madhya Pradesh,ssp5_8_5,miroc6,-669.6017929223366
 Odisha,ssp5_8_5,canesm5,-816.8102138017421
 Odisha,ssp5_8_5,cmcc_esm2,699.0413515592809
 Odisha,ssp5_8_5,cnrm_cm6_1,-166.09402727830457
+Odisha,ssp5_8_5,gfdl_esm4,-31.349642512679566
 Odisha,ssp5_8_5,hadgem3_gc31_mm,-301.4593226884608
 Odisha,ssp5_8_5,iitm_esm,234.01293683302356
 Odisha,ssp5_8_5,miroc6,-287.35135149705457
 Tamil Nadu,ssp5_8_5,canesm5,-170.81022841930394
 Tamil Nadu,ssp5_8_5,cmcc_esm2,367.5066966295242
 Tamil Nadu,ssp5_8_5,cnrm_cm6_1,463.7509898424148
+Tamil Nadu,ssp5_8_5,gfdl_esm4,360.55415146350856
 Tamil Nadu,ssp5_8_5,hadgem3_gc31_mm,311.5715464830398
 Tamil Nadu,ssp5_8_5,iitm_esm,277.83955185413356
 Tamil Nadu,ssp5_8_5,miroc6,-585.2307606458664
 Uttar Pradesh,ssp5_8_5,canesm5,-136.9619251700409
 Uttar Pradesh,ssp5_8_5,cmcc_esm2,-477.1689564200409
 Uttar Pradesh,ssp5_8_5,cnrm_cm6_1,-146.8888050528534
+Uttar Pradesh,ssp5_8_5,gfdl_esm4,57.04350695886535
 Uttar Pradesh,ssp5_8_5,hadgem3_gc31_mm,-207.4879261466034
 Uttar Pradesh,ssp5_8_5,iitm_esm,72.01677356042785
 Uttar Pradesh,ssp5_8_5,miroc6,-1245.1986195059785
 West Bengal,ssp5_8_5,canesm5,-915.0978175664902
 West Bengal,ssp5_8_5,cmcc_esm2,756.4760349725723
 West Bengal,ssp5_8_5,cnrm_cm6_1,-13.099770691490221
+West Bengal,ssp5_8_5,gfdl_esm4,-98.94126239070897
 West Bengal,ssp5_8_5,hadgem3_gc31_mm,194.43092999210353
 West Bengal,ssp5_8_5,iitm_esm,-714.6949855352402
 West Bengal,ssp5_8_5,miroc6,-464.0405665899277
 Andhra Pradesh,ssp5_8_5,canesm5,-456.63702020049095
 Andhra Pradesh,ssp5_8_5,cmcc_esm2,159.10248175263405
 Andhra Pradesh,ssp5_8_5,cnrm_cm6_1,615.3808325827122
+Andhra Pradesh,ssp5_8_5,gfdl_esm4,123.53204718232155
 Andhra Pradesh,ssp5_8_5,hadgem3_gc31_mm,195.61041632294655
 Andhra Pradesh,ssp5_8_5,iitm_esm,164.2443884909153
 Andhra Pradesh,ssp5_8_5,miroc6,435.03900519013405
 Puducherry,ssp5_8_5,canesm5,-855.9043567121029
 Puducherry,ssp5_8_5,cmcc_esm2,-769.2612903058529
 Puducherry,ssp5_8_5,cnrm_cm6_1,-743.5763537824154
+Puducherry,ssp5_8_5,gfdl_esm4,-639.4111926496029
 Puducherry,ssp5_8_5,hadgem3_gc31_mm,-971.0413196027279
 Puducherry,ssp5_8_5,iitm_esm,-688.2418811261654
 Puducherry,ssp5_8_5,miroc6,-1028.404112571478
 Maharashtra,ssp5_8_5,canesm5,-624.5105111135869
 Maharashtra,ssp5_8_5,cmcc_esm2,296.4977286325069
 Maharashtra,ssp5_8_5,cnrm_cm6_1,110.95463781219439
+Maharashtra,ssp5_8_5,gfdl_esm4,293.1604788766475
 Maharashtra,ssp5_8_5,hadgem3_gc31_mm,322.4354727731319
 Maharashtra,ssp5_8_5,iitm_esm,263.0255606637569
 Maharashtra,ssp5_8_5,miroc6,-269.21290369171186
 Daman and Diu,ssp5_8_5,canesm5,-521.1056487083436
 Daman and Diu,ssp5_8_5,cmcc_esm2,-85.61358327865605
 Daman and Diu,ssp5_8_5,cnrm_cm6_1,229.61636667251582
+Daman and Diu,ssp5_8_5,gfdl_esm4,70.13800363540645
 Daman and Diu,ssp5_8_5,hadgem3_gc31_mm,74.09588937759395
 Daman and Diu,ssp5_8_5,iitm_esm,231.65133981704707
 Daman and Diu,ssp5_8_5,miroc6,-343.16802663803105
 Dadra and Nagar Haveli,ssp5_8_5,canesm5,-649.8960649790242
 Dadra and Nagar Haveli,ssp5_8_5,cmcc_esm2,-214.40399954933673
 Dadra and Nagar Haveli,ssp5_8_5,cnrm_cm6_1,110.49211861472577
+Dadra and Nagar Haveli,ssp5_8_5,gfdl_esm4,52.10301949363202
 Dadra and Nagar Haveli,ssp5_8_5,hadgem3_gc31_mm,224.10784127097577
 Dadra and Nagar Haveli,ssp5_8_5,iitm_esm,248.32701851706952
 Dadra and Nagar Haveli,ssp5_8_5,miroc6,-601.6236040415242
