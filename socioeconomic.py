@@ -11,8 +11,10 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
+from sklearn.metrics import r2_score
 
-from utils import dict_name_code, draw_state_map, dict_code_name,get_ssp_palette
+from utils import dict_name_code, draw_state_map, get_ssp_palette
 
 EXPERIMENTS_LIST = ['ssp1','ssp2','ssp3','ssp5']
 
@@ -78,7 +80,7 @@ def add_households_data(base_year=2023, columns_format_name=True, base_data=None
     
     if not columns_format_name:
         data = data.rename(columns=dict_name_code)
-        
+    
     data = data.loc[base_year]
     data = pd.DataFrame(data).rename(columns={base_year:'households'})
     data = data.rename(columns={k:f'{k}_{base_year}' for k in data.columns})
@@ -158,6 +160,64 @@ def add_ac_cooler_data(base_year=2014, columns_format_name=True, base_data=None)
         base_data = data
     return base_data
 
+
+def get_population_projection():
+    file = os.path.join('data','iamc_data-3fbc344f-2763-46da-97c3-f4fc654a3f35.csv')
+    pop_projection = pd.read_csv(file)
+    pop_projection = pop_projection[pop_projection.variable=='Population']
+    pop_projection = pop_projection[['scenario',
+           '1950', '1955', '1960', '1965', '1970', '1975', '1980', '1985', '1990',
+           '1995', '2000', '2005', '2010', '2015', '2020', '2025', '2030', '2035',
+           '2040', '2045', '2050', '2055', '2060', '2065', '2070', '2075', '2080',
+           '2085', '2090', '2095', '2100']].set_index('scenario').T
+    pop_projection.index = pop_projection.index.map(int)
+    
+    unit = 1e6
+    pop_projection = pop_projection*unit
+    
+    survey_pop = get_population_data()
+    
+    pop_projection_first_years = pop_projection[pop_projection.index.isin(survey_pop.index)]
+    correction_coefficient = survey_pop[survey_pop.index.isin(pop_projection_first_years.index)].sum(axis=1).mean()/pop_projection_first_years['Historical Reference'].mean()
+    print(f'Coefficient correcteur : {correction_coefficient:.4f}')
+    
+    pop_projection = pop_projection*correction_coefficient
+    
+    pop_projection = pd.DataFrame(index=list(range(1950,2101))).join(pop_projection).interpolate(limit_area='inside')
+    
+    return pop_projection
+
+
+def get_gdp_projection():
+    file = os.path.join('data','iamc_data-3fbc344f-2763-46da-97c3-f4fc654a3f35.csv')
+    pop_projection = pd.read_csv(file)
+    pop_projection = pop_projection[pop_projection.variable=='GDP|PPP [per capita]']
+    pop_projection = pop_projection[pop_projection.unit=='USD_2017/yr']
+    pop_projection = pop_projection[['scenario',
+           '1950', '1955', '1960', '1965', '1970', '1975', '1980', '1985', '1990',
+           '1995', '2000', '2005', '2010', '2015', '2020', '2025', '2030', '2035',
+           '2040', '2045', '2050', '2055', '2060', '2065', '2070', '2075', '2080',
+           '2085', '2090', '2095', '2100']].set_index('scenario').T
+    pop_projection.index = pop_projection.index.map(int)
+    
+    unit = 1
+    pop_projection = pop_projection*unit
+    
+    year = 2020
+    data = add_gdp_data(base_year=year)
+    data = add_pop_data(base_year=year,base_data=data)
+    gdp_per_capita_ref = data[f'gdp_{year}'].sum()/data[f'population_{year}'].sum()
+    
+    
+    pop_projection_first_years = pop_projection.loc[year]['Historical Reference']
+    calibration_coefficient = gdp_per_capita_ref/pop_projection_first_years
+    print(f'Coefficient de calibration : {calibration_coefficient:.4f} rupee/dollar')
+    
+    pop_projection = pop_projection*calibration_coefficient
+    
+    pop_projection = pd.DataFrame(index=list(range(1950,2101))).join(pop_projection).interpolate(limit_area='inside')
+    
+    return pop_projection
 
 
 #%% ===========================================================================
@@ -251,26 +311,8 @@ def main():
         
     #%% Projection de population 
     if True:
-        file = os.path.join('data','iamc_data-3fbc344f-2763-46da-97c3-f4fc654a3f35.csv')
-        pop_projection = pd.read_csv(file)
-        pop_projection = pop_projection[pop_projection.variable=='Population']
-        pop_projection = pop_projection[['scenario',
-               '1950', '1955', '1960', '1965', '1970', '1975', '1980', '1985', '1990',
-               '1995', '2000', '2005', '2010', '2015', '2020', '2025', '2030', '2035',
-               '2040', '2045', '2050', '2055', '2060', '2065', '2070', '2075', '2080',
-               '2085', '2090', '2095', '2100']].set_index('scenario').T
-        pop_projection.index = pop_projection.index.map(int)
         
-        unit = 1e6
-        pop_projection = pop_projection*unit
-        
-        survey_pop = get_population_data()
-        
-        pop_projection_first_years = pop_projection[pop_projection.index.isin(survey_pop.index)]
-        correction_coefficient = survey_pop[survey_pop.index.isin(pop_projection_first_years.index)].sum(axis=1).mean()/pop_projection_first_years['Historical Reference'].mean()
-        print(f'Coefficient correcteur : {correction_coefficient:.4f}')
-        
-        pop_projection = pop_projection*correction_coefficient
+        pop_projection = get_population_projection()
         
         fig,ax = plt.subplots(figsize=(5,5),dpi=300)
         ax.plot(pop_projection['Historical Reference'],color='k',label='Historical',zorder=5)
@@ -285,10 +327,68 @@ def main():
         ax.set_ylabel('Population (inhab)')
         plt.show()
         
+    #%% Projection de PIB par habitant 
+    if True:
         
-        pass
+        pop_projection = get_gdp_projection()
         
+        fig,ax = plt.subplots(figsize=(5,5),dpi=300)
+        ax.plot(pop_projection['Historical Reference'],color='k',label='Historical',zorder=5)
+        # ax.plot(survey_pop.sum(axis=1),color='red',label='Survey',zorder=5)
+        
+        for scenario in EXPERIMENTS_LIST:
+            ax.plot(pop_projection[scenario.upper()],color=get_ssp_palette(scenario),label=scenario.upper())
+            
+        ax.set_ylim(bottom=0.)
+        ax.set_xlim(left=2015)
+        ax.legend()
+        ax.set_ylabel('GDP per capita (rupees)')
+        plt.show()
+        
+        
+    # %% Carcatérisation nombre de ménages par habitant
+    if False:
+        base_year = 2023
+        gdp = add_gdp_data(base_year)
+        gdp = add_households_data(base_year,base_data=gdp)
+        gdp = add_pop_data(base_year,base_data=gdp)
+        
+        a,b = np.polyfit(gdp[f'population_{base_year}'],gdp[f'households_{base_year}'],deg=1)
+        Y_hat = a*gdp[f'population_{base_year}']+b
+        r2 = r2_score(gdp[f'households_{base_year}'],Y_hat)
+        
+        national_avg = gdp[f'households_{base_year}'].sum()/gdp[f'population_{base_year}'].sum()
+        Y_avg = national_avg*gdp[f'population_{base_year}']
+        
+        fig,ax = plt.subplots(dpi=300,figsize=(5,5))
+        ax.plot(gdp[f'population_{base_year}'],Y_avg,color='k',label='National average')
+        ax.plot([-1],[0],ls='',alpha=0,label=f'(slope = {national_avg:.2f})')
+        sns.regplot(gdp,x=f'population_{base_year}',y=f'households_{base_year}',ax=ax,
+                    label=f'Linear regression (R$^2$={r2:.2f})',color='tab:blue')
+        ax.plot([-1],[0],ls='',alpha=0,label=f'(slope = {a:.2f})')
+        ax.set_xlabel('Population (inhab)')
+        ax.set_ylabel('Households (unit)')
+        ax.legend()
+        ax.set_title(base_year)
+        ax.set_ylim(bottom=0.)
+        ax.set_xlim(left=0.)
+        plt.show()
+        
+        # pop = get_population_data()
+        # hoh = pd.read_excel(os.path.join('data','Households-States-2014-2023.xlsx'),sheet_name='Households',skipfooter=1).set_index('States').T
+        
+        # ratio_dict = {}
+        # for state in hoh.columns:
+        #     pop_state = pop[[state]].rename(columns={state:'pop'})
+        #     hoh_state = hoh[[state]].rename(columns={state:'hoh'})
+        #     pop_state = pop_state.join(hoh_state).dropna()
+            
+        #     a,b = np.polyfit(pop_state['pop'], pop_state.hoh, deg=1)
+        #     ratio_dict[state] = a
+        # print()
+        # print(f'nb_households = {np.mean(list(ratio_dict.values())):.3f} (+- {np.std(list(ratio_dict.values())):.3f}) * nb_inhab')
     
+        
     tac = time.time()
     print('Done in {:.2f}s.'.format(tac-tic))
     
