@@ -33,7 +33,7 @@ def main():
     #%% projection de climatisation
     if True:
         cdd_threshold = 26 #°C
-        projection,_,missing_states = export_cdd(cdd_threshold,force=False)
+        projection,_,missing_states_cdd = export_cdd(cdd_threshold,force=False)
         
         base_year = 2020
         ref = add_gdp_data(base_year=base_year)
@@ -41,6 +41,8 @@ def main():
         ref[f'gdp_per_capita_{base_year}'] = ref[f'gdp_{base_year}']/ref[f'population_{base_year}']
         ref_gdp_per_capita = ref[f'gdp_per_capita_{base_year}'].to_dict()
         ref_pop = ref[f'population_{base_year}'].to_dict()
+        
+        missing_states_gdp_pop = set([e for e in dict_name_geom.keys() if e not in ref_pop.keys()])
         
         gdp = get_gdp_projection()
         gdp = gdp/gdp.loc[2020]['Historical Reference']
@@ -174,9 +176,35 @@ def main():
         
         #%% Graphes propres
         
-        # graphes par état
+        # génération du latex
         if True:
+            missing = missing_states_cdd.union(missing_states_gdp_pop)
+            for state in list(dict_name_geom.keys()):
+                if state in missing:
+                    continue
+                
+                print('\\subsubsection{'+state+'}')
+                print()
+                print('\\begin{figure}[ht]')
+                print('\t\\centering')
+                print('\t\\includegraphics[height=0.25\\textheight]{figures/projection_states/projection_cdd26_'+state+'.png}\\hfill')
+                print('\t\\includegraphics[height=0.25\\textheight]{figures/projection_states/projection_gdp_per_capita_'+state+'.png}\\\\')
+                print('\t\\includegraphics[height=0.25\\textheight]{figures/projection_states/projection_ac_rate_'+state+'.png}\\hfill')
+                print('\t\\includegraphics[height=0.25\\textheight]{figures/projection_states/projection_ac_systems_'+state+'.png}')
+                print("\t\\caption{Projections des différentes variables pour "+state+"}")
+                print('\\end{figure}')
+                print()
+                print('\\clearpage')
+                print()
+        
+
+        # graphes par état
+        if False:
+            print(missing_states_cdd.union(missing_states_gdp_pop))
+            
             for test_state in dict_name_geom.keys():
+                if test_state in missing_states_cdd or test_state in missing_states_gdp_pop:
+                    continue
             
                 # graphe évolution GDP_per_capita
                 years = list(range(2020,2071,1))
@@ -203,6 +231,7 @@ def main():
                 ax.set_ylim(bottom=0.)
                 ax.set_ylabel('GDP per capita (rupees)')
                 ax.set_title(f'{test_state}')
+                plt.savefig(os.path.join('output','projection_states',f'projection_gdp_per_capita_{test_state}.png'), bbox_inches='tight')
                 plt.show()
                 
                 # graphe evolution CDD
@@ -210,28 +239,28 @@ def main():
                 
                 state_projection = projection[(projection.state==test_state)&(projection.year.isin(years))]
                 
-                fig,ax = plt.subplots(dpi=300,figsize=(5,5))
-                # ax.plot([ref_year],[ref_ac_rate.get(test_state)],ls='',marker='o',color='k',zorder=5,label='Survey')
+                # fig,ax = plt.subplots(dpi=300,figsize=(5,5))
+                # # ax.plot([ref_year],[ref_ac_rate.get(test_state)],ls='',marker='o',color='k',zorder=5,label='Survey')
                 
-                for idx,experiment in enumerate(EXPERIMENTS_DICT.keys()):
-                    state_exp = state_projection[state_projection.experiment==experiment]
-                    mean_value = state_exp[['year',f'cdd{cdd_threshold}_rolling']].groupby('year').mean()
-                    std_value = state_exp[['year',f'cdd{cdd_threshold}_rolling']].groupby('year').std()
+                # for idx,experiment in enumerate(EXPERIMENTS_DICT.keys()):
+                #     state_exp = state_projection[state_projection.experiment==experiment]
+                #     mean_value = state_exp[['year',f'cdd{cdd_threshold}_rolling']].groupby('year').mean()
+                #     std_value = state_exp[['year',f'cdd{cdd_threshold}_rolling']].groupby('year').std()
                     
-                    ax.plot(mean_value.index,mean_value.values.T[0],color=get_ssp_palette(experiment),
-                            label=get_ssp_name(experiment))
+                #     ax.plot(mean_value.index,mean_value.values.T[0],color=get_ssp_palette(experiment),
+                #             label=get_ssp_name(experiment))
                     
-                    if experiment in ['ssp1_2_6', 'ssp5_8_5']:
-                        ax.fill_between(mean_value.index,
-                                        mean_value.values.T[0]+std_value.values.T[0],
-                                        mean_value.values.T[0]-std_value.values.T[0],
-                                        alpha=0.2,color=get_ssp_palette(experiment))
+                #     if experiment in ['ssp1_2_6', 'ssp5_8_5']:
+                #         ax.fill_between(mean_value.index,
+                #                         mean_value.values.T[0]+std_value.values.T[0],
+                #                         mean_value.values.T[0]-std_value.values.T[0],
+                #                         alpha=0.2,color=get_ssp_palette(experiment))
                 
-                ax.legend()
-                ax.set_ylim(bottom=0.)
-                ax.set_ylabel(f'10-years rolling average CDD{cdd_threshold} (°C.days)')
-                ax.set_title(f'{test_state}')
-                plt.show()
+                # ax.legend()
+                # ax.set_ylim(bottom=0.)
+                # ax.set_ylabel(f'10-years rolling average CDD{cdd_threshold} (°C.days)')
+                # ax.set_title(f'{test_state}')
+                # plt.show()
                 
                 
                 # graphe évolution taux équipement par état
@@ -255,6 +284,7 @@ def main():
                 ax.set_ylim(bottom=0.,top=1.)
                 ax.set_ylabel('AC equipment rate (ratio)')
                 ax.set_title(f'{test_state}')
+                plt.savefig(os.path.join('output','projection_states',f'projection_ac_rate_{test_state}.png'), bbox_inches='tight')
                 plt.show()
                 
                 # graphe évolution nombre équipement par état
@@ -277,10 +307,11 @@ def main():
                 ax.set_ylim(bottom=0.)
                 ax.set_ylabel('AC systems (unit)')
                 ax.set_title(f'{test_state}')
+                plt.savefig(os.path.join('output','projection_states',f'projection_ac_systems_{test_state}.png'), bbox_inches='tight')
                 plt.show()
                 
         # graphes nationaux
-        if True:
+        if False:
             
             # graphe évolution taux équipement national
             years = list(range(2020,2071,10))
@@ -310,6 +341,7 @@ def main():
             ax.set_ylim(bottom=0.,top=1.)
             ax.set_ylabel('AC equipment rate (ratio)')
             ax.set_title('')
+            plt.savefig(os.path.join('output','projection_ac_rate_india.png'), bbox_inches='tight')
             plt.show()
             
             # graphe évolution nombre de systèmes INDIA
@@ -340,6 +372,8 @@ def main():
             ax.set_ylim(bottom=0.)
             ax.set_ylabel('AC systems (unit)')
             ax.set_title('')
+            plt.savefig(os.path.join('output','projection_ac_systems_india.png'), bbox_inches='tight')
+            
             plt.show()
                 
         

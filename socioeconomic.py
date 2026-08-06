@@ -325,6 +325,7 @@ def main():
         ax.set_xlim(left=2015)
         ax.legend()
         ax.set_ylabel('Population (inhab)')
+        plt.savefig(os.path.join('output','projection_population_india.png'), bbox_inches='tight')
         plt.show()
         
     #%% Projection de PIB par habitant 
@@ -343,6 +344,7 @@ def main():
         ax.set_xlim(left=2015)
         ax.legend()
         ax.set_ylabel('GDP per capita (rupees)')
+        plt.savefig(os.path.join('output','projection_gdp_per_capita_india.png'), bbox_inches='tight')
         plt.show()
         
         
@@ -352,6 +354,8 @@ def main():
         gdp = add_gdp_data(base_year)
         gdp = add_households_data(base_year,base_data=gdp)
         gdp = add_pop_data(base_year,base_data=gdp)
+        gdp[f'ratio_hh_pop_{base_year}'] = gdp[f'households_{base_year}']/gdp[f'population_{base_year}']
+        gdp[f'gdp_per_capita_{base_year}'] = gdp[f'gdp_{base_year}']/gdp[f'population_{base_year}']
         
         a,b = np.polyfit(gdp[f'population_{base_year}'],gdp[f'households_{base_year}'],deg=1)
         Y_hat = a*gdp[f'population_{base_year}']+b
@@ -360,19 +364,37 @@ def main():
         national_avg = gdp[f'households_{base_year}'].sum()/gdp[f'population_{base_year}'].sum()
         Y_avg = national_avg*gdp[f'population_{base_year}']
         
+        # fig,ax = plt.subplots(dpi=300,figsize=(5,5))
+        # ax.plot(gdp[f'population_{base_year}'],Y_avg,color='k',label='National average')
+        # ax.plot([-1],[0],ls='',alpha=0,label=f'(slope = {national_avg:.2f})')
+        # sns.regplot(gdp,x=f'population_{base_year}',y=f'households_{base_year}',ax=ax,
+        #             label=f'Linear regression (R$^2$={r2:.2f})',color='tab:blue')
+        # ax.plot([-1],[0],ls='',alpha=0,label=f'(slope = {a:.2f})')
+        # ax.set_xlabel('Population (inhab)')
+        # ax.set_ylabel('Households (unit)')
+        # ax.legend()
+        # ax.set_title(base_year)
+        # ax.set_ylim(bottom=0.)
+        # ax.set_xlim(left=0.)
+        # plt.show()
+        
+        a,b = np.polyfit(gdp[f'gdp_per_capita_{base_year}'],gdp[f'ratio_hh_pop_{base_year}'],deg=1)
+        Y_hat = a*gdp[f'gdp_per_capita_{base_year}']+b
+        r2 = r2_score(gdp[f'gdp_per_capita_{base_year}'],Y_hat)
+        
         fig,ax = plt.subplots(dpi=300,figsize=(5,5))
-        ax.plot(gdp[f'population_{base_year}'],Y_avg,color='k',label='National average')
-        ax.plot([-1],[0],ls='',alpha=0,label=f'(slope = {national_avg:.2f})')
-        sns.regplot(gdp,x=f'population_{base_year}',y=f'households_{base_year}',ax=ax,
+        # ax.plot(gdp[f'gdp_per_capita_{base_year}'],gdp[f'ratio_hh_pop_{base_year}'],color='k',marker='o',ls='',label = f'Survey ({base_year})')
+        # ax.plot(gdp[f'gdp_per_capita_{base_year}'],Y_hat,label=f'Linear regression (R$^2$={r2:.2f})',color='tab:blue')
+        sns.regplot(gdp,x=f'gdp_per_capita_{base_year}',y=f'ratio_hh_pop_{base_year}',ax=ax,
                     label=f'Linear regression (R$^2$={r2:.2f})',color='tab:blue')
-        ax.plot([-1],[0],ls='',alpha=0,label=f'(slope = {a:.2f})')
-        ax.set_xlabel('Population (inhab)')
-        ax.set_ylabel('Households (unit)')
+        # ax.set_xlabel('Population (inhab)')
+        # ax.set_ylabel('Households (unit)')
         ax.legend()
-        ax.set_title(base_year)
+        # ax.set_title(base_year)
         ax.set_ylim(bottom=0.)
-        ax.set_xlim(left=0.)
+        # ax.set_xlim(left=0.)
         plt.show()
+        
         
         # pop = get_population_data()
         # hoh = pd.read_excel(os.path.join('data','Households-States-2014-2023.xlsx'),sheet_name='Households',skipfooter=1).set_index('States').T
