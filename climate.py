@@ -24,6 +24,7 @@ from shapely.ops import unary_union
 from utils import (save_figure,
                    draw_state_map,
                    dict_name_code,
+                   dict_code_name,
                    blank_map,
                    dict_name_geom,
                    get_ssp_palette,
@@ -69,6 +70,20 @@ def get_cdd_data(threshold=26, source='iea', columns_format_name=True):
     if not columns_format_name:
         data = data.rename(columns=dict_name_code)
     return data
+
+
+def get_historical_temperature_data():
+        file = os.path.join('data','IEA_CMCC',"IEA_CMCC_Temperaturedailysubnationalbypopalldays.csv")
+        data = pd.read_csv(file,skiprows=9,encoding='latin-1',low_memory=False)
+        data = data[data['COUNTRY ISO3']=='IND']
+        # format state name
+        data['Territory'] = data['Territory'].str.replace('Orissa','Odisha').replace('Uttaranchal','Uttarakhand')
+        data = data[['Territory','Date','Temperature']]
+        data['Date'] = pd.to_datetime(data.Date, format='%Y-%m-%d')
+        data = data.set_index(['Date','Territory'])
+        data = data.unstack()
+        data.columns = data.columns.droplevel(0)
+        return data
 
 
 def add_cdd_data(base_year=2024, mean_period=10, threshold=26, source='iea', 
@@ -493,7 +508,13 @@ def main():
         pop.rio.write_crs("epsg:4326", inplace=True)
         pop_clipped = pop.copy().rio.clip([india_shape])
         
-        fig,ax = blank_map()
+        # fig,ax = blank_map()
+        
+        dict_states = dict_code_name.copy()
+        for k,v in dict_states.items():
+            dict_states[k] = None
+        fig,ax = draw_state_map(dict_states)
+        
         pop_clipped.plot(ax=ax, transform=ccrs.PlateCarree(), cmap=cmap, add_colorbar=False, norm=matplotlib.colors.LogNorm(),vmin=1e4)
         
         cbar_ax = fig.add_axes([0, 0, 0.1, 0.1])
@@ -506,6 +527,7 @@ def main():
         _ = plt.colorbar(mappable, cax=cbar_ax, label=cbar_label_var, extend='min', extendfrac=0.02)
         
         ax.set_title('')
+        plt.savefig(os.path.join('output','map_population.png'),bbox_inches='tight')
         plt.show()
             
     #%% Mise en forme des données et calcul des CDD, par état indien
@@ -594,7 +616,7 @@ def main():
             # moyenne des modèles
             if True:
                 fig,ax = plt.subplots(figsize=(5,5),dpi=300)
-                ax.plot(iea_data[state],color='k',label='IEA $\\times$ CMCC',zorder=5)
+                ax.plot(iea_data[state],color='k',label='Historical',zorder=5)
                 
                 for scenario in EXPERIMENTS_DICT.keys():
                     cdd_state_scenario = cdd_state[cdd_state.experiment==scenario]
@@ -616,11 +638,12 @@ def main():
                 ax.set_xlim(left=2015)
                 ax.legend()
                 ax.set_ylabel(f'CDD{threshold} (°C.days)')
+                plt.savefig(os.path.join('output','projection_states',f'projection_cdd{threshold}_{state}.png'), bbox_inches='tight')
                 plt.show()
     
     
     #%% cartes et graphes à l'échelle nationale pour illustration
-    if True:
+    if False:
         
         # cartes de températures (difference entre 2015-2035 et 2080-2100, SSP3-7.0)
         if True:
@@ -660,10 +683,11 @@ def main():
                 norm = matplotlib.colors.Normalize(vmin=-vmax, vmax=vmax)
                 mappable = matplotlib.cm.ScalarMappable(norm=norm, cmap=cmap)
                 
-                cbar_label_var = 'Mean annual temperature difference (°C)'
+                cbar_label_var = 'Mean annual temperature difference [2015-2035], [2080-2100] (°C)'
                 _ = plt.colorbar(mappable, cax=cbar_ax, label=cbar_label_var, extend='neither', extendfrac=0.02)
                 
                 ax.set_title(f"{mod.upper().replace('_','-')}")
+                plt.savefig(os.path.join('output',f'annual_difference_{experiment}_{mod}.png'), bbox_inches='tight')
                 plt.show()
             pass
         
@@ -695,6 +719,7 @@ def main():
             ax.set_xlim(left=2015)
             ax.legend()
             ax.set_ylabel(f'CDD{threshold} (°C.days)')
+            plt.savefig(os.path.join('output',f'projection_cdd{threshold}_india.png'), bbox_inches='tight')
             plt.show()
         
     
