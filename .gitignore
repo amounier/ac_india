@@ -3,7 +3,10 @@ output/
 data/CMIP6/
 data/temperature.parquet
 data/gpw-v4-population-count-rev11_totpop_15_min_nc/
+data/Indian_load_curve_all_states_2017-2025.xlsx
+data/Indian_load_curve_all_states_2017-2025.csv
 .cds*
+data/IEA_CMCC/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
