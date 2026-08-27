@@ -179,7 +179,7 @@ def main():
         # génération du latex
         if True:
             missing = missing_states_cdd.union(missing_states_gdp_pop)
-            for state in list(dict_name_geom.keys()):
+            for state in sorted(list(dict_name_geom.keys())):
                 if state in missing:
                     continue
                 

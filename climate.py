@@ -72,7 +72,7 @@ def get_cdd_data(threshold=26, source='iea', columns_format_name=True):
     return data
 
 
-def get_historical_temperature_data():
+def get_historical_daily_temperature_data():
         file = os.path.join('data','IEA_CMCC',"IEA_CMCC_Temperaturedailysubnationalbypopalldays.csv")
         data = pd.read_csv(file,skiprows=9,encoding='latin-1',low_memory=False)
         data = data[data['COUNTRY ISO3']=='IND']
