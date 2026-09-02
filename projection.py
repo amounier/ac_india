@@ -24,6 +24,11 @@ from socioeconomic import (add_gdp_data,
 from characterisation import global_function_exp_sigmoid
 
 
+def get_ac_projection():
+    data = pd.read_csv(os.path.join('data','AC_projection.csv'))
+    return data
+
+
 #%% ===========================================================================
 # script
 # =============================================================================
@@ -230,7 +235,7 @@ def main():
                 ax.legend()
                 ax.set_ylim(bottom=0.)
                 ax.set_ylabel('GDP per capita (rupees)')
-                ax.set_title(f'{test_state}')
+                ax.set_title(f'{test_state}')   
                 plt.savefig(os.path.join('output','projection_states',f'projection_gdp_per_capita_{test_state}.png'), bbox_inches='tight')
                 plt.show()
                 

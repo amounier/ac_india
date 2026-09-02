@@ -33,9 +33,9 @@ def get_ssp_palette(scenario):
 def get_ssp_name(scenario):
     # https://www.ipcc.ch/site/assets/uploads/2022/09/IPCC_AR6_WGI_VisualStyleGuide_2022.pdf
     ssp_name = {'ssp1_2_6': 'SSP1-2.6',
-                   'ssp2_4_5': 'SSP2-4.5',
-                   'ssp3_7_0': 'SSP3-7.0',
-                   'ssp5_8_5': 'SSP5-8.5'}
+                'ssp2_4_5': 'SSP2-4.5',
+                'ssp3_7_0': 'SSP3-7.0',
+                'ssp5_8_5': 'SSP5-8.5'}
     return ssp_name.get(scenario)
 
 
