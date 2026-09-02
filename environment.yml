@@ -17,3 +17,4 @@ dependencies:
   - shapely
   - openpyxl
   - fastparquet
+  - pwlf
