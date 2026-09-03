@@ -10,6 +10,7 @@ data/Indian_load_curve_all_states_2017-2025.csv
 data/hourly_consumption_projection/
 .cds*
 data/IEA_CMCC/
+*.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

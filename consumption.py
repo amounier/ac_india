@@ -59,9 +59,9 @@ def piecewise_linear(T, T0, C0, kh, kc):
 
 def compute_thermal_sensitivity(force=False):
     file_name = 'thermal_sensitivity.csv'
-    file_path = os.path.join('output',file_name)
+    file_path = os.path.join('data',file_name)
     
-    if file_name not in os.listdir('output') or force:
+    if file_name not in os.listdir('data') or force:
         daily_temperature = get_historical_daily_temperature_data()
         daily_consumption = get_historical_daily_consumption_data()
         
@@ -321,11 +321,14 @@ def main():
                 if state in SMALL_STATES:
                     continue 
                 
-                fig,ax = plt.subplots(figsize=(15,5),dpi=300)
-                ax.plot(hourly_consumption[state])
+                fig,ax = plt.subplots(figsize=(15,5),dpi=800)
+                ax.plot(hourly_consumption[state],color='tab:blue',lw=0.1)
                 ax.set_ylim(bottom=0.)
+                ax.set_xlim([pd.to_datetime(f'{y}-01-01') for y in [2017,2026]])
                 ax.set_ylabel('Electricity load (MW)')
                 ax.set_title(state)
+                os.makedirs('output/electricity_timeseries',exist_ok=True)
+                plt.savefig(os.path.join(f'output/electricity_timeseries/electricity_timeseries_{state}.png'), bbox_inches='tight')
                 plt.show()
                 plt.close()
                 
@@ -480,7 +483,7 @@ def main():
             
             if normalized:
                 df_weekly_factor = pd.DataFrame().from_dict(df_weekly_factor)
-                df_weekly_factor.to_csv(os.path.join('output','weekly_factor.csv'),index=False)
+                df_weekly_factor.to_csv(os.path.join('data','weekly_factor.csv'),index=False)
     
 #%%============================================================================
 # thermosensibilités
@@ -508,6 +511,7 @@ def main():
             sensitivity['gdp_per_capita'] = sensitivity['gdp']/sensitivity['pop']
             
             alpha,K,r2 = get_C_base_parameters(force=False)
+            print(f'alpha = {alpha:.3f}, K1 = {K:.3f} (R2 = {r2:.3f})')
             
             x_variable = 'gdp_per_capita'
             y_variable = 'C_base'
@@ -542,6 +546,7 @@ def main():
             sensitivity = sensitivity.reset_index()
             
             a,b,r2 = get_cooling_slope_parameters(force=False)
+            print(f'beta = {a:.3f}, K2 = {b:.3f} (R2 = {r2:.3f})')
             
             x_variable = 'ac_per_household_2021'
             y_variable = 'cooling_slope'
@@ -554,7 +559,7 @@ def main():
             # ax.set_yscale('log')
             # ax.set_xscale('log')
             ax.set_ylabel('Cooling slope (kWh.inhab$^{-1}$.°C$^{-1}$)')
-            ax.set_xlabel('AC equipment rate (ratio·)')
+            ax.set_xlabel('AC equipment rate (ratio)')
             ax.plot(x_hat,a*x_hat+b,label=f'Linear fit (R$^2$ = {r2:.2f})',color='k')
             ax.legend()
             
@@ -805,7 +810,7 @@ def main():
         daily_projection.to_parquet(os.path.join('data','consumption.parquet'))
 
     # sorties graphiques
-    if False:
+    if True:
         # consumption : TWh
         # consumption_per_capita : kWh.inhab-1
         daily_projection = pd.read_parquet(os.path.join('data','consumption.parquet')) 
@@ -849,7 +854,7 @@ def main():
         plt.show()
     
     # projections horaires
-    if True:
+    if False:
         # consumption : TWh
         daily_projection = pd.read_parquet(os.path.join('data','consumption.parquet')) 
         daily_projection = daily_projection.reset_index()
@@ -918,7 +923,40 @@ def main():
         
         if 'hourly_consumption.parquet' not in os.listdir('data'):
             hourly_projection.to_parquet(os.path.join('data','hourly_consumption.parquet'))
+
+#%% ===========================================================================
+# mise en page
+# =============================================================================
+    # latex des annnexes
+    if False:
+        daily_projection = pd.read_parquet(os.path.join('data','consumption.parquet')) 
+        daily_projection = daily_projection.reset_index()
+        daily_projection = daily_projection[daily_projection.date.dt.year>=2020]
+        daily_projection = daily_projection[daily_projection.date.dt.year<=2070]
         
+        # historical cosnumption (MWh)
+        daily_consumption = get_historical_daily_consumption_data()
+        daily_consumption = daily_consumption[[s for s in set(daily_projection.state) if s in daily_consumption.columns]]
+        annual_consumption = daily_consumption.groupby(daily_consumption.index.year).sum()
+        
+        daily_projection = daily_projection[daily_projection.state.isin(daily_consumption.columns)]
+        
+        states = sorted(list(daily_projection.state.unique()))
+        
+        for idx,state in enumerate(states):
+            
+            print('\\subsubsection{'+state+'}')
+            print()
+            print('\\begin{figure}[ht]')
+            print('\t\\centering')
+            print('\t\\includegraphics[height=0.24\\textheight]{figures/thermal_sensitivity/thermal_sensitivity_'+state+'.png}\\hfill')
+            print('\t\\includegraphics[height=0.24\\textheight]{figures/weekly_consumption/weekly_consumption_factor_'+state+'.png}')
+            print("\t\\caption{Consommations thermosensibles et hebdomadaires pour "+state+"}")
+            print('\\end{figure}')
+            print()
+            if idx%2 == 1:
+                print('\\clearpage')
+                print()
     tac = time.time()
     print(f'Done in {tac-tic:.2f}s.')
     
