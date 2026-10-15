@@ -381,9 +381,8 @@ def main():
                 #     plt.savefig(os.path.join(figs_folder,'{}.png'.format('{}_heating_cooling_rules'.format(self.name))),bbox_inches='tight')
                 plt.show()
                 
-                
         # graphe des courbes de charge hebdomadaires moyennes avec différence entre les saisons IMD ou Ritu
-        if True:
+        if False:
             # calendar = 'IMD'
             calendar = 'CEA'
             normalized = True
@@ -572,9 +571,11 @@ def main():
 # =============================================================================
     
     # projections journalières 
-    if False:
+    if True:
         # détermination des paramètres annuels 
         print('Détermination des paramètres annuels...')
+        
+        constant_climate = True
         
         # données thermosensibles
         gdp_data = get_gdp_data()
@@ -603,15 +604,19 @@ def main():
         # cooling_slope (f(tau_ac))
         a,_,_ = get_cooling_slope_parameters(force=False)
         
+        if constant_climate:
+            ac_equipment_rate_var = 'ac_equipment_rate_cst_climate'
+        else:
+            ac_equipment_rate_var = 'ac_equipment_rate'
+            
         def compute_cooling_slope(tau_ac, tau_ac_init, cooling_slope_init,a):
             if np.isnan(tau_ac) or np.isnan(tau_ac_init) or np.isnan(cooling_slope_init):
                 return np.nan
             return a * (tau_ac-tau_ac_init) + cooling_slope_init
-            # return cooling_slope_init # todo : pour analyse de sensibilité
         
         cooling_slope_dict = sensitivity.set_index('state')['cooling_slope'].to_dict()
         ac_rate_dict = add_ac_cooler_data(base_year=2021)['ac_per_household_2021'].to_dict()
-        annual_projection['cooling_slope'] = [compute_cooling_slope(tau_ac,ac_rate_dict.get(state,np.nan),cooling_slope_dict.get(state,np.nan),a) for tau_ac,state in zip(annual_projection.ac_equipment_rate,annual_projection.state)]
+        annual_projection['cooling_slope'] = [compute_cooling_slope(tau_ac,ac_rate_dict.get(state,np.nan),cooling_slope_dict.get(state,np.nan),a) for tau_ac,state in zip(annual_projection[ac_equipment_rate_var],annual_projection.state)]
         
         # test graphique
         if False:
@@ -635,7 +640,6 @@ def main():
             if np.isnan(GDP_per_capita) or np.isnan(GDP_per_capita_init) or np.isnan(C_base_init):
                 return np.nan
             return (GDP_per_capita/GDP_per_capita_init)**alpha*C_base_init
-            # return C_base_init # todo : pour analyse de sensibilité
         
         C_base_dict = sensitivity.set_index('state')['C_base'].to_dict()
         gdp_cap_dict = sensitivity.set_index('state')['gdp_per_capita'].to_dict()
@@ -678,7 +682,6 @@ def main():
         hist_years = list(range(historical_temperature.index[0].year,historical_temperature.index[-1].year+1))
         overlapped_years = sorted(list(set(proj_years).intersection(set(hist_years))))
         
-        # déterminations des paramètres de recalage
         calibration_file = 'temperature_calibration.csv'
         
         if calibration_file not in os.listdir('data'):
@@ -729,6 +732,62 @@ def main():
         daily_projection = daily_projection.join(df_calibration, on=['state','experiment','model'])
         daily_projection['calibrated_temperature'] = daily_projection.temperature * daily_projection.multiplier + daily_projection.shifter
         
+        # enlever la tendance des scénarios climatiques (0 en 2020)
+        if constant_climate:
+            daily_projection = daily_projection.reset_index().set_index('date')
+            
+            climate_trends_file = 'temperature_trends.csv'
+            
+            if climate_trends_file not in os.listdir('data'):
+                
+                df_trends = {'state':[],
+                             'experiment':[],
+                             'model':[],
+                             'trend':[],}
+                
+                for state in tqdm.tqdm(daily_projection.state.unique()):
+                    for experiment, models in EXPERIMENTS_DICT.items():
+                        for model in models:
+                            proj_temp = daily_projection[(daily_projection.index.year.isin(list(range(2020,2101))))&
+                                                         (daily_projection.experiment==experiment)&
+                                                         (daily_projection.model==model)&
+                                                         (daily_projection.state==state)][['calibrated_temperature']]
+                            a,b = np.polyfit(np.arange(len(proj_temp)).T,proj_temp.calibrated_temperature.values,deg=1)
+                            
+                            df_trends['state'].append(state)
+                            df_trends['experiment'].append(experiment)
+                            df_trends['model'].append(model)
+                            df_trends['trend'].append(a)
+                            
+                            # todo: plot exemple
+                            if state == 'Delhi' and experiment == 'ssp3_7_0' and model == 'gfdl_esm4':
+                                proj_temp['constant_temperature'] = [t-a*i for i,t in enumerate(proj_temp.calibrated_temperature.values)]
+                                proj_temp['trend_temperature'] = [a*i for i,t in enumerate(proj_temp.calibrated_temperature.values)]
+                                annual_proj_temp = proj_temp.groupby(proj_temp.index.year).mean()
+                                fig,ax = plt.subplots(figsize=(5,5),dpi=300)
+                                ax.plot(annual_proj_temp.index,annual_proj_temp.calibrated_temperature,label='Temperature',color='k',ls=':')
+                                ax.plot(annual_proj_temp.index,annual_proj_temp.trend_temperature+b,color='k',label=f'Trend ({a:+.2e} °C.day$^{{-1}}$)')
+                                ax.plot(annual_proj_temp.index,annual_proj_temp.constant_temperature,color='tab:blue',label='Detrended temperature')
+                                ax.set_ylabel('Mean annual temperature (°C)')
+                                ax.legend()
+                                ax.set_xlim([2020,2070])
+                                ax.set_title(f"{state} - {get_ssp_name(experiment)} ({model.upper().replace('_','-')})")
+                                plt.savefig(os.path.join('output',f'detrended_{state}_{experiment}_{model}'), bbox_inches='tight')
+                                plt.show()
+                                
+                                
+                df_trends = pd.DataFrame().from_dict(df_trends)
+                df_trends.to_csv(os.path.join('data',climate_trends_file),index=False)
+            
+            else:
+                df_trends = pd.read_csv(os.path.join('data',climate_trends_file))
+                df_trends = df_trends.set_index(['state','experiment','model'])
+                
+            daily_projection = daily_projection.reset_index().set_index(['date','state','experiment','model'])
+            daily_projection = daily_projection.join(df_trends, on=['state','experiment','model'])
+            
+            daily_projection['days_since'] = (daily_projection.index.get_level_values('date') - pd.to_datetime('2020-01-01')).days
+            daily_projection['constant_temperature'] = [t-a*i for t,a,i in zip(daily_projection.calibrated_temperature.values,daily_projection.trend.values,daily_projection.days_since.values)]
         
         # calcul des consommations journalières par habitant
         daily_projection = daily_projection.join(annual_projection)
@@ -737,8 +796,13 @@ def main():
         def piecewise_linear_array(T, T0, C0, kh, kc):
             T, T0, C0, kh, kc = np.broadcast_arrays(T, T0, C0, kh, kc)
             return np.where(T < T0, kh * (T - T0) + C0, kc * (T - T0) + C0)
-
-        daily_projection['consumption_per_capita'] = piecewise_linear_array(daily_projection.calibrated_temperature, 
+        
+        if constant_climate:
+            temperature_var = 'constant_temperature'
+        else:
+            temperature_var = 'calibrated_temperature'
+            
+        daily_projection['consumption_per_capita'] = piecewise_linear_array(daily_projection[temperature_var], 
                                                                             daily_projection.T_base,
                                                                             daily_projection.C_base, 
                                                                             daily_projection.heating_slope, 
@@ -807,13 +871,18 @@ def main():
         daily_projection = daily_projection[~daily_projection.consumption.isna()]
         daily_projection = daily_projection[daily_projection.index.get_level_values('date').year<=2071]
         daily_projection = daily_projection[['temperature','calibrated_temperature','population','consumption']]
-        daily_projection.to_parquet(os.path.join('data','consumption.parquet'))
+        
+        if constant_climate:
+            daily_projection.to_parquet(os.path.join('data','consumption_cst_climate.parquet'))
+        else:
+            daily_projection.to_parquet(os.path.join('data','consumption.parquet'))
 
     # sorties graphiques
     if True:
         # consumption : TWh
         # consumption_per_capita : kWh.inhab-1
-        daily_projection = pd.read_parquet(os.path.join('data','consumption.parquet')) 
+        
+        # daily_projection = pd.read_parquet(os.path.join('data','consumption.parquet')) 
         daily_projection = daily_projection.reset_index()
         daily_projection = daily_projection[daily_projection.date.dt.year>=2020]
         daily_projection = daily_projection[daily_projection.date.dt.year<=2070]
@@ -846,22 +915,35 @@ def main():
                             daily_projection_exp_mean_mod.consumption-daily_projection_exp_std_mod.consumption,
                             alpha=0.2,color=get_ssp_palette(experiment))
             
-        ax.set_ylim(bottom=0.)
+        ax.set_ylim(bottom=0.,top=10300)
         ax.set_xlim(left=2017)
         ax.legend()
-        ax.set_ylabel('Annual electricity consumption (TWh)')
-        plt.savefig(os.path.join('output','projection_electricity_consumption_india.png'), bbox_inches='tight')
-        plt.show()
+        
+        if constant_climate:
+            ax.set_title('No climate effects')
+            ax.set_ylabel('Annual electricity consumption (TWh)')
+            plt.savefig(os.path.join('output','projection_electricity_consumption_india_cst_climate.png'), bbox_inches='tight')
+            plt.show()
+        else:
+            ax.set_title(' ')
+            ax.set_ylabel('Annual electricity consumption (TWh)')
+            plt.savefig(os.path.join('output','projection_electricity_consumption_india.png'), bbox_inches='tight')
+            plt.show()
     
     # projections horaires
     if False:
+        constant_climate = True
+        
         # consumption : TWh
-        daily_projection = pd.read_parquet(os.path.join('data','consumption.parquet')) 
+        if constant_climate:
+            daily_projection = pd.read_parquet(os.path.join('data','consumption_cst_climate.parquet')) 
+        else:
+            daily_projection = pd.read_parquet(os.path.join('data','consumption.parquet')) 
         daily_projection = daily_projection.reset_index()
         daily_projection = daily_projection[daily_projection.date.dt.year>=2020]
         daily_projection = daily_projection[['date','state','experiment','model','consumption']]
             
-        weekly_factor = pd.read_csv(os.path.join('output','weekly_factor.csv'))
+        weekly_factor = pd.read_csv(os.path.join('data','weekly_factor.csv'))
         calendar = 'CEA'
         
         if calendar=='IMD':
@@ -879,10 +961,18 @@ def main():
             
         month_to_season = {m:k for k,v in seasons_dict.items() for m in v}
             
-        output_folder = os.path.join('data','hourly_consumption_projection')
-        os.makedirs(output_folder,exist_ok=True)
+        
     
         hourly_projection = None
+        
+        if constant_climate:
+            hourly_projection_file = 'hourly_consumption_cst_climate.parquet'
+            output_folder = os.path.join('data','hourly_consumption_projection_cst_climate')
+            os.makedirs(output_folder,exist_ok=True)
+        else:
+            hourly_projection_file = 'hourly_consumption.parquet'
+            output_folder = os.path.join('data','hourly_consumption_projection')
+            os.makedirs(output_folder,exist_ok=True)
         
         for state in tqdm.tqdm(daily_projection.state.unique()):
             weekly_factor_state = weekly_factor[weekly_factor.state==state].set_index(['season','dow','hour'])[['intraday_factor']]
@@ -891,7 +981,7 @@ def main():
                 for model in models:
                     output_file = f'hourly_consumption__2020_2070__{state}__{experiment}__{model}.csv'
                     
-                    if output_file not in os.listdir(output_folder) and 'hourly_consumption.parquet' not in os.listdir('data'):
+                    if output_file not in os.listdir(output_folder) and hourly_projection_file not in os.listdir('data'):
                         filtered_daily = daily_projection[(daily_projection.state==state)&
                                                           (daily_projection.experiment==experiment)&
                                                           (daily_projection.model==model)].set_index('date')[['consumption']]
@@ -921,8 +1011,8 @@ def main():
                         else:
                             hourly_projection = pd.concat([hourly_projection,filtered_hourly])
         
-        if 'hourly_consumption.parquet' not in os.listdir('data'):
-            hourly_projection.to_parquet(os.path.join('data','hourly_consumption.parquet'))
+        if hourly_projection_file not in os.listdir('data'):
+            hourly_projection.to_parquet(os.path.join('data',hourly_projection_file))
 
 #%% ===========================================================================
 # mise en page

@@ -247,7 +247,7 @@ def main():
         plt.show()
         
     #%% Caractérisation des refroidisseurs d'air
-    if True:
+    if False:
         os.makedirs('output/cooler_equipment',exist_ok=True)
         
         year = 2021

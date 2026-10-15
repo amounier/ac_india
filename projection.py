@@ -78,6 +78,7 @@ def main():
         projection['gdp_per_capita'] = proj_gdp_per_capita
         projection['population'] = proj_pop
         
+        
         cdd_projection_rolling = None
         for state in tqdm.tqdm(set(projection.state)):
             for experiment in set(projection.experiment):
@@ -87,6 +88,7 @@ def main():
                 for model in set(cdd_experiment.model):
                     cdd = cdd_experiment[cdd_experiment.model==model]
                     cdd[f'cdd{cdd_threshold}_rolling'] = cdd[f'cdd{cdd_threshold}'].rolling(10,center=True).mean()
+                    cdd[f'cdd{cdd_threshold}_cst'] = [cdd[cdd.year.isin(list(range(2015,2025)))][f'cdd{cdd_threshold}'].mean()]*len(cdd)
                     cdd['gdp_per_capita_rolling'] = cdd['gdp_per_capita'].rolling(10,center=True).mean()
                     cdd['population_rolling'] = cdd['population'].rolling(10,center=True).mean()
                     
@@ -106,14 +108,19 @@ def main():
         for cdd,gdp_per_cap in tqdm.tqdm(zip(projection[f'cdd{cdd_threshold}_rolling'],projection.gdp_per_capita_rolling),total=len(projection)):
             ac_rate = global_function_exp_sigmoid((cdd,gdp_per_cap),alpha,beta,gamma,delta)
             proj_ac_rate.append(ac_rate)
-            
         projection['ac_equipment_rate'] = proj_ac_rate
         
-        ref_year = 2021
-        ref_ac_rate = add_ac_cooler_data(base_year=ref_year, base_data=None)
+        proj_ac_rate_cst_climate = []
+        for cdd,gdp_per_cap in tqdm.tqdm(zip(projection[f'cdd{cdd_threshold}_cst'],projection.gdp_per_capita_rolling),total=len(projection)):
+            ac_rate = global_function_exp_sigmoid((cdd,gdp_per_cap),alpha,beta,gamma,delta)
+            proj_ac_rate_cst_climate.append(ac_rate)  
+        projection['ac_equipment_rate_cst_climate'] = proj_ac_rate_cst_climate
+        
+        ref_year_ac = 2021
+        ref_ac_rate = add_ac_cooler_data(base_year=ref_year_ac, base_data=None)
         ref_ac_rate = add_households_data(2022,base_data=ref_ac_rate)
-        ref_ac_rate_INDIA = (ref_ac_rate[f'ac_per_household_{ref_year}']*ref_ac_rate['households_2022']).sum()/ref_ac_rate['households_2022'].sum()
-        ref_ac_rate = ref_ac_rate[f'ac_per_household_{ref_year}'].to_dict()
+        ref_ac_rate_INDIA = (ref_ac_rate[f'ac_per_household_{ref_year_ac}']*ref_ac_rate['households_2022']).sum()/ref_ac_rate['households_2022'].sum()
+        ref_ac_rate = ref_ac_rate[f'ac_per_household_{ref_year_ac}'].to_dict()
         
         base_year_pop = 2023
         pop_hh = add_households_data(base_year_pop)
@@ -126,6 +133,7 @@ def main():
         
         nb_ac_per_equiped_household = 1.23
         projection['ac_systems'] = projection.households_rolling * projection.ac_equipment_rate * nb_ac_per_equiped_household
+        projection['ac_systems_cst_climate'] = projection.households_rolling * projection.ac_equipment_rate_cst_climate * nb_ac_per_equiped_household
         
         print()
         print(projection)
@@ -170,7 +178,7 @@ def main():
             plt.show()
             
             fig,ax = plt.subplots(dpi=300,figsize=(5,5))
-            ax.plot([ref_year],[ref_ac_rate.get(test_state)],ls='',marker='o',color='k',zorder=5,label='Survey')
+            ax.plot([ref_year_ac],[ref_ac_rate.get(test_state)],ls='',marker='o',color='k',zorder=5,label='Survey')
             ax.plot(cdd_test.year, cdd_test['ac_equipment_rate'],label='Model')
             # ax.plot(cdd_test.year, cdd_test[f'cdd{cdd_threshold}'].rolling(10,center=True).mean(),label='3')
             ax.legend()
@@ -182,7 +190,7 @@ def main():
         #%% Graphes propres
         
         # génération du latex
-        if True:
+        if False:
             missing = missing_states_cdd.union(missing_states_gdp_pop)
             for state in sorted(list(dict_name_geom.keys())):
                 if state in missing:
@@ -216,7 +224,7 @@ def main():
                 state_projection = projection[(projection.state==test_state)&(projection.year.isin(years))]
                 
                 fig,ax = plt.subplots(dpi=300,figsize=(5,5))
-                # ax.plot([ref_year],[ref_ac_rate.get(test_state)],ls='',marker='o',color='k',zorder=5,label='Survey')
+                # ax.plot([ref_year_ac],[ref_ac_rate.get(test_state)],ls='',marker='o',color='k',zorder=5,label='Survey')
                 
                 for idx,experiment in enumerate(EXPERIMENTS_DICT.keys()):
                     state_exp = state_projection[state_projection.experiment==experiment]
@@ -245,7 +253,7 @@ def main():
                 state_projection = projection[(projection.state==test_state)&(projection.year.isin(years))]
                 
                 # fig,ax = plt.subplots(dpi=300,figsize=(5,5))
-                # # ax.plot([ref_year],[ref_ac_rate.get(test_state)],ls='',marker='o',color='k',zorder=5,label='Survey')
+                # # ax.plot([ref_year_ac],[ref_ac_rate.get(test_state)],ls='',marker='o',color='k',zorder=5,label='Survey')
                 
                 # for idx,experiment in enumerate(EXPERIMENTS_DICT.keys()):
                 #     state_exp = state_projection[state_projection.experiment==experiment]
@@ -274,7 +282,7 @@ def main():
                 state_projection = projection[(projection.state==test_state)&(projection.year.isin(years))]
                 
                 fig,ax = plt.subplots(dpi=300,figsize=(5,5))
-                ax.plot([ref_year],[ref_ac_rate.get(test_state)],ls='',marker='o',color='k',zorder=5,label='Survey')
+                ax.plot([ref_year_ac],[ref_ac_rate.get(test_state)],ls='',marker='o',color='k',zorder=5,label='Survey')
                 
                 for idx,experiment in enumerate(EXPERIMENTS_DICT.keys()):
                     state_exp = state_projection[state_projection.experiment==experiment]
@@ -316,7 +324,7 @@ def main():
                 plt.show()
                 
         # graphes nationaux
-        if False:
+        if True:
             
             # graphe évolution taux équipement national
             years = list(range(2020,2071,10))
@@ -324,7 +332,7 @@ def main():
             state_projection = projection[projection.year.isin(years)]
             
             fig,ax = plt.subplots(dpi=300,figsize=(5,5))
-            ax.plot([ref_year],[ref_ac_rate_INDIA],ls='',marker='o',color='k',zorder=5,label='Survey')
+            ax.plot([ref_year_ac],[ref_ac_rate_INDIA],ls='',marker='o',color='k',zorder=5,label='Survey')
             
             for idx,experiment in enumerate(EXPERIMENTS_DICT.keys()):
                 state_exp = state_projection[state_projection.experiment==experiment].dropna()
@@ -338,15 +346,52 @@ def main():
                 mean_ac_rate = sum_exp[['year','ac_equipment_rate']].groupby('year').mean()
                 std_ac_rate = sum_exp[['year','ac_equipment_rate']].groupby('year').std()
                 
+                print(f'{experiment} : {mean_ac_rate.values.T[0][-1]*100:.0f}%')
+                
                 ax.errorbar(mean_ac_rate.index+(idx-2)/2,mean_ac_rate.values.T[0],std_ac_rate.values.T[0]*2,
                             capsize=3,color=get_ssp_palette(experiment),
                             label=get_ssp_name(experiment),ls=':',marker='o',mec='w')
             
-            ax.legend()
+            ax.legend(loc='upper left')
             ax.set_ylim(bottom=0.,top=1.)
             ax.set_ylabel('AC equipment rate (ratio)')
-            ax.set_title('')
+            ax.set_title(' ')
             plt.savefig(os.path.join('output','projection_ac_rate_india.png'), bbox_inches='tight')
+            plt.show()
+            
+            print()
+            
+            # graphe évolution taux équipement national (sans effets du climat)
+            years = list(range(2020,2071,10))
+            
+            state_projection = projection[projection.year.isin(years)]
+            
+            fig,ax = plt.subplots(dpi=300,figsize=(5,5))
+            ax.plot([ref_year_ac],[ref_ac_rate_INDIA],ls='',marker='o',color='k',zorder=5,label='Survey')
+            
+            for idx,experiment in enumerate(EXPERIMENTS_DICT.keys()):
+                state_exp = state_projection[state_projection.experiment==experiment].dropna()
+                state_exp['nb_equiped_households_cst_climate'] = state_exp['ac_equipment_rate_cst_climate'] * state_exp['households_rolling']
+                sum_exp = state_exp[['year','model','nb_equiped_households_cst_climate','households_rolling']].groupby(['year','model']).sum()
+                sum_exp['ac_equipment_rate_cst_climate'] = sum_exp.nb_equiped_households_cst_climate/sum_exp.households_rolling
+                sum_exp['ac_systems_cst_climate'] = sum_exp.nb_equiped_households_cst_climate * nb_ac_per_equiped_household
+                
+                sum_exp = sum_exp.reset_index()
+                
+                mean_ac_rate = sum_exp[['year','ac_equipment_rate_cst_climate']].groupby('year').mean()
+                std_ac_rate = sum_exp[['year','ac_equipment_rate_cst_climate']].groupby('year').std()
+                
+                print(f'{experiment} : {mean_ac_rate.values.T[0][-1]*100:.0f}%')
+                
+                ax.errorbar(mean_ac_rate.index+(idx-2)/2,mean_ac_rate.values.T[0],std_ac_rate.values.T[0]*2,
+                            capsize=3,color=get_ssp_palette(experiment),
+                            label=get_ssp_name(experiment),ls=':',marker='o',mec='w')
+            
+            ax.legend(loc='upper left')
+            ax.set_ylim(bottom=0.,top=1.)
+            ax.set_ylabel('AC equipment rate (ratio)')
+            ax.set_title('No climate effects')
+            plt.savefig(os.path.join('output','projection_ac_rate_india_cst_climate.png'), bbox_inches='tight')
             plt.show()
             
             # graphe évolution nombre de systèmes INDIA
@@ -354,32 +399,32 @@ def main():
             
             state_projection = projection[projection.year.isin(years)]
             
-            fig,ax = plt.subplots(dpi=300,figsize=(5,5))
-            # ax.plot([ref_year],[ref_ac_rate_INDIA],ls='',marker='o',color='k',zorder=5,label='Survey')
+            # fig,ax = plt.subplots(dpi=300,figsize=(5,5))
+            # # ax.plot([ref_year_ac],[ref_ac_rate_INDIA],ls='',marker='o',color='k',zorder=5,label='Survey')
             
-            for idx,experiment in enumerate(EXPERIMENTS_DICT.keys()):
-                state_exp = state_projection[state_projection.experiment==experiment].dropna()
-                state_exp['nb_equiped_households'] = state_exp['ac_equipment_rate'] * state_exp['households_rolling']
-                sum_exp = state_exp[['year','model','nb_equiped_households','households_rolling']].groupby(['year','model']).sum()
-                sum_exp['ac_equipment_rate'] = sum_exp.nb_equiped_households/sum_exp.households_rolling
-                sum_exp['ac_systems'] = sum_exp.nb_equiped_households * nb_ac_per_equiped_household
+            # for idx,experiment in enumerate(EXPERIMENTS_DICT.keys()):
+            #     state_exp = state_projection[state_projection.experiment==experiment].dropna()
+            #     state_exp['nb_equiped_households'] = state_exp['ac_equipment_rate'] * state_exp['households_rolling']
+            #     sum_exp = state_exp[['year','model','nb_equiped_households','households_rolling']].groupby(['year','model']).sum()
+            #     sum_exp['ac_equipment_rate'] = sum_exp.nb_equiped_households/sum_exp.households_rolling
+            #     sum_exp['ac_systems'] = sum_exp.nb_equiped_households * nb_ac_per_equiped_household
                 
-                sum_exp = sum_exp.reset_index()
+            #     sum_exp = sum_exp.reset_index()
                 
-                mean_ac_rate = sum_exp[['year','ac_systems']].groupby('year').mean()
-                std_ac_rate = sum_exp[['year','ac_systems']].groupby('year').std()
+            #     mean_ac_rate = sum_exp[['year','ac_systems']].groupby('year').mean()
+            #     std_ac_rate = sum_exp[['year','ac_systems']].groupby('year').std()
                 
-                ax.errorbar(mean_ac_rate.index+(idx-2)/2,mean_ac_rate.values.T[0],std_ac_rate.values.T[0]*2,
-                            capsize=3,color=get_ssp_palette(experiment),
-                            label=get_ssp_name(experiment),ls=':',marker='o',mec='w')
+            #     ax.errorbar(mean_ac_rate.index+(idx-2)/2,mean_ac_rate.values.T[0],std_ac_rate.values.T[0]*2,
+            #                 capsize=3,color=get_ssp_palette(experiment),
+            #                 label=get_ssp_name(experiment),ls=':',marker='o',mec='w')
             
-            ax.legend()
-            ax.set_ylim(bottom=0.)
-            ax.set_ylabel('AC systems (unit)')
-            ax.set_title('')
-            plt.savefig(os.path.join('output','projection_ac_systems_india.png'), bbox_inches='tight')
+            # ax.legend()
+            # ax.set_ylim(bottom=0.)
+            # ax.set_ylabel('AC systems (unit)')
+            # ax.set_title('')
+            # plt.savefig(os.path.join('output','projection_ac_systems_india.png'), bbox_inches='tight')
             
-            plt.show()
+            # plt.show()
                 
         
     

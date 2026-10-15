@@ -1,0 +1,601 @@
+state,experiment,model,trend
+Chhattisgarh,ssp1_2_6,cmcc_esm2,3.5551743550209426e-05
+Chhattisgarh,ssp1_2_6,iitm_esm,1.028270438608077e-05
+Chhattisgarh,ssp1_2_6,hadgem3_gc31_mm,6.679867943779579e-05
+Chhattisgarh,ssp1_2_6,miroc6,1.42405620437773e-05
+Chhattisgarh,ssp1_2_6,cnrm_cm6_1,3.681900656491476e-05
+Chhattisgarh,ssp1_2_6,gfdl_esm4,7.165923314208097e-06
+Chhattisgarh,ssp2_4_5,cmcc_esm2,7.931065608205351e-05
+Chhattisgarh,ssp2_4_5,iitm_esm,4.393065108164238e-05
+Chhattisgarh,ssp2_4_5,hadgem3_gc31_ll,8.340103822306376e-05
+Chhattisgarh,ssp2_4_5,miroc6,4.6167160288613634e-05
+Chhattisgarh,ssp2_4_5,cnrm_cm6_1,8.159941151820221e-05
+Chhattisgarh,ssp2_4_5,gfdl_esm4,4.0489170716316996e-05
+Chhattisgarh,ssp3_7_0,cmcc_cm2_sr5,8.778614918765644e-05
+Chhattisgarh,ssp3_7_0,iitm_esm,7.248323114958048e-05
+Chhattisgarh,ssp3_7_0,canesm5,0.0001258451920717904
+Chhattisgarh,ssp3_7_0,miroc6,6.425143227606002e-05
+Chhattisgarh,ssp3_7_0,cnrm_cm6_1,0.00011687908505479893
+Chhattisgarh,ssp3_7_0,gfdl_esm4,8.463688639443641e-05
+Chhattisgarh,ssp5_8_5,cmcc_esm2,0.00011769203039560446
+Chhattisgarh,ssp5_8_5,iitm_esm,0.00010787244837895682
+Chhattisgarh,ssp5_8_5,hadgem3_gc31_mm,0.00023726719551393823
+Chhattisgarh,ssp5_8_5,canesm5,0.00015810395137364852
+Chhattisgarh,ssp5_8_5,miroc6,9.119379401863088e-05
+Chhattisgarh,ssp5_8_5,cnrm_cm6_1,0.00018987338176728195
+Chhattisgarh,ssp5_8_5,gfdl_esm4,0.00011684679194417704
+Delhi,ssp1_2_6,cmcc_esm2,7.10610836473245e-05
+Delhi,ssp1_2_6,iitm_esm,6.5072805883685735e-06
+Delhi,ssp1_2_6,hadgem3_gc31_mm,7.242386632619671e-05
+Delhi,ssp1_2_6,miroc6,2.8659422373495938e-05
+Delhi,ssp1_2_6,cnrm_cm6_1,4.704582425796694e-05
+Delhi,ssp1_2_6,gfdl_esm4,2.201413360049152e-05
+Delhi,ssp2_4_5,cmcc_esm2,0.00010296019306719791
+Delhi,ssp2_4_5,iitm_esm,6.021933841235924e-05
+Delhi,ssp2_4_5,hadgem3_gc31_ll,0.00010922255723679573
+Delhi,ssp2_4_5,miroc6,6.424317966190802e-05
+Delhi,ssp2_4_5,cnrm_cm6_1,0.00010885817819260444
+Delhi,ssp2_4_5,gfdl_esm4,6.168343191259746e-05
+Delhi,ssp3_7_0,cmcc_cm2_sr5,0.00010166236334927918
+Delhi,ssp3_7_0,iitm_esm,9.830352430037458e-05
+Delhi,ssp3_7_0,canesm5,0.00018569637723275808
+Delhi,ssp3_7_0,miroc6,7.906469585690552e-05
+Delhi,ssp3_7_0,cnrm_cm6_1,0.00013308573738287619
+Delhi,ssp3_7_0,gfdl_esm4,0.00010476480144092277
+Delhi,ssp5_8_5,cmcc_esm2,0.00016365746704681414
+Delhi,ssp5_8_5,iitm_esm,0.00013797921914205903
+Delhi,ssp5_8_5,hadgem3_gc31_mm,0.0002475017898416666
+Delhi,ssp5_8_5,canesm5,0.00021041570290785658
+Delhi,ssp5_8_5,miroc6,0.00013374700834366805
+Delhi,ssp5_8_5,cnrm_cm6_1,0.00021200487910292876
+Delhi,ssp5_8_5,gfdl_esm4,0.0001433531549468723
+Haryana,ssp1_2_6,cmcc_esm2,6.450763427193394e-05
+Haryana,ssp1_2_6,iitm_esm,6.307482476889851e-06
+Haryana,ssp1_2_6,hadgem3_gc31_mm,6.6504809015214e-05
+Haryana,ssp1_2_6,miroc6,3.105521324659064e-05
+Haryana,ssp1_2_6,cnrm_cm6_1,4.625605108325607e-05
+Haryana,ssp1_2_6,gfdl_esm4,2.1383623757088615e-05
+Haryana,ssp2_4_5,cmcc_esm2,0.00010696912409519331
+Haryana,ssp2_4_5,iitm_esm,5.83703770949703e-05
+Haryana,ssp2_4_5,hadgem3_gc31_ll,0.00010408530631227134
+Haryana,ssp2_4_5,miroc6,5.99457010821954e-05
+Haryana,ssp2_4_5,cnrm_cm6_1,0.00010459436262170783
+Haryana,ssp2_4_5,gfdl_esm4,6.064037092577269e-05
+Haryana,ssp3_7_0,cmcc_cm2_sr5,9.542519517978767e-05
+Haryana,ssp3_7_0,iitm_esm,9.52852345186145e-05
+Haryana,ssp3_7_0,canesm5,0.00017999479652239546
+Haryana,ssp3_7_0,miroc6,7.602343602063053e-05
+Haryana,ssp3_7_0,cnrm_cm6_1,0.00013550793045773667
+Haryana,ssp3_7_0,gfdl_esm4,0.00010197207845349246
+Haryana,ssp5_8_5,cmcc_esm2,0.0001635160520041742
+Haryana,ssp5_8_5,iitm_esm,0.00013374273555517182
+Haryana,ssp5_8_5,hadgem3_gc31_mm,0.00023809683712204375
+Haryana,ssp5_8_5,canesm5,0.00020395514546061683
+Haryana,ssp5_8_5,miroc6,0.0001373791232245536
+Haryana,ssp5_8_5,cnrm_cm6_1,0.00021057109506262075
+Haryana,ssp5_8_5,gfdl_esm4,0.0001385381016684276
+Himachal Pradesh,ssp1_2_6,cmcc_esm2,4.899399167481027e-05
+Himachal Pradesh,ssp1_2_6,iitm_esm,-3.0178349016044537e-06
+Himachal Pradesh,ssp1_2_6,hadgem3_gc31_mm,5.7057326973797436e-05
+Himachal Pradesh,ssp1_2_6,miroc6,3.1102659094634055e-05
+Himachal Pradesh,ssp1_2_6,cnrm_cm6_1,3.2448065413865146e-05
+Himachal Pradesh,ssp1_2_6,gfdl_esm4,1.4727848319236783e-05
+Himachal Pradesh,ssp2_4_5,cmcc_esm2,8.040779065152765e-05
+Himachal Pradesh,ssp2_4_5,iitm_esm,4.313488153498942e-05
+Himachal Pradesh,ssp2_4_5,hadgem3_gc31_ll,7.243081762450034e-05
+Himachal Pradesh,ssp2_4_5,miroc6,4.8449366441188086e-05
+Himachal Pradesh,ssp2_4_5,cnrm_cm6_1,8.81184260068309e-05
+Himachal Pradesh,ssp2_4_5,gfdl_esm4,5.745190955186577e-05
+Himachal Pradesh,ssp3_7_0,cmcc_cm2_sr5,8.24747592061925e-05
+Himachal Pradesh,ssp3_7_0,iitm_esm,8.094404753855818e-05
+Himachal Pradesh,ssp3_7_0,canesm5,0.00015306415330092708
+Himachal Pradesh,ssp3_7_0,miroc6,6.325308574016545e-05
+Himachal Pradesh,ssp3_7_0,cnrm_cm6_1,0.0001324473879302485
+Himachal Pradesh,ssp3_7_0,gfdl_esm4,9.728195823802187e-05
+Himachal Pradesh,ssp5_8_5,cmcc_esm2,0.00012213274435520928
+Himachal Pradesh,ssp5_8_5,iitm_esm,0.00010707463599106055
+Himachal Pradesh,ssp5_8_5,hadgem3_gc31_mm,0.00022037883457064506
+Himachal Pradesh,ssp5_8_5,canesm5,0.0001705136139588713
+Himachal Pradesh,ssp5_8_5,miroc6,0.00012094937125872836
+Himachal Pradesh,ssp5_8_5,cnrm_cm6_1,0.00019500756797968786
+Himachal Pradesh,ssp5_8_5,gfdl_esm4,0.00011133772068356848
+Jharkhand,ssp1_2_6,cmcc_esm2,4.581868169320544e-05
+Jharkhand,ssp1_2_6,iitm_esm,9.673566589045047e-06
+Jharkhand,ssp1_2_6,hadgem3_gc31_mm,6.415349773038263e-05
+Jharkhand,ssp1_2_6,miroc6,1.9269787485705833e-05
+Jharkhand,ssp1_2_6,cnrm_cm6_1,3.483255730284498e-05
+Jharkhand,ssp1_2_6,gfdl_esm4,4.037554906885183e-06
+Jharkhand,ssp2_4_5,cmcc_esm2,9.105233003973809e-05
+Jharkhand,ssp2_4_5,iitm_esm,4.2191297906017986e-05
+Jharkhand,ssp2_4_5,hadgem3_gc31_ll,9.230882323302125e-05
+Jharkhand,ssp2_4_5,miroc6,4.6219152398710756e-05
+Jharkhand,ssp2_4_5,cnrm_cm6_1,8.369664787265493e-05
+Jharkhand,ssp2_4_5,gfdl_esm4,3.985632441938581e-05
+Jharkhand,ssp3_7_0,cmcc_cm2_sr5,8.919880938002877e-05
+Jharkhand,ssp3_7_0,iitm_esm,5.937753130071967e-05
+Jharkhand,ssp3_7_0,canesm5,0.00013490005177734174
+Jharkhand,ssp3_7_0,miroc6,5.208923962562694e-05
+Jharkhand,ssp3_7_0,cnrm_cm6_1,0.00011704251905822798
+Jharkhand,ssp3_7_0,gfdl_esm4,8.46585169381597e-05
+Jharkhand,ssp5_8_5,cmcc_esm2,0.00011990194600073023
+Jharkhand,ssp5_8_5,iitm_esm,9.83358325536789e-05
+Jharkhand,ssp5_8_5,hadgem3_gc31_mm,0.00023607744813198804
+Jharkhand,ssp5_8_5,canesm5,0.00016390822001671255
+Jharkhand,ssp5_8_5,miroc6,8.294513143133705e-05
+Jharkhand,ssp5_8_5,cnrm_cm6_1,0.0001816993509164173
+Jharkhand,ssp5_8_5,gfdl_esm4,0.00011657235652203605
+Karnataka,ssp1_2_6,cmcc_esm2,3.245580832162733e-05
+Karnataka,ssp1_2_6,iitm_esm,8.101969820652862e-06
+Karnataka,ssp1_2_6,hadgem3_gc31_mm,5.47046772668971e-05
+Karnataka,ssp1_2_6,miroc6,8.171617967261336e-07
+Karnataka,ssp1_2_6,cnrm_cm6_1,2.8738242822190762e-05
+Karnataka,ssp1_2_6,gfdl_esm4,9.953784312314723e-06
+Karnataka,ssp2_4_5,cmcc_esm2,5.04057317467436e-05
+Karnataka,ssp2_4_5,iitm_esm,3.6898961244960235e-05
+Karnataka,ssp2_4_5,hadgem3_gc31_ll,8.114289154261509e-05
+Karnataka,ssp2_4_5,miroc6,2.9719070717144825e-05
+Karnataka,ssp2_4_5,cnrm_cm6_1,5.516393151541815e-05
+Karnataka,ssp2_4_5,gfdl_esm4,2.818702028507923e-05
+Karnataka,ssp3_7_0,cmcc_cm2_sr5,7.138325461356128e-05
+Karnataka,ssp3_7_0,iitm_esm,6.771013210571862e-05
+Karnataka,ssp3_7_0,canesm5,7.755789695447412e-05
+Karnataka,ssp3_7_0,miroc6,5.040441118471998e-05
+Karnataka,ssp3_7_0,cnrm_cm6_1,8.302620791788057e-05
+Karnataka,ssp3_7_0,gfdl_esm4,5.82681035488712e-05
+Karnataka,ssp5_8_5,cmcc_esm2,0.00010983550128948954
+Karnataka,ssp5_8_5,iitm_esm,7.660665348831116e-05
+Karnataka,ssp5_8_5,hadgem3_gc31_mm,0.00019734562512877747
+Karnataka,ssp5_8_5,canesm5,0.00012095839074084582
+Karnataka,ssp5_8_5,miroc6,6.658297722699067e-05
+Karnataka,ssp5_8_5,cnrm_cm6_1,0.00012851388296993872
+Karnataka,ssp5_8_5,gfdl_esm4,7.038885891827269e-05
+Punjab,ssp1_2_6,cmcc_esm2,6.587158255832964e-05
+Punjab,ssp1_2_6,iitm_esm,2.9878150964328225e-06
+Punjab,ssp1_2_6,hadgem3_gc31_mm,6.049237407745159e-05
+Punjab,ssp1_2_6,miroc6,2.795887453095698e-05
+Punjab,ssp1_2_6,cnrm_cm6_1,4.585992419741913e-05
+Punjab,ssp1_2_6,gfdl_esm4,2.4662435667454375e-05
+Punjab,ssp2_4_5,cmcc_esm2,0.00010747774379178508
+Punjab,ssp2_4_5,iitm_esm,5.143000453708341e-05
+Punjab,ssp2_4_5,hadgem3_gc31_ll,0.00010463304820454402
+Punjab,ssp2_4_5,miroc6,5.6471199065931553e-05
+Punjab,ssp2_4_5,cnrm_cm6_1,0.00010106919117663777
+Punjab,ssp2_4_5,gfdl_esm4,6.258722565799453e-05
+Punjab,ssp3_7_0,cmcc_cm2_sr5,9.514580019209778e-05
+Punjab,ssp3_7_0,iitm_esm,8.989368720414621e-05
+Punjab,ssp3_7_0,canesm5,0.00018716065005587265
+Punjab,ssp3_7_0,miroc6,8.527719908487158e-05
+Punjab,ssp3_7_0,cnrm_cm6_1,0.00012096380096508127
+Punjab,ssp3_7_0,gfdl_esm4,0.00010611423309353037
+Punjab,ssp5_8_5,cmcc_esm2,0.00016343086169392859
+Punjab,ssp5_8_5,iitm_esm,0.00012544792501358688
+Punjab,ssp5_8_5,hadgem3_gc31_mm,0.0002258113983374624
+Punjab,ssp5_8_5,canesm5,0.00020849714412999145
+Punjab,ssp5_8_5,miroc6,0.000142782423189417
+Punjab,ssp5_8_5,cnrm_cm6_1,0.0001979382205186952
+Punjab,ssp5_8_5,gfdl_esm4,0.0001410357660622757
+Rajasthan,ssp1_2_6,cmcc_esm2,5.6671922523242306e-05
+Rajasthan,ssp1_2_6,iitm_esm,1.4798826733091025e-05
+Rajasthan,ssp1_2_6,hadgem3_gc31_mm,5.334270388141773e-05
+Rajasthan,ssp1_2_6,miroc6,1.985220129419766e-05
+Rajasthan,ssp1_2_6,cnrm_cm6_1,3.6599559626773273e-05
+Rajasthan,ssp1_2_6,gfdl_esm4,1.5705499265823694e-05
+Rajasthan,ssp2_4_5,cmcc_esm2,9.198057366960533e-05
+Rajasthan,ssp2_4_5,iitm_esm,6.136335117662535e-05
+Rajasthan,ssp2_4_5,hadgem3_gc31_ll,9.198460700229266e-05
+Rajasthan,ssp2_4_5,miroc6,5.158205031212259e-05
+Rajasthan,ssp2_4_5,cnrm_cm6_1,8.6617022187171e-05
+Rajasthan,ssp2_4_5,gfdl_esm4,4.886230230613953e-05
+Rajasthan,ssp3_7_0,cmcc_cm2_sr5,0.00011077450440890484
+Rajasthan,ssp3_7_0,iitm_esm,8.185081575168847e-05
+Rajasthan,ssp3_7_0,canesm5,0.000160751420648078
+Rajasthan,ssp3_7_0,miroc6,7.62275528450712e-05
+Rajasthan,ssp3_7_0,cnrm_cm6_1,0.00011937773037421366
+Rajasthan,ssp3_7_0,gfdl_esm4,0.00010327004044040654
+Rajasthan,ssp5_8_5,cmcc_esm2,0.00017079651773489832
+Rajasthan,ssp5_8_5,iitm_esm,0.00012105117768198031
+Rajasthan,ssp5_8_5,hadgem3_gc31_mm,0.00021711158861400953
+Rajasthan,ssp5_8_5,canesm5,0.0001829782117718464
+Rajasthan,ssp5_8_5,miroc6,0.00012286220777743903
+Rajasthan,ssp5_8_5,cnrm_cm6_1,0.00018495985130024306
+Rajasthan,ssp5_8_5,gfdl_esm4,0.0001298928091937508
+Uttarakhand,ssp1_2_6,cmcc_esm2,5.3751587045295046e-05
+Uttarakhand,ssp1_2_6,iitm_esm,2.621285281727525e-06
+Uttarakhand,ssp1_2_6,hadgem3_gc31_mm,6.417711834813724e-05
+Uttarakhand,ssp1_2_6,miroc6,2.8055939861258906e-05
+Uttarakhand,ssp1_2_6,cnrm_cm6_1,3.244226544949107e-05
+Uttarakhand,ssp1_2_6,gfdl_esm4,6.203119305621026e-06
+Uttarakhand,ssp2_4_5,cmcc_esm2,8.098980276287297e-05
+Uttarakhand,ssp2_4_5,iitm_esm,4.5557620477196286e-05
+Uttarakhand,ssp2_4_5,hadgem3_gc31_ll,9.334038032654044e-05
+Uttarakhand,ssp2_4_5,miroc6,4.367218882663673e-05
+Uttarakhand,ssp2_4_5,cnrm_cm6_1,8.458506150571596e-05
+Uttarakhand,ssp2_4_5,gfdl_esm4,5.03287814197589e-05
+Uttarakhand,ssp3_7_0,cmcc_cm2_sr5,9.08297627822385e-05
+Uttarakhand,ssp3_7_0,iitm_esm,7.760821778612074e-05
+Uttarakhand,ssp3_7_0,canesm5,0.00015658585236852997
+Uttarakhand,ssp3_7_0,miroc6,5.177300677214944e-05
+Uttarakhand,ssp3_7_0,cnrm_cm6_1,0.00012361891872912748
+Uttarakhand,ssp3_7_0,gfdl_esm4,9.787386710451767e-05
+Uttarakhand,ssp5_8_5,cmcc_esm2,0.0001342662949554582
+Uttarakhand,ssp5_8_5,iitm_esm,0.00010783618492359665
+Uttarakhand,ssp5_8_5,hadgem3_gc31_mm,0.00022997863572040092
+Uttarakhand,ssp5_8_5,canesm5,0.00017815256292948755
+Uttarakhand,ssp5_8_5,miroc6,9.68146785240255e-05
+Uttarakhand,ssp5_8_5,cnrm_cm6_1,0.00018526168299644953
+Uttarakhand,ssp5_8_5,gfdl_esm4,0.00011452036163317331
+Telangana,ssp1_2_6,cmcc_esm2,3.8912062573504676e-05
+Telangana,ssp1_2_6,iitm_esm,6.8674578698252975e-06
+Telangana,ssp1_2_6,hadgem3_gc31_mm,5.917709145280356e-05
+Telangana,ssp1_2_6,miroc6,6.512583298321259e-06
+Telangana,ssp1_2_6,cnrm_cm6_1,4.022066873242669e-05
+Telangana,ssp1_2_6,gfdl_esm4,8.060067680643597e-06
+Telangana,ssp2_4_5,cmcc_esm2,6.484721033089253e-05
+Telangana,ssp2_4_5,iitm_esm,3.2169426514407346e-05
+Telangana,ssp2_4_5,hadgem3_gc31_ll,7.618753571082055e-05
+Telangana,ssp2_4_5,miroc6,2.9873397788246072e-05
+Telangana,ssp2_4_5,cnrm_cm6_1,5.960129714230797e-05
+Telangana,ssp2_4_5,gfdl_esm4,2.9921565773069416e-05
+Telangana,ssp3_7_0,cmcc_cm2_sr5,7.193216053355939e-05
+Telangana,ssp3_7_0,iitm_esm,5.085752718267463e-05
+Telangana,ssp3_7_0,canesm5,8.981974196965851e-05
+Telangana,ssp3_7_0,miroc6,3.675347760326829e-05
+Telangana,ssp3_7_0,cnrm_cm6_1,9.924833516252967e-05
+Telangana,ssp3_7_0,gfdl_esm4,6.501311256849334e-05
+Telangana,ssp5_8_5,cmcc_esm2,9.964955519702646e-05
+Telangana,ssp5_8_5,iitm_esm,7.983000452723892e-05
+Telangana,ssp5_8_5,hadgem3_gc31_mm,0.00020176590251992586
+Telangana,ssp5_8_5,canesm5,0.0001262407633666478
+Telangana,ssp5_8_5,miroc6,5.7133595059342916e-05
+Telangana,ssp5_8_5,cnrm_cm6_1,0.00014440865465432741
+Telangana,ssp5_8_5,gfdl_esm4,8.458865877179946e-05
+Bihar,ssp1_2_6,cmcc_esm2,5.774771838637495e-05
+Bihar,ssp1_2_6,iitm_esm,9.018442517851927e-06
+Bihar,ssp1_2_6,hadgem3_gc31_mm,7.187113342016924e-05
+Bihar,ssp1_2_6,miroc6,2.2892015532091726e-05
+Bihar,ssp1_2_6,cnrm_cm6_1,4.2461696897244155e-05
+Bihar,ssp1_2_6,gfdl_esm4,7.965654294175647e-06
+Bihar,ssp2_4_5,cmcc_esm2,0.00010386945336763921
+Bihar,ssp2_4_5,iitm_esm,4.490421696511866e-05
+Bihar,ssp2_4_5,hadgem3_gc31_ll,9.004903835777726e-05
+Bihar,ssp2_4_5,miroc6,6.456313924485908e-05
+Bihar,ssp2_4_5,cnrm_cm6_1,9.773925890887095e-05
+Bihar,ssp2_4_5,gfdl_esm4,5.31546951654898e-05
+Bihar,ssp3_7_0,cmcc_cm2_sr5,8.880026579037788e-05
+Bihar,ssp3_7_0,iitm_esm,6.482572806226322e-05
+Bihar,ssp3_7_0,canesm5,0.00016264632829428443
+Bihar,ssp3_7_0,miroc6,6.020989513626493e-05
+Bihar,ssp3_7_0,cnrm_cm6_1,0.00011255558959231339
+Bihar,ssp3_7_0,gfdl_esm4,8.552070099695007e-05
+Bihar,ssp5_8_5,cmcc_esm2,0.00012988006085458892
+Bihar,ssp5_8_5,iitm_esm,0.00011275618970208626
+Bihar,ssp5_8_5,hadgem3_gc31_mm,0.00023903451593442133
+Bihar,ssp5_8_5,canesm5,0.00018782438912745209
+Bihar,ssp5_8_5,miroc6,8.306193390659982e-05
+Bihar,ssp5_8_5,cnrm_cm6_1,0.00018390038885149137
+Bihar,ssp5_8_5,gfdl_esm4,0.00012352169600183567
+Gujarat,ssp1_2_6,cmcc_esm2,4.466260750329548e-05
+Gujarat,ssp1_2_6,iitm_esm,1.6025722414295515e-05
+Gujarat,ssp1_2_6,hadgem3_gc31_mm,4.785342905469779e-05
+Gujarat,ssp1_2_6,miroc6,7.748376238220884e-06
+Gujarat,ssp1_2_6,cnrm_cm6_1,2.9956249363685566e-05
+Gujarat,ssp1_2_6,gfdl_esm4,6.275476105083444e-06
+Gujarat,ssp2_4_5,cmcc_esm2,7.047108700126685e-05
+Gujarat,ssp2_4_5,iitm_esm,4.74788208134194e-05
+Gujarat,ssp2_4_5,hadgem3_gc31_ll,6.941441750959562e-05
+Gujarat,ssp2_4_5,miroc6,3.899386505072717e-05
+Gujarat,ssp2_4_5,cnrm_cm6_1,5.356544480220435e-05
+Gujarat,ssp2_4_5,gfdl_esm4,3.088591841471866e-05
+Gujarat,ssp3_7_0,cmcc_cm2_sr5,7.840952797702927e-05
+Gujarat,ssp3_7_0,iitm_esm,6.163702103931263e-05
+Gujarat,ssp3_7_0,canesm5,0.0001397369712915593
+Gujarat,ssp3_7_0,miroc6,4.0566176520664396e-05
+Gujarat,ssp3_7_0,cnrm_cm6_1,9.054335332780959e-05
+Gujarat,ssp3_7_0,gfdl_esm4,6.91826825198661e-05
+Gujarat,ssp5_8_5,cmcc_esm2,0.00012610840823706302
+Gujarat,ssp5_8_5,iitm_esm,0.00010209342477905336
+Gujarat,ssp5_8_5,hadgem3_gc31_mm,0.00017703304779964415
+Gujarat,ssp5_8_5,canesm5,0.00014457126638746183
+Gujarat,ssp5_8_5,miroc6,9.112089121787761e-05
+Gujarat,ssp5_8_5,cnrm_cm6_1,0.00012722481509287465
+Gujarat,ssp5_8_5,gfdl_esm4,7.954306267476241e-05
+Kerala,ssp1_2_6,cmcc_esm2,3.818219462040297e-05
+Kerala,ssp1_2_6,iitm_esm,7.834354029890551e-06
+Kerala,ssp1_2_6,hadgem3_gc31_mm,4.0827572202469096e-05
+Kerala,ssp1_2_6,miroc6,7.551446962627568e-06
+Kerala,ssp1_2_6,cnrm_cm6_1,1.4139531723717907e-05
+Kerala,ssp1_2_6,gfdl_esm4,1.8855716667543783e-06
+Kerala,ssp2_4_5,cmcc_esm2,6.710578953052507e-05
+Kerala,ssp2_4_5,iitm_esm,2.7017930491397955e-05
+Kerala,ssp2_4_5,hadgem3_gc31_ll,8.574386545181604e-05
+Kerala,ssp2_4_5,miroc6,2.568873774066573e-05
+Kerala,ssp2_4_5,cnrm_cm6_1,5.42820318337985e-05
+Kerala,ssp2_4_5,gfdl_esm4,3.0083124562815486e-05
+Kerala,ssp3_7_0,cmcc_cm2_sr5,8.174952194718772e-05
+Kerala,ssp3_7_0,iitm_esm,4.617575063810271e-05
+Kerala,ssp3_7_0,canesm5,0.00014055020686661032
+Kerala,ssp3_7_0,miroc6,5.735034855218811e-05
+Kerala,ssp3_7_0,cnrm_cm6_1,9.128904822725064e-05
+Kerala,ssp3_7_0,gfdl_esm4,5.4020926463278485e-05
+Kerala,ssp5_8_5,cmcc_esm2,0.00011859989373654856
+Kerala,ssp5_8_5,iitm_esm,5.171888259116084e-05
+Kerala,ssp5_8_5,hadgem3_gc31_mm,0.00015405287744508603
+Kerala,ssp5_8_5,canesm5,0.00019996030633876623
+Kerala,ssp5_8_5,miroc6,7.051708406272685e-05
+Kerala,ssp5_8_5,cnrm_cm6_1,0.0001353397591968332
+Kerala,ssp5_8_5,gfdl_esm4,5.943243698249135e-05
+Lakshadweep,ssp1_2_6,cmcc_esm2,
+Lakshadweep,ssp1_2_6,iitm_esm,
+Lakshadweep,ssp1_2_6,hadgem3_gc31_mm,
+Lakshadweep,ssp1_2_6,miroc6,
+Lakshadweep,ssp1_2_6,cnrm_cm6_1,
+Lakshadweep,ssp1_2_6,gfdl_esm4,
+Lakshadweep,ssp2_4_5,cmcc_esm2,
+Lakshadweep,ssp2_4_5,iitm_esm,
+Lakshadweep,ssp2_4_5,hadgem3_gc31_ll,
+Lakshadweep,ssp2_4_5,miroc6,
+Lakshadweep,ssp2_4_5,cnrm_cm6_1,
+Lakshadweep,ssp2_4_5,gfdl_esm4,
+Lakshadweep,ssp3_7_0,cmcc_cm2_sr5,
+Lakshadweep,ssp3_7_0,iitm_esm,
+Lakshadweep,ssp3_7_0,canesm5,
+Lakshadweep,ssp3_7_0,miroc6,
+Lakshadweep,ssp3_7_0,cnrm_cm6_1,
+Lakshadweep,ssp3_7_0,gfdl_esm4,
+Lakshadweep,ssp5_8_5,cmcc_esm2,
+Lakshadweep,ssp5_8_5,iitm_esm,
+Lakshadweep,ssp5_8_5,hadgem3_gc31_mm,
+Lakshadweep,ssp5_8_5,canesm5,
+Lakshadweep,ssp5_8_5,miroc6,
+Lakshadweep,ssp5_8_5,cnrm_cm6_1,
+Lakshadweep,ssp5_8_5,gfdl_esm4,
+Madhya Pradesh,ssp1_2_6,cmcc_esm2,4.1929635716547666e-05
+Madhya Pradesh,ssp1_2_6,iitm_esm,1.7551579233390024e-05
+Madhya Pradesh,ssp1_2_6,hadgem3_gc31_mm,6.151890952446405e-05
+Madhya Pradesh,ssp1_2_6,miroc6,2.010407370371453e-05
+Madhya Pradesh,ssp1_2_6,cnrm_cm6_1,4.0583672193390584e-05
+Madhya Pradesh,ssp1_2_6,gfdl_esm4,8.524940591463271e-06
+Madhya Pradesh,ssp2_4_5,cmcc_esm2,7.577418787947024e-05
+Madhya Pradesh,ssp2_4_5,iitm_esm,5.3030943564679175e-05
+Madhya Pradesh,ssp2_4_5,hadgem3_gc31_ll,8.473212980558826e-05
+Madhya Pradesh,ssp2_4_5,miroc6,4.068497428966304e-05
+Madhya Pradesh,ssp2_4_5,cnrm_cm6_1,8.536315362865671e-05
+Madhya Pradesh,ssp2_4_5,gfdl_esm4,4.0165565769120205e-05
+Madhya Pradesh,ssp3_7_0,cmcc_cm2_sr5,9.862178993949743e-05
+Madhya Pradesh,ssp3_7_0,iitm_esm,6.626397509795466e-05
+Madhya Pradesh,ssp3_7_0,canesm5,0.00014379967983158302
+Madhya Pradesh,ssp3_7_0,miroc6,4.3470667306814016e-05
+Madhya Pradesh,ssp3_7_0,cnrm_cm6_1,0.00011822555639426904
+Madhya Pradesh,ssp3_7_0,gfdl_esm4,9.241589598943326e-05
+Madhya Pradesh,ssp5_8_5,cmcc_esm2,0.00013225969806352733
+Madhya Pradesh,ssp5_8_5,iitm_esm,0.00010197013611832232
+Madhya Pradesh,ssp5_8_5,hadgem3_gc31_mm,0.00024147054579226108
+Madhya Pradesh,ssp5_8_5,canesm5,0.00015989631407214736
+Madhya Pradesh,ssp5_8_5,miroc6,9.227848585269328e-05
+Madhya Pradesh,ssp5_8_5,cnrm_cm6_1,0.00019124788977509013
+Madhya Pradesh,ssp5_8_5,gfdl_esm4,0.00011866710940193562
+Odisha,ssp1_2_6,cmcc_esm2,3.711669733713258e-05
+Odisha,ssp1_2_6,iitm_esm,8.456690907859517e-06
+Odisha,ssp1_2_6,hadgem3_gc31_mm,5.640698513546639e-05
+Odisha,ssp1_2_6,miroc6,1.749886169742178e-05
+Odisha,ssp1_2_6,cnrm_cm6_1,2.8576483118995803e-05
+Odisha,ssp1_2_6,gfdl_esm4,6.3904315031451995e-06
+Odisha,ssp2_4_5,cmcc_esm2,6.707029984503119e-05
+Odisha,ssp2_4_5,iitm_esm,3.231748296281231e-05
+Odisha,ssp2_4_5,hadgem3_gc31_ll,6.37699663857978e-05
+Odisha,ssp2_4_5,miroc6,4.460841575461073e-05
+Odisha,ssp2_4_5,cnrm_cm6_1,5.8316043723923206e-05
+Odisha,ssp2_4_5,gfdl_esm4,2.7133699287352683e-05
+Odisha,ssp3_7_0,cmcc_cm2_sr5,6.941508671161387e-05
+Odisha,ssp3_7_0,iitm_esm,6.0022669436927064e-05
+Odisha,ssp3_7_0,canesm5,9.716875437722067e-05
+Odisha,ssp3_7_0,miroc6,5.7350394166880374e-05
+Odisha,ssp3_7_0,cnrm_cm6_1,8.482847488498627e-05
+Odisha,ssp3_7_0,gfdl_esm4,6.46905214984818e-05
+Odisha,ssp5_8_5,cmcc_esm2,9.8628155406248e-05
+Odisha,ssp5_8_5,iitm_esm,7.920073031766787e-05
+Odisha,ssp5_8_5,hadgem3_gc31_mm,0.00017994472458104734
+Odisha,ssp5_8_5,canesm5,0.00012607990689136
+Odisha,ssp5_8_5,miroc6,8.5390076637594e-05
+Odisha,ssp5_8_5,cnrm_cm6_1,0.00014613747934321764
+Odisha,ssp5_8_5,gfdl_esm4,8.862082877936667e-05
+Tamil Nadu,ssp1_2_6,cmcc_esm2,2.489547877827871e-05
+Tamil Nadu,ssp1_2_6,iitm_esm,1.391367711883688e-05
+Tamil Nadu,ssp1_2_6,hadgem3_gc31_mm,5.0685211674280494e-05
+Tamil Nadu,ssp1_2_6,miroc6,7.3714708933567125e-06
+Tamil Nadu,ssp1_2_6,cnrm_cm6_1,2.2288976579838847e-05
+Tamil Nadu,ssp1_2_6,gfdl_esm4,-7.435454295412094e-07
+Tamil Nadu,ssp2_4_5,cmcc_esm2,4.898895255001153e-05
+Tamil Nadu,ssp2_4_5,iitm_esm,3.633786753641148e-05
+Tamil Nadu,ssp2_4_5,hadgem3_gc31_ll,9.13530258951715e-05
+Tamil Nadu,ssp2_4_5,miroc6,3.507111162193907e-05
+Tamil Nadu,ssp2_4_5,cnrm_cm6_1,6.410660859894239e-05
+Tamil Nadu,ssp2_4_5,gfdl_esm4,2.93914039653416e-05
+Tamil Nadu,ssp3_7_0,cmcc_cm2_sr5,7.338060437941836e-05
+Tamil Nadu,ssp3_7_0,iitm_esm,6.225069042913081e-05
+Tamil Nadu,ssp3_7_0,canesm5,0.0001342964776245578
+Tamil Nadu,ssp3_7_0,miroc6,5.289141956077075e-05
+Tamil Nadu,ssp3_7_0,cnrm_cm6_1,0.00010422855487924576
+Tamil Nadu,ssp3_7_0,gfdl_esm4,5.238164618780777e-05
+Tamil Nadu,ssp5_8_5,cmcc_esm2,0.00011901319665768559
+Tamil Nadu,ssp5_8_5,iitm_esm,7.516172838563655e-05
+Tamil Nadu,ssp5_8_5,hadgem3_gc31_mm,0.00016869527130949186
+Tamil Nadu,ssp5_8_5,canesm5,0.00018388347898781453
+Tamil Nadu,ssp5_8_5,miroc6,6.647922281147799e-05
+Tamil Nadu,ssp5_8_5,cnrm_cm6_1,0.0001455714203265323
+Tamil Nadu,ssp5_8_5,gfdl_esm4,6.47196107796529e-05
+Uttar Pradesh,ssp1_2_6,cmcc_esm2,6.169440825381073e-05
+Uttar Pradesh,ssp1_2_6,iitm_esm,1.748929591411008e-05
+Uttar Pradesh,ssp1_2_6,hadgem3_gc31_mm,8.180241341534224e-05
+Uttar Pradesh,ssp1_2_6,miroc6,2.3202284084025485e-05
+Uttar Pradesh,ssp1_2_6,cnrm_cm6_1,4.485790486256921e-05
+Uttar Pradesh,ssp1_2_6,gfdl_esm4,1.6088210832616508e-05
+Uttar Pradesh,ssp2_4_5,cmcc_esm2,0.00010664847083137926
+Uttar Pradesh,ssp2_4_5,iitm_esm,5.873488743481502e-05
+Uttar Pradesh,ssp2_4_5,hadgem3_gc31_ll,0.0001113610216179598
+Uttar Pradesh,ssp2_4_5,miroc6,6.259362685829806e-05
+Uttar Pradesh,ssp2_4_5,cnrm_cm6_1,0.00010803911207814398
+Uttar Pradesh,ssp2_4_5,gfdl_esm4,6.154875836408578e-05
+Uttar Pradesh,ssp3_7_0,cmcc_cm2_sr5,9.989827451767106e-05
+Uttar Pradesh,ssp3_7_0,iitm_esm,8.535977972176734e-05
+Uttar Pradesh,ssp3_7_0,canesm5,0.00016234163777315708
+Uttar Pradesh,ssp3_7_0,miroc6,7.308013432101049e-05
+Uttar Pradesh,ssp3_7_0,cnrm_cm6_1,0.00013221657507218727
+Uttar Pradesh,ssp3_7_0,gfdl_esm4,9.477221434735344e-05
+Uttar Pradesh,ssp5_8_5,cmcc_esm2,0.00015670110753142745
+Uttar Pradesh,ssp5_8_5,iitm_esm,0.00012845798440961085
+Uttar Pradesh,ssp5_8_5,hadgem3_gc31_mm,0.0002581761294245994
+Uttar Pradesh,ssp5_8_5,canesm5,0.0001867054311411671
+Uttar Pradesh,ssp5_8_5,miroc6,0.00011229718060847442
+Uttar Pradesh,ssp5_8_5,cnrm_cm6_1,0.000209366717271593
+Uttar Pradesh,ssp5_8_5,gfdl_esm4,0.0001442670618665077
+West Bengal,ssp1_2_6,cmcc_esm2,4.2002593627556496e-05
+West Bengal,ssp1_2_6,iitm_esm,5.359856495627403e-06
+West Bengal,ssp1_2_6,hadgem3_gc31_mm,6.092006305585786e-05
+West Bengal,ssp1_2_6,miroc6,2.90861906507199e-05
+West Bengal,ssp1_2_6,cnrm_cm6_1,2.6255360630432376e-05
+West Bengal,ssp1_2_6,gfdl_esm4,6.105443172667123e-06
+West Bengal,ssp2_4_5,cmcc_esm2,9.288785903332507e-05
+West Bengal,ssp2_4_5,iitm_esm,3.400819318294852e-05
+West Bengal,ssp2_4_5,hadgem3_gc31_ll,7.542970242873875e-05
+West Bengal,ssp2_4_5,miroc6,4.381253125307776e-05
+West Bengal,ssp2_4_5,cnrm_cm6_1,7.239591081427131e-05
+West Bengal,ssp2_4_5,gfdl_esm4,3.6467212694482586e-05
+West Bengal,ssp3_7_0,cmcc_cm2_sr5,8.513957745220424e-05
+West Bengal,ssp3_7_0,iitm_esm,5.6457853225355784e-05
+West Bengal,ssp3_7_0,canesm5,0.00011201191198859316
+West Bengal,ssp3_7_0,miroc6,4.343114668605587e-05
+West Bengal,ssp3_7_0,cnrm_cm6_1,9.255352037917612e-05
+West Bengal,ssp3_7_0,gfdl_esm4,6.708966495060273e-05
+West Bengal,ssp5_8_5,cmcc_esm2,0.0001250634988177043
+West Bengal,ssp5_8_5,iitm_esm,8.873240329264149e-05
+West Bengal,ssp5_8_5,hadgem3_gc31_mm,0.00020460953109250596
+West Bengal,ssp5_8_5,canesm5,0.00014088455301175458
+West Bengal,ssp5_8_5,miroc6,8.306617410624275e-05
+West Bengal,ssp5_8_5,cnrm_cm6_1,0.00015279981984440014
+West Bengal,ssp5_8_5,gfdl_esm4,0.0001010014214795515
+Andhra Pradesh,ssp1_2_6,cmcc_esm2,3.554770431070837e-05
+Andhra Pradesh,ssp1_2_6,iitm_esm,7.751014531021171e-06
+Andhra Pradesh,ssp1_2_6,hadgem3_gc31_mm,4.948912625957452e-05
+Andhra Pradesh,ssp1_2_6,miroc6,1.143633383994979e-05
+Andhra Pradesh,ssp1_2_6,cnrm_cm6_1,3.47525169531699e-05
+Andhra Pradesh,ssp1_2_6,gfdl_esm4,4.701569242062641e-06
+Andhra Pradesh,ssp2_4_5,cmcc_esm2,5.605474812623652e-05
+Andhra Pradesh,ssp2_4_5,iitm_esm,3.329806423230293e-05
+Andhra Pradesh,ssp2_4_5,hadgem3_gc31_ll,7.35898117829015e-05
+Andhra Pradesh,ssp2_4_5,miroc6,3.7968527458856675e-05
+Andhra Pradesh,ssp2_4_5,cnrm_cm6_1,5.0508069492450604e-05
+Andhra Pradesh,ssp2_4_5,gfdl_esm4,2.2347856868259372e-05
+Andhra Pradesh,ssp3_7_0,cmcc_cm2_sr5,7.270083882449739e-05
+Andhra Pradesh,ssp3_7_0,iitm_esm,5.142352384107933e-05
+Andhra Pradesh,ssp3_7_0,canesm5,8.364478852773008e-05
+Andhra Pradesh,ssp3_7_0,miroc6,4.888852221894328e-05
+Andhra Pradesh,ssp3_7_0,cnrm_cm6_1,8.344188082967105e-05
+Andhra Pradesh,ssp3_7_0,gfdl_esm4,5.444897295473721e-05
+Andhra Pradesh,ssp5_8_5,cmcc_esm2,0.0001037495492475705
+Andhra Pradesh,ssp5_8_5,iitm_esm,8.224226278170685e-05
+Andhra Pradesh,ssp5_8_5,hadgem3_gc31_mm,0.00017647655423193276
+Andhra Pradesh,ssp5_8_5,canesm5,0.00011207228287169005
+Andhra Pradesh,ssp5_8_5,miroc6,7.075429619038634e-05
+Andhra Pradesh,ssp5_8_5,cnrm_cm6_1,0.00012792518909472036
+Andhra Pradesh,ssp5_8_5,gfdl_esm4,6.967796646213278e-05
+Maharashtra,ssp1_2_6,cmcc_esm2,3.553815836676869e-05
+Maharashtra,ssp1_2_6,iitm_esm,1.2107624855654326e-05
+Maharashtra,ssp1_2_6,hadgem3_gc31_mm,6.303277517968512e-05
+Maharashtra,ssp1_2_6,miroc6,6.277876164207967e-06
+Maharashtra,ssp1_2_6,cnrm_cm6_1,3.383398075700789e-05
+Maharashtra,ssp1_2_6,gfdl_esm4,8.312758813804212e-06
+Maharashtra,ssp2_4_5,cmcc_esm2,5.633359282661117e-05
+Maharashtra,ssp2_4_5,iitm_esm,4.239495379119144e-05
+Maharashtra,ssp2_4_5,hadgem3_gc31_ll,6.799999032828543e-05
+Maharashtra,ssp2_4_5,miroc6,2.7770542992094488e-05
+Maharashtra,ssp2_4_5,cnrm_cm6_1,6.0615516041128836e-05
+Maharashtra,ssp2_4_5,gfdl_esm4,3.6076982283163566e-05
+Maharashtra,ssp3_7_0,cmcc_cm2_sr5,7.979935950065696e-05
+Maharashtra,ssp3_7_0,iitm_esm,6.444559558955348e-05
+Maharashtra,ssp3_7_0,canesm5,0.00011636518208342038
+Maharashtra,ssp3_7_0,miroc6,4.324558195694553e-05
+Maharashtra,ssp3_7_0,cnrm_cm6_1,0.00010105328642351806
+Maharashtra,ssp3_7_0,gfdl_esm4,7.004797875929718e-05
+Maharashtra,ssp5_8_5,cmcc_esm2,0.00011274187037247258
+Maharashtra,ssp5_8_5,iitm_esm,9.498445017821458e-05
+Maharashtra,ssp5_8_5,hadgem3_gc31_mm,0.00022477710800082782
+Maharashtra,ssp5_8_5,canesm5,0.00013775474321644428
+Maharashtra,ssp5_8_5,miroc6,8.001802933867723e-05
+Maharashtra,ssp5_8_5,cnrm_cm6_1,0.00015558622212425284
+Maharashtra,ssp5_8_5,gfdl_esm4,8.068676322527345e-05
+Daman and Diu,ssp1_2_6,cmcc_esm2,4.974476256841113e-05
+Daman and Diu,ssp1_2_6,iitm_esm,1.212851127021096e-05
+Daman and Diu,ssp1_2_6,hadgem3_gc31_mm,5.579972428330075e-05
+Daman and Diu,ssp1_2_6,miroc6,1.1252320555640854e-05
+Daman and Diu,ssp1_2_6,cnrm_cm6_1,3.35130062002734e-05
+Daman and Diu,ssp1_2_6,gfdl_esm4,1.080105934931488e-05
+Daman and Diu,ssp2_4_5,cmcc_esm2,0.00010257718823242142
+Daman and Diu,ssp2_4_5,iitm_esm,5.880257686219385e-05
+Daman and Diu,ssp2_4_5,hadgem3_gc31_ll,0.0001232817470129169
+Daman and Diu,ssp2_4_5,miroc6,4.897822602835309e-05
+Daman and Diu,ssp2_4_5,cnrm_cm6_1,6.392627634888128e-05
+Daman and Diu,ssp2_4_5,gfdl_esm4,3.895128103344572e-05
+Daman and Diu,ssp3_7_0,cmcc_cm2_sr5,9.820041091989425e-05
+Daman and Diu,ssp3_7_0,iitm_esm,8.895977552396862e-05
+Daman and Diu,ssp3_7_0,canesm5,0.000133221868224169
+Daman and Diu,ssp3_7_0,miroc6,7.187576358472957e-05
+Daman and Diu,ssp3_7_0,cnrm_cm6_1,0.00010870734686337841
+Daman and Diu,ssp3_7_0,gfdl_esm4,7.46693162990968e-05
+Daman and Diu,ssp5_8_5,cmcc_esm2,0.00015974724384797495
+Daman and Diu,ssp5_8_5,iitm_esm,0.00013106560871699226
+Daman and Diu,ssp5_8_5,hadgem3_gc31_mm,0.0002456407994138315
+Daman and Diu,ssp5_8_5,canesm5,0.00012683273280654635
+Daman and Diu,ssp5_8_5,miroc6,0.00012091578572321188
+Daman and Diu,ssp5_8_5,cnrm_cm6_1,0.00015451844012504177
+Daman and Diu,ssp5_8_5,gfdl_esm4,8.343004590139279e-05
+Dadra and Nagar Haveli,ssp1_2_6,cmcc_esm2,5.260771821720866e-05
+Dadra and Nagar Haveli,ssp1_2_6,iitm_esm,1.6727058335529418e-05
+Dadra and Nagar Haveli,ssp1_2_6,hadgem3_gc31_mm,5.613325809314134e-05
+Dadra and Nagar Haveli,ssp1_2_6,miroc6,9.145269919110286e-06
+Dadra and Nagar Haveli,ssp1_2_6,cnrm_cm6_1,2.849258415249487e-05
+Dadra and Nagar Haveli,ssp1_2_6,gfdl_esm4,8.371825318293799e-06
+Dadra and Nagar Haveli,ssp2_4_5,cmcc_esm2,0.00010848080351420719
+Dadra and Nagar Haveli,ssp2_4_5,iitm_esm,4.7746008340596354e-05
+Dadra and Nagar Haveli,ssp2_4_5,hadgem3_gc31_ll,0.0001303769698219245
+Dadra and Nagar Haveli,ssp2_4_5,miroc6,3.161867027973501e-05
+Dadra and Nagar Haveli,ssp2_4_5,cnrm_cm6_1,6.233318152814258e-05
+Dadra and Nagar Haveli,ssp2_4_5,gfdl_esm4,3.740025529375055e-05
+Dadra and Nagar Haveli,ssp3_7_0,cmcc_cm2_sr5,0.0001038521299480162
+Dadra and Nagar Haveli,ssp3_7_0,iitm_esm,7.991740966611249e-05
+Dadra and Nagar Haveli,ssp3_7_0,canesm5,0.00014088917389581864
+Dadra and Nagar Haveli,ssp3_7_0,miroc6,3.749535487387654e-05
+Dadra and Nagar Haveli,ssp3_7_0,cnrm_cm6_1,9.80317084277429e-05
+Dadra and Nagar Haveli,ssp3_7_0,gfdl_esm4,7.275059614258044e-05
+Dadra and Nagar Haveli,ssp5_8_5,cmcc_esm2,0.0001689411619720245
+Dadra and Nagar Haveli,ssp5_8_5,iitm_esm,0.00011120241616447961
+Dadra and Nagar Haveli,ssp5_8_5,hadgem3_gc31_mm,0.00021486369962923462
+Dadra and Nagar Haveli,ssp5_8_5,canesm5,0.00013413232516747993
+Dadra and Nagar Haveli,ssp5_8_5,miroc6,8.094166523552137e-05
+Dadra and Nagar Haveli,ssp5_8_5,cnrm_cm6_1,0.00013880894538798177
+Dadra and Nagar Haveli,ssp5_8_5,gfdl_esm4,7.794431743757128e-05
+Ladakh,ssp1_2_6,cmcc_esm2,
+Ladakh,ssp1_2_6,iitm_esm,
+Ladakh,ssp1_2_6,hadgem3_gc31_mm,
+Ladakh,ssp1_2_6,miroc6,
+Ladakh,ssp1_2_6,cnrm_cm6_1,
+Ladakh,ssp1_2_6,gfdl_esm4,
+Ladakh,ssp2_4_5,cmcc_esm2,
+Ladakh,ssp2_4_5,iitm_esm,
+Ladakh,ssp2_4_5,hadgem3_gc31_ll,
+Ladakh,ssp2_4_5,miroc6,
+Ladakh,ssp2_4_5,cnrm_cm6_1,
+Ladakh,ssp2_4_5,gfdl_esm4,
+Ladakh,ssp3_7_0,cmcc_cm2_sr5,
+Ladakh,ssp3_7_0,iitm_esm,
+Ladakh,ssp3_7_0,canesm5,
+Ladakh,ssp3_7_0,miroc6,
+Ladakh,ssp3_7_0,cnrm_cm6_1,
+Ladakh,ssp3_7_0,gfdl_esm4,
+Ladakh,ssp5_8_5,cmcc_esm2,
+Ladakh,ssp5_8_5,iitm_esm,
+Ladakh,ssp5_8_5,hadgem3_gc31_mm,
+Ladakh,ssp5_8_5,canesm5,
+Ladakh,ssp5_8_5,miroc6,
+Ladakh,ssp5_8_5,cnrm_cm6_1,
+Ladakh,ssp5_8_5,gfdl_esm4,

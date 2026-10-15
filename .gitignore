@@ -3,11 +3,14 @@ output/
 data/CMIP6/
 data/temperature.parquet
 data/consumption.parquet
+data/consumption_cst_climate.parquet
 data/hourly_consumption.parquet
+data/hourly_consumption_cst_climate.parquet
 data/gpw-v4-population-count-rev11_totpop_15_min_nc/
 data/Indian_load_curve_all_states_2017-2025.xlsx
 data/Indian_load_curve_all_states_2017-2025.csv
 data/hourly_consumption_projection/
+data/hourly_consumption_projection_cst_climate/
 .cds*
 data/IEA_CMCC/
 *.zip

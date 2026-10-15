@@ -498,7 +498,7 @@ def main():
                 
                 
     #%% Données de population
-    if True: 
+    if False: 
         cmap = plt.get_cmap('viridis')
         
         india_shape = unary_union(list(dict_name_geom.values()))
@@ -575,7 +575,7 @@ def main():
         
     
     # formatage des températures et calcul des CDD26
-    if True:
+    if False:
         threshold = 26 #°C
         # scenario = 'ssp2_4_5'
         scenario = 'ssp5_8_5'
@@ -643,7 +643,7 @@ def main():
     
     
     #%% cartes et graphes à l'échelle nationale pour illustration
-    if False:
+    if True:
         
         # cartes de températures (difference entre 2015-2035 et 2080-2100, SSP3-7.0)
         if True:
