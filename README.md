@@ -10,3 +10,4 @@ See PDF notes in ``note`` folder for the details:
 - ``20250622.pdf`` : Characterisation of equipment rates
 - ``20260706.pdf`` : Projection of equipment rates
 - ``20260903.pdf`` : Calculation of annual and hourly consumption
+- ``20261015.pdf`` : Calculation of annual and hourly consumption without climate effects
